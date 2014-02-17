@@ -1,0 +1,28 @@
+Command line:
+   BPSK_txTest_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56293
+
+Mon Feb 17 00:59:39 2014
+
+
+ Elaboration Time: 0.530404 sec
+
+ Current Memory Usage: 1164.49 Meg
+
+ Total Signals          : 1538
+ Total Nets             : 877
+ Total Signal Drivers   : 589
+ Total Blocks           : 308
+ Total Primitive Blocks : 274
+ Total Processes        : 1053
+ Total Traceable Variables  : 773
+ Total Scalar Nets and Variables : 61601
+
+ Total Simulation Time: 0.592804 sec
+
+ Current Memory Usage: 692.609 Meg
+
+Mon Feb 17 01:12:17 2014
+

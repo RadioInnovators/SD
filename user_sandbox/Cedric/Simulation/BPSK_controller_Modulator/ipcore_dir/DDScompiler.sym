@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="DDScompiler">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2014-2-17T2:59:54</timestamp>
+    <pin polarity="Input" x="0" y="432" name="aclk" />
+    <pin polarity="Input" x="0" y="464" name="aclken" />
+    <pin polarity="Input" x="0" y="496" name="aresetn" />
+    <pin polarity="Output" x="1056" y="80" name="m_axis_data_tvalid" />
+    <pin polarity="Output" x="1056" y="144" name="m_axis_data_tdata[15:0]" />
+    <graph>
+        <text style="fontsize:40;fontname:Arial" x="32" y="32">DDScompiler</text>
+        <rect width="992" x="32" y="32" height="608" />
+        <line x2="32" y1="432" y2="432" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="432" type="pin aclk" />
+        <line x2="32" y1="464" y2="464" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="464" type="pin aclken" />
+        <line x2="32" y1="496" y2="496" x1="0" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="496" type="pin aresetn" />
+        <line x2="1024" y1="80" y2="80" x1="1056" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="1020" y="80" type="pin m_axis_data_tvalid" />
+        <line x2="1024" y1="144" y2="144" style="linewidth:W" x1="1056" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="1020" y="144" type="pin m_axis_data_tdata[15:0]" />
+    </graph>
+</symbol>
