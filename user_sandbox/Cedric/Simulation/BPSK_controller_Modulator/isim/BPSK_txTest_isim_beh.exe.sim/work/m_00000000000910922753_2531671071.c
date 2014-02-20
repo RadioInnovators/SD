@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/tibbs2010/Documents/SD/trunk/user_sandbox/Brian/Verilog/BPSK_controller_Modulator/ClockDivider.v";
+static const char *ng0 = "C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/ClockDivider.v";
 static unsigned int ng1[] = {1U, 0U};
 static int ng2[] = {0, 0};
 

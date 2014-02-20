@@ -6,6 +6,9 @@ module BPSKcontroller(
     input data_rdy,
     input PB,
 
+    input davdac,
+    output reg dacdav = 0,
+
     output reg sine_rst = 1'b1,
     output reg sine_clk_en = 0,
     output reg mod_en = 0
@@ -21,7 +24,7 @@ always@(posedge clk)begin
 	state <= next_state;
 end
 
-always@(state, sine_rdy, data_rdy, PB)begin
+always@(state, sine_rdy, data_rdy, PB, davdac)begin
 	sine_rst = 1'b1;
 	sine_clk_en = 1'b0;
 	
@@ -52,6 +55,13 @@ always@(state, sine_rdy, data_rdy, PB)begin
 			end
 		end
 	endcase
+
+	if(davdac == 0 && sine_rdy)begin
+		dacdav = 1'b1;
+	end else begin
+		dacdav = 0;
+	end
+
 end
 
 endmodule

@@ -1,16 +1,16 @@
-Release 14.7 - xst P.20131013 (nt64)
+Release 14.6 - xst P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.36 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.36 secs
  
 --> Reading design: BPSK_tx.prj
 
@@ -108,21 +108,23 @@ Cores Search Directories           : {"ipcore_dir"  }
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\tibbs2010\Documents\SD\trunk\user_sandbox\Brian\Verilog\BPSK_controller_Modulator\ipcore_dir\DDScompiler.v" into library work
+Analyzing Verilog file "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\ipcore_dir\DDScompiler.v" into library work
 Parsing module <DDScompiler>.
-Analyzing Verilog file "C:\Users\tibbs2010\Documents\SD\trunk\user_sandbox\Brian\Verilog\BPSK_controller_Modulator\SINE.v" into library work
+Analyzing Verilog file "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\SINE.v" into library work
 Parsing module <SINE>.
-Analyzing Verilog file "C:\Users\tibbs2010\Documents\SD\trunk\user_sandbox\Brian\Verilog\BPSK_controller_Modulator\Mixer.v" into library work
+Analyzing Verilog file "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\Mixer.v" into library work
 Parsing module <Mixer>.
-Analyzing Verilog file "C:\Users\tibbs2010\Documents\SD\trunk\user_sandbox\Brian\Verilog\BPSK_controller_Modulator\sineDatapath.v" into library work
+Analyzing Verilog file "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\sineDatapath.v" into library work
 Parsing module <sineDatapath>.
-Analyzing Verilog file "C:\Users\tibbs2010\Documents\SD\trunk\user_sandbox\Brian\Verilog\BPSK_controller_Modulator\sineController.v" into library work
+Analyzing Verilog file "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\sineController.v" into library work
 Parsing module <BPSKcontroller>.
-Analyzing Verilog file "C:\Users\tibbs2010\Documents\SD\trunk\user_sandbox\Brian\Verilog\BPSK_controller_Modulator\Debouncer.v" into library work
+Analyzing Verilog file "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\Debouncer.v" into library work
 Parsing module <Debouncer>.
-Analyzing Verilog file "C:\Users\tibbs2010\Documents\SD\trunk\user_sandbox\Brian\Verilog\BPSK_controller_Modulator\ClockDivider.v" into library work
+Analyzing Verilog file "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\da3dac.v" into library work
+Parsing module <da3dac>.
+Analyzing Verilog file "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\ClockDivider.v" into library work
 Parsing module <ClockDivider>.
-Analyzing Verilog file "C:\Users\tibbs2010\Documents\SD\trunk\user_sandbox\Brian\Verilog\BPSK_controller_Modulator\BPSK_tx.v" into library work
+Analyzing Verilog file "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" into library work
 Parsing module <BPSK_tx>.
 
 =========================================================================
@@ -145,19 +147,21 @@ Elaborating module <DDScompiler>.
 
 Elaborating module <Mixer>.
 
+Elaborating module <da3dac>.
+
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <BPSK_tx>.
-    Related source file is "C:\Users\tibbs2010\Documents\SD\trunk\user_sandbox\Brian\Verilog\BPSK_controller_Modulator\BPSK_tx.v".
+    Related source file is "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v".
     Summary:
 	no macro.
 Unit <BPSK_tx> synthesized.
 
 Synthesizing Unit <ClockDivider>.
-    Related source file is "C:\Users\tibbs2010\Documents\SD\trunk\user_sandbox\Brian\Verilog\BPSK_controller_Modulator\ClockDivider.v".
-        MAX_COUNT = 20
+    Related source file is "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\ClockDivider.v".
+        MAX_COUNT = 10
     Found 1-bit register for signal <clk>.
     Found 5-bit register for signal <count>.
     Found 5-bit adder for signal <_n0013> created at line 11.
@@ -167,10 +171,10 @@ Synthesizing Unit <ClockDivider>.
 Unit <ClockDivider> synthesized.
 
 Synthesizing Unit <Debouncer>.
-    Related source file is "C:\Users\tibbs2010\Documents\SD\trunk\user_sandbox\Brian\Verilog\BPSK_controller_Modulator\Debouncer.v".
+    Related source file is "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\Debouncer.v".
         WAIT = 0
         HOLD = 1
-        MAX_COUNT = 250
+        MAX_COUNT = 5
     Found 25-bit register for signal <count>.
     Found 1-bit register for signal <state>.
     Found 25-bit adder for signal <count[24]_GND_3_o_add_3_OUT> created at line 38.
@@ -182,7 +186,7 @@ WARNING:Xst:737 - Found 1-bit latch for signal <PB_db>. Latches may be generated
 Unit <Debouncer> synthesized.
 
 Synthesizing Unit <BPSKcontroller>.
-    Related source file is "C:\Users\tibbs2010\Documents\SD\trunk\user_sandbox\Brian\Verilog\BPSK_controller_Modulator\sineController.v".
+    Related source file is "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\sineController.v".
         WAIT = 0
         MOD = 1
     Found 1-bit register for signal <state>.
@@ -192,19 +196,19 @@ Synthesizing Unit <BPSKcontroller>.
 Unit <BPSKcontroller> synthesized.
 
 Synthesizing Unit <sineDatapath>.
-    Related source file is "C:\Users\tibbs2010\Documents\SD\trunk\user_sandbox\Brian\Verilog\BPSK_controller_Modulator\sineDatapath.v".
+    Related source file is "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\sineDatapath.v".
     Summary:
 	no macro.
 Unit <sineDatapath> synthesized.
 
 Synthesizing Unit <SINE>.
-    Related source file is "C:\Users\tibbs2010\Documents\SD\trunk\user_sandbox\Brian\Verilog\BPSK_controller_Modulator\SINE.v".
+    Related source file is "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\SINE.v".
     Summary:
 	no macro.
 Unit <SINE> synthesized.
 
 Synthesizing Unit <Mixer>.
-    Related source file is "C:\Users\tibbs2010\Documents\SD\trunk\user_sandbox\Brian\Verilog\BPSK_controller_Modulator\Mixer.v".
+    Related source file is "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\Mixer.v".
     Found 16-bit register for signal <BPSK>.
     Found 1-bit register for signal <ena_mod>.
     Found 16x16-bit multiplier for signal <n0008> created at line 19.
@@ -214,25 +218,44 @@ Synthesizing Unit <Mixer>.
 	inferred   1 Multiplexer(s).
 Unit <Mixer> synthesized.
 
+Synthesizing Unit <da3dac>.
+    Related source file is "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\da3dac.v".
+WARNING:Xst:2935 - Signal 'dacld', unconnected in block 'da3dac', is tied to its initial value (0).
+    Found 1-bit register for signal <daccs>.
+    Found 1-bit register for signal <dacsck>.
+    Found 1-bit register for signal <davdac>.
+    Found 1-bit register for signal <dacout>.
+    Found 6-bit register for signal <dacstate>.
+    Found 64x6-bit Read Only RAM for signal <dacstate[5]_PWR_9_o_wide_mux_5_OUT>
+    Summary:
+	inferred   1 RAM(s).
+	inferred  10 D-type flip-flop(s).
+	inferred  26 Multiplexer(s).
+Unit <da3dac> synthesized.
+
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
+# RAMs                                                 : 1
+ 64x6-bit single-port Read Only RAM                    : 1
 # Multipliers                                          : 1
  16x16-bit multiplier                                  : 1
 # Adders/Subtractors                                   : 2
  25-bit adder                                          : 1
  5-bit adder                                           : 1
-# Registers                                            : 7
- 1-bit register                                        : 4
+# Registers                                            : 12
+ 1-bit register                                        : 8
  16-bit register                                       : 1
  25-bit register                                       : 1
  5-bit register                                        : 1
+ 6-bit register                                        : 1
 # Latches                                              : 1
  1-bit latch                                           : 1
-# Multiplexers                                         : 2
- 1-bit 2-to-1 multiplexer                              : 1
+# Multiplexers                                         : 28
+ 1-bit 2-to-1 multiplexer                              : 25
  16-bit 2-to-1 multiplexer                             : 1
+ 6-bit 2-to-1 multiplexer                              : 2
 
 =========================================================================
 
@@ -252,10 +275,26 @@ Synthesizing (advanced) Unit <Debouncer>.
 The following registers are absorbed into counter <count>: 1 register on signal <count>.
 Unit <Debouncer> synthesized (advanced).
 
+Synthesizing (advanced) Unit <da3dac>.
+INFO:Xst:3231 - The small RAM <Mram_dacstate[5]_PWR_9_o_wide_mux_5_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 6-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <dacstate[5]_GND_11_o_mux_2_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <da3dac> synthesized (advanced).
+
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
+# RAMs                                                 : 1
+ 64x6-bit single-port distributed Read Only RAM        : 1
 # Multipliers                                          : 1
  16x16-bit multiplier                                  : 1
 # Adders/Subtractors                                   : 1
@@ -263,11 +302,12 @@ Macro Statistics
 # Counters                                             : 2
  25-bit up counter                                     : 1
  5-bit up counter                                      : 1
-# Registers                                            : 20
- Flip-Flops                                            : 20
-# Multiplexers                                         : 2
- 1-bit 2-to-1 multiplexer                              : 1
+# Registers                                            : 30
+ Flip-Flops                                            : 30
+# Multiplexers                                         : 28
+ 1-bit 2-to-1 multiplexer                              : 25
  16-bit 2-to-1 multiplexer                             : 1
+ 6-bit 2-to-1 multiplexer                              : 2
 
 =========================================================================
 
@@ -302,9 +342,34 @@ WARNING:Xst:3002 - This design contains one or more registers/latches that are d
 
 Optimizing unit <BPSK_tx> ...
 
-Optimizing unit <Mixer> ...
+Optimizing unit <da3dac> ...
 
 Optimizing unit <Debouncer> ...
+
+Optimizing unit <Mixer> ...
+WARNING:Xst:1293 - FF/Latch <u1/count_3> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_4> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_5> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_6> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_7> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_8> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_9> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_10> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_11> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_12> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_13> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_14> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_15> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_16> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_17> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_18> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_19> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_20> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_21> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_22> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_23> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_24> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_4> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -316,8 +381,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 50
- Flip-Flops                                            : 50
+# Registers                                            : 37
+ Flip-Flops                                            : 37
 
 =========================================================================
 
@@ -340,23 +405,25 @@ Top Level Output File Name         : BPSK_tx.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 271
+# BELS                             : 230
 #      GND                         : 3
 #      INV                         : 5
-#      LUT1                        : 27
-#      LUT2                        : 50
-#      LUT3                        : 30
-#      LUT4                        : 3
-#      LUT5                        : 2
-#      LUT6                        : 6
-#      MUXCY                       : 70
+#      LUT1                        : 5
+#      LUT2                        : 48
+#      LUT3                        : 42
+#      LUT4                        : 8
+#      LUT5                        : 3
+#      LUT6                        : 12
+#      MUXCY                       : 48
+#      MUXF7                       : 2
+#      MUXF8                       : 1
 #      VCC                         : 2
-#      XORCY                       : 73
-# FlipFlops/Latches                : 155
-#      FD                          : 5
-#      FDE                         : 74
-#      FDR                         : 21
-#      FDRE                        : 52
+#      XORCY                       : 51
+# FlipFlops/Latches                : 142
+#      FD                          : 13
+#      FDE                         : 76
+#      FDR                         : 20
+#      FDRE                        : 30
 #      FDSE                        : 2
 #      LD                          : 1
 # RAMS                             : 1
@@ -366,9 +433,9 @@ Primitive and Black Box Usage:
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 19
+# IO Buffers                       : 23
 #      IBUF                        : 2
-#      OBUF                        : 17
+#      OBUF                        : 21
 # DSPs                             : 1
 #      DSP48A1                     : 1
 
@@ -379,23 +446,22 @@ Selected Device : 6slx45csg484-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             154  out of  54576     0%  
+ Number of Slice Registers:             142  out of  54576     0%  
  Number of Slice LUTs:                  125  out of  27288     0%  
     Number used as Logic:               123  out of  27288     0%  
     Number used as Memory:                2  out of   6408     0%  
        Number used as SRL:                2
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    229
-   Number with an unused Flip Flop:      75  out of    229    32%  
-   Number with an unused LUT:           104  out of    229    45%  
-   Number of fully used LUT-FF pairs:    50  out of    229    21%  
-   Number of unique control sets:         6
+ Number of LUT Flip Flop pairs used:    230
+   Number with an unused Flip Flop:      88  out of    230    38%  
+   Number with an unused LUT:           105  out of    230    45%  
+   Number of fully used LUT-FF pairs:    37  out of    230    16%  
+   Number of unique control sets:         7
 
 IO Utilization: 
- Number of IOs:                          20
- Number of bonded IOBs:                  20  out of    320     6%  
-    IOB Flip Flops/Latches:               1
+ Number of IOs:                          24
+ Number of bonded IOBs:                  24  out of    320     7%  
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:                1  out of    116     0%  
@@ -424,8 +490,8 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-CLK                                | BUFGP                  | 130   |
-u0/clk                             | BUFG                   | 27    |
+CLK                                | BUFGP                  | 15    |
+u0/clk                             | BUFG                   | 129   |
 u1/PB_db_G(u1/PB_db_G:O)           | NONE(*)(u1/PB_db)      | 1     |
 -----------------------------------+------------------------+-------+
 (*) This 1 clock signal(s) are generated by combinatorial logic,
@@ -443,7 +509,7 @@ Speed Grade: -2
 
    Minimum period: 5.807ns (Maximum Frequency: 172.206MHz)
    Minimum input arrival time before clock: 3.047ns
-   Maximum output required time after clock: 4.118ns
+   Maximum output required time after clock: 4.162ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -452,14 +518,40 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 4.664ns (frequency: 214.408MHz)
+  Total number of paths / destination ports: 157 / 19
+-------------------------------------------------------------------------
+Delay:               4.664ns (Levels of Logic = 5)
+  Source:            u4/davdac (FF)
+  Destination:       u4/dacout (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: u4/davdac to u4/dacout
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              16   0.525   1.182  u4/davdac (u4/davdac)
+     LUT3:I2->O           10   0.254   1.116  u4/Mmux_dacstate[5]_GND_11_o_mux_2_OUT21 (u4/dacstate[5]_GND_11_o_mux_2_OUT<1>)
+     LUT6:I4->O            1   0.250   0.000  u4/Mmux__n0084_4 (u4/Mmux__n0084_4)
+     MUXF7:I1->O           1   0.175   0.000  u4/Mmux__n0084_3_f7 (u4/Mmux__n0084_3_f7)
+     MUXF8:I1->O           1   0.152   0.682  u4/Mmux__n0084_2_f8 (u4/_n0084)
+     LUT6:I5->O            1   0.254   0.000  u4/dacout_rstpot (u4/dacout_rstpot)
+     FD:D                      0.074          u4/dacout
+    ----------------------------------------
+    Total                      4.664ns (1.684ns logic, 2.980ns route)
+                                       (36.1% logic, 63.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'u0/clk'
   Clock period: 5.807ns (frequency: 172.206MHz)
-  Total number of paths / destination ports: 1458 / 174
+  Total number of paths / destination ports: 1564 / 297
 -------------------------------------------------------------------------
 Delay:               5.807ns (Levels of Logic = 3)
   Source:            sec_inst (FF)
   Destination:       u3/u1/BPSK_15 (FF)
-  Source Clock:      CLK rising
-  Destination Clock: CLK rising
+  Source Clock:      u0/clk rising
+  Destination Clock: u0/clk rising
 
   Data Path: sec_inst to u3/u1/BPSK_15
                                 Gate     Net
@@ -476,42 +568,19 @@ Delay:               5.807ns (Levels of Logic = 3)
                                        (70.9% logic, 29.1% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'u0/clk'
-  Clock period: 5.096ns (frequency: 196.231MHz)
-  Total number of paths / destination ports: 1028 / 77
--------------------------------------------------------------------------
-Delay:               5.096ns (Levels of Logic = 2)
-  Source:            u1/state (FF)
-  Destination:       u1/count_24 (FF)
-  Source Clock:      u0/clk rising
-  Destination Clock: u0/clk rising
-
-  Data Path: u1/state to u1/count_24
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q              29   0.525   1.470  u1/state (u1/state)
-     LUT6:I5->O            1   0.254   0.682  u1/_n00256_SW0 (N01)
-     LUT6:I5->O           28   0.254   1.452  u1/_n00256 (u1/_n0025)
-     FDRE:R                    0.459          u1/count_0
-    ----------------------------------------
-    Total                      5.096ns (1.492ns logic, 3.604ns route)
-                                       (29.3% logic, 70.7% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 16 / 16
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u0/clk'
+  Total number of paths / destination ports: 17 / 17
 -------------------------------------------------------------------------
 Offset:              3.047ns (Levels of Logic = 2)
-  Source:            SW (PAD)
+  Source:            DATA (PAD)
   Destination:       u3/u1/BPSK_15 (FF)
-  Destination Clock: CLK rising
+  Destination Clock: u0/clk rising
 
-  Data Path: SW to u3/u1/BPSK_15
+  Data Path: DATA to u3/u1/BPSK_15
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            16   1.328   1.410  SW_IBUF (SW_IBUF)
+     IBUF:I->O            16   1.328   1.410  DATA_IBUF (DATA_IBUF)
      LUT3:I0->O            1   0.235   0.000  u3/u1/Mmux_PWR_8_o_sine[15]_mux_3_OUT17 (u3/u1/PWR_8_o_sine[15]_mux_3_OUT<0>)
      FDR:D                     0.074          u3/u1/BPSK_0
     ----------------------------------------
@@ -519,43 +588,42 @@ Offset:              3.047ns (Levels of Logic = 2)
                                        (53.7% logic, 46.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'u0/clk'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              2.547ns (Levels of Logic = 2)
-  Source:            PB (PAD)
-  Destination:       u1/state (FF)
-  Destination Clock: u0/clk rising
-
-  Data Path: PB to u1/state
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   1.328   0.910  PB_IBUF (PB_IBUF)
-     LUT3:I0->O            1   0.235   0.000  u1/state_rstpot (u1/state_rstpot)
-     FD:D                      0.074          u1/state
-    ----------------------------------------
-    Total                      2.547ns (1.637ns logic, 0.910ns route)
-                                       (64.3% logic, 35.7% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'u0/clk'
   Total number of paths / destination ports: 17 / 17
 -------------------------------------------------------------------------
-Offset:              4.118ns (Levels of Logic = 1)
+Offset:              4.162ns (Levels of Logic = 1)
   Source:            u3/u1/BPSK_15 (FF)
   Destination:       BPSK<15> (PAD)
-  Source Clock:      CLK rising
+  Source Clock:      u0/clk rising
 
   Data Path: u3/u1/BPSK_15 to BPSK<15>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              1   0.525   0.681  u3/u1/BPSK_15 (u3/u1/BPSK_15)
+     FDR:C->Q              2   0.525   0.725  u3/u1/BPSK_15 (u3/u1/BPSK_15)
      OBUF:I->O                 2.912          BPSK_15_OBUF (BPSK<15>)
     ----------------------------------------
-    Total                      4.118ns (3.437ns logic, 0.681ns route)
-                                       (83.5% logic, 16.5% route)
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            u4/daccs (FF)
+  Destination:       CS (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: u4/daccs to CS
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.525   0.725  u4/daccs (u4/daccs)
+     OBUF:I->O                 2.912          CS_OBUF (CS)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
 
 =========================================================================
 
@@ -567,8 +635,8 @@ Clock to Setup on destination clock CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    5.807|         |         |         |
-u0/clk         |    4.659|         |         |         |
+CLK            |    4.664|         |         |         |
+u0/clk         |    4.873|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock u0/clk
@@ -576,7 +644,7 @@ Clock to Setup on destination clock u0/clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-u0/clk         |    5.096|         |         |         |
+u0/clk         |    5.807|         |         |         |
 u1/PB_db_G     |         |    1.695|         |         |
 ---------------+---------+---------+---------+---------+
 
@@ -585,20 +653,20 @@ Clock to Setup on destination clock u1/PB_db_G
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-u0/clk         |         |         |    4.928|         |
+u0/clk         |         |         |    1.967|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 8.64 secs
+Total REAL time to Xst completion: 44.00 secs
+Total CPU time to Xst completion: 43.56 secs
  
 --> 
 
-Total memory usage is 260100 kilobytes
+Total memory usage is 296532 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
-Number of infos    :    1 (   0 filtered)
+Number of warnings :   26 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
 

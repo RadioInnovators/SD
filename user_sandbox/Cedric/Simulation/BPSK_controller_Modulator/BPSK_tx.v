@@ -6,7 +6,12 @@ module BPSK_tx(
     input DATA,
 
     output LED,
-    output [15:0] BPSK
+    output [15:0] BPSK,
+
+    output LDAC,
+    output CS,
+    output SCLK,
+    output DIN
     );
 
 	wire clk;
@@ -31,17 +36,24 @@ module BPSK_tx(
 	wire clk_en;
 	wire mod_en;
 
+	wire davdac_w;
+	wire dacdav_w;
+
 	BPSKcontroller u2 (
 		.clk(clk),
 		.sine_rdy(sine_rdy),
 		.data_rdy(data_rdy),
 		.PB(BTN),
 
+		.davdac(davdac_w),
+		.dacdav(dacdav_w),
+
 		.sine_rst(rst),
 		.sine_clk_en(clk_en),
 		.mod_en(mod_en)
 	);
 
+	wire [15:0] BPSK_w;
 	sineDatapath u3(
 		.clk(clk),
 		.clken(clk_en),
@@ -54,5 +66,17 @@ module BPSK_tx(
 		.ena_mod(LED),
 		.BPSK(BPSK)
 	);
-	
+
+	da3dac u4 (
+		.dacclk(CLK),
+		.dacdav(dacdav_w),
+		.dacdata(BPSK),
+
+		.dacout(DIN),
+		.dacsck(SCLK),
+		.daccs(CS),
+		.dacld(LDAC),
+		.davdac(davdac_w)
+	);
+
 endmodule

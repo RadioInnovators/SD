@@ -14,6 +14,11 @@ module BPSK_txTest;
 	reg DATA;
 
 	// Outputs
+	wire LDAC;
+	wire CS;
+	wire SCLK;
+	wire DIN;
+
 	wire LED;
 	wire signed [15:0] BPSK;
 
@@ -22,6 +27,11 @@ module BPSK_txTest;
 		.CLK(CLK), 
 		.PB(PB), 
 		.DATA(DATA), 
+
+		.LDAC(LDAC),
+		.CS(CS),
+		.SCLK(SCLK),
+		.DIN(DIN),
 
 		.LED(LED), 
 		.BPSK(BPSK)
@@ -51,7 +61,7 @@ module BPSK_txTest;
 
 	always begin
 			#5 CLK = ~CLK;    // every 5 nanoseconds invert the clock (5 MHz)
-			$fwrite (myFile, "%d \t %d\n", BPSK, $time);
+			//$fwrite (myFile, "%d \t %d\n", BPSK, $time);
 	end
 	
 endmodule
