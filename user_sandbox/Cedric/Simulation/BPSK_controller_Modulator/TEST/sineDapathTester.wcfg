@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/sineDatapathTest_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="sineDatapathTest" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/sineDatapathTest/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sineDatapathTest/clken" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clken</obj_property>
+      <obj_property name="ObjectShortName">clken</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sineDatapathTest/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sineDatapathTest/sine_rdy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sine_rdy</obj_property>
+      <obj_property name="ObjectShortName">sine_rdy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sineDatapathTest/data_rdy" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_rdy</obj_property>
+      <obj_property name="ObjectShortName">data_rdy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sineDatapathTest/data" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data</obj_property>
+      <obj_property name="ObjectShortName">data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sineDatapathTest/mod_ena" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mod_ena</obj_property>
+      <obj_property name="ObjectShortName">mod_ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sineDatapathTest/ena_mod" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ena_mod</obj_property>
+      <obj_property name="ObjectShortName">ena_mod</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sineDatapathTest/BPSK" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">BPSK[15:0]</obj_property>
+      <obj_property name="ObjectShortName">BPSK[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

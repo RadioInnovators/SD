@@ -1,0 +1,15 @@
+# Output products list for <NCO>
+NCO.asy
+NCO.gise
+NCO.ngc
+NCO.sym
+NCO.v
+NCO.veo
+NCO.xco
+NCO.xise
+NCO\doc\dds_compiler_v4_0_vinfo.html
+NCO\doc\dds_ds558.pdf
+NCO_flist.txt
+NCO_readme.txt
+NCO_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

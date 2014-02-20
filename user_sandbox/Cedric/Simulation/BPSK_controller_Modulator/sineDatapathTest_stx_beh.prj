@@ -1,0 +1,6 @@
+verilog isim_temp "ipcore_dir/DDScompiler.v"
+verilog isim_temp "SINE.v"
+verilog isim_temp "Mixer.v"
+verilog isim_temp "sineDatapath.v"
+verilog isim_temp "sineDatapathTest.v"
+verilog isim_temp "C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v"

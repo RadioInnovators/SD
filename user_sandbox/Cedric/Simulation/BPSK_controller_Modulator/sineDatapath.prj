@@ -1,0 +1,4 @@
+verilog work "ipcore_dir/DDScompiler.v"
+verilog work "SINE.v"
+verilog work "Mixer.v"
+verilog work "sineDatapath.v"

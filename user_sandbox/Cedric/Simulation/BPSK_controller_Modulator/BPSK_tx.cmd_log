@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/BPSK_tx.xst" -ofn "C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/BPSK_tx.syr" 
+xst -intstyle ise -ifn "C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/BPSK_tx.xst" -ofn "C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/BPSK_tx.syr" 
+xst -intstyle ise -ifn "C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/BPSK_tx.xst" -ofn "C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/BPSK_tx.syr" 
+xst -intstyle ise -ifn "C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/BPSK_tx.xst" -ofn "C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/BPSK_tx.syr" 
+xst -intstyle ise -ifn "C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/BPSK_tx.xst" -ofn "C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/BPSK_tx.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx45-csg484-2 BPSK_tx.ngc BPSK_tx.ngd  
+map -intstyle ise -p xc6slx45-csg484-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BPSK_tx_map.ncd BPSK_tx.ngd BPSK_tx.pcf 
+par -w -intstyle ise -ol high -mt off BPSK_tx_map.ncd BPSK_tx.ncd BPSK_tx.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc TrenzEl.ucf -p xc6slx45-csg484-2 BPSK_tx.ngc BPSK_tx.ngd  
+xst -intstyle ise -ifn "C:/Users/tibbs2010/Documents/SD/trunk/user_sandbox/Brian/Verilog/BPSK_controller_Modulator/BPSK_tx.xst" -ofn "C:/Users/tibbs2010/Documents/SD/trunk/user_sandbox/Brian/Verilog/BPSK_controller_Modulator/BPSK_tx.syr" 
