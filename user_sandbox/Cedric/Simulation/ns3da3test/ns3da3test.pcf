@@ -1,0 +1,24 @@
+//! **************************************************************************
+// Written by: Map P.40xd on Tue May 21 15:01:01 2013
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "JA1" LOCATE = SITE "T12" LEVEL 1;
+COMP "JA2" LOCATE = SITE "V12" LEVEL 1;
+COMP "JA3" LOCATE = SITE "N10" LEVEL 1;
+COMP "JA4" LOCATE = SITE "P11" LEVEL 1;
+COMP "CLK" LOCATE = SITE "V10" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "M1/gstate_FSM_FFd2" BEL "M1/gstate_FSM_FFd1" BEL
+        "M1/dacdata_0" BEL "M1/dacdata_1" BEL "M1/dacdata_2" BEL
+        "M1/dacdata_3" BEL "M1/dacdata_4" BEL "M1/dacdata_5" BEL
+        "M1/dacdata_6" BEL "M1/dacdata_7" BEL "M1/dacdata_8" BEL
+        "M1/dacdata_9" BEL "M1/dacdata_10" BEL "M1/dacdata_11" BEL
+        "M1/dacdata_12" BEL "M1/dacdata_13" BEL "M1/dacdata_14" BEL
+        "M1/dacdata_15" BEL "M0/dacsck" BEL "M0/daccs" BEL "M0/dacstate_5" BEL
+        "M0/dacstate_4" BEL "M0/dacstate_3" BEL "M0/dacstate_2" BEL
+        "M0/dacstate_1" BEL "M0/dacstate_0" BEL "M1/dacdav" BEL "M0/dacout"
+        BEL "M0/davdac" BEL "M1/dacdav_1" BEL "M1/dacdav_2" BEL
+        "CLK_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

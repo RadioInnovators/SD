@@ -1,0 +1,2 @@
+verilog work "../../peripherals/da3dac.v"
+verilog work "ns3da3test.v"

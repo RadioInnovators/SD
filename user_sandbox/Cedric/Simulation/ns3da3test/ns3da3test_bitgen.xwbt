@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\s6EDPGA-v14\Chapter 3\DACtest\ns3da3test\ns3da3test.ncd
+OUTFILE=C:\s6EDPGA-v14\Chapter 3\DACtest\ns3da3test\ns3da3test.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\s6EDPGA-v14\Chapter 3\DACtest\ns3da3test
+LICENSE=ISE
+USER_INFO=174393175_174132533_210547215_409
