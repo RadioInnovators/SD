@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-02-21T15:40:11</DateModified>
+  <DateModified>2014-02-21T15:50:01</DateModified>
   <ModuleName>atlusbuart</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/SCDC-093011/Documents/SD/trunk/user_sandbox/bkeith/serial_loop/serial_loop/iseconfig/atlusbuart.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/SCDC-093011/Documents/SD/trunk/user_sandbox/bkeith/serial_loop/serial_loop</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/SCDC-093011/Documents/SD/trunk/user_sandbox/bkeith/serial_loop/serial_loop\</ImplementationReportsDirectory>
   <DateInitialized>2014-02-21T15:40:11</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

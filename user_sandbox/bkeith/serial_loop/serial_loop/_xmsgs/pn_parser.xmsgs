@@ -11,14 +11,5 @@
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/SCDC-093011/Documents/SD/trunk/user_sandbox/bkeith/serial_loop/serial_loop/atlusbuart.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/SCDC-093011/Documents/SD/trunk/user_sandbox/bkeith/serial_loop/serial_loop/genusbuart.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/SCDC-093011/Documents/SD/trunk/user_sandbox/bkeith/serial_loop/serial_loop/rcvr.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/SCDC-093011/Documents/SD/trunk/user_sandbox/bkeith/serial_loop/serial_loop/txmit.v&quot; into library work</arg>
-</msg>
-
 </messages>
 

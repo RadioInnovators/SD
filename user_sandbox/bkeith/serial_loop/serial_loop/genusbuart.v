@@ -2,7 +2,7 @@
 // USB-UART atlusbuart.v
 // c 2012 Embedded Design using Programmable Gate Arrays  Dennis Silage
 
-module genusbuart(input genclk, BTND, output reg rdrst=0, input [7:0] rbr,
+module genusbuart(input genclk, RST, output reg rdrst=0, input [7:0] rbr,
                   input rdrdy, output reg [7:0] tdin, input tbre,
 						output reg wrn);
 					
@@ -10,7 +10,7 @@ reg [2:0] gstate=0;		// state register
 
 always@(posedge genclk)
 	begin
-		if (BTND==1)		// reset
+		if (RST==1)		// reset
 				gstate=0;
 		else
 		
