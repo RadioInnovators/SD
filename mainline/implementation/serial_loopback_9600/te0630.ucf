@@ -1,0 +1,35 @@
+#	Author: Brandon Keith
+#	Date: 2/15/14
+#	Course: Senior Design II
+#	Organization: Temple University
+#	Description: UCF file for Trenz Electronics TE0304 carrier 
+#			 	board and Trenz Electronics TE0603 FPGA module 
+#			 	(Xilinx Spartan-6 XC62LX45 FPGA).
+#
+#			 	Our project implements 1200 b/sec digital loopback
+#			 	using BPSK modulation with (2, 1, 7) convolutional
+#			 	coding through AWGN. Client and server is a Realterm
+#			 	serial terminal on PC, communicating serially (RS-232)
+#			 	with FPGA board.  
+#
+#	Revision History:
+#
+#	2/15/14: Created. 		
+#
+#********************************************************************************************************
+
+NET CLK LOC=AA12 | IOSTANDARD = LVCMOS33  | PERIOD = 10000 ps;		# 100 MHz
+NET RST LOC=R7 | IOSTANDARD = LVCMOS33 | PULLDOWN | TIG;
+
+# LEDs
+#NET LED<0> LOC=K8  | IOSTANDARD = LVCMOS33;
+#NET LED<1> LOC=F2  | IOSTANDARD = LVCMOS33;
+#NET LED<2> LOC=F1  | IOSTANDARD = LVCMOS33;
+#NET LED<3> LOC=J4  | IOSTANDARD = LVCMOS33;
+
+# RS-232 DCE 
+NET RXD LOC=Y7	| IOSTANDARD = LVCMOS33;
+NET TXD LOC=AB7	| IOSTANDARD = LVCMOS33;
+
+
+
