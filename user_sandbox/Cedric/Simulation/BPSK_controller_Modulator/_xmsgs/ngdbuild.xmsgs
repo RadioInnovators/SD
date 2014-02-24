@@ -5,10 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="ConstraintSystem:300" num="0" >In file: TrenzEl.ucf(15): Syntax error.  Ensure that the previous constraint specification was terminated with &apos;;&apos;.
-</msg>
-
-<msg type="error" file="ConstraintSystem:300" num="0" >In file: TrenzEl.ucf(19): Syntax error.  Ensure that the previous constraint specification was terminated with &apos;;&apos;.
+<msg type="info" file="ConstraintSystem" num="0" >The Period constraint &lt;PERIOD = 10000 ps;&gt; [TrenzEl.ucf(6)], is specified using the Net Period method which is not recommended. Please use the Timespec PERIOD method.
 </msg>
 
 </messages>

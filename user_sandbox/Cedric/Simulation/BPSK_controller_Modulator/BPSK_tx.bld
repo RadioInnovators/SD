@@ -13,12 +13,12 @@ Gathering constraint information from source properties...
 Done.
 
 Annotating constraints to design from ucf file "TrenzEl.ucf" ...
-ERROR:ConstraintSystem:300 - In file: TrenzEl.ucf(15): Syntax error.  Ensure
-   that the previous constraint specification was terminated with ';'.
-ERROR:ConstraintSystem:300 - In file: TrenzEl.ucf(19): Syntax error.  Ensure
-   that the previous constraint specification was terminated with ';'.
 Resolving constraint associations...
 Checking Constraint Associations...
+INFO:ConstraintSystem - The Period constraint <PERIOD = 10000 ps;>
+   [TrenzEl.ucf(6)], is specified using the Net Period method which is not
+   recommended. Please use the Timespec PERIOD method.
+
 Done...
 
 Checking expanded design ...
@@ -31,14 +31,13 @@ Partition Implementation Status
 -------------------------------
 
 NGDBUILD Design Results Summary:
-  Number of errors:     2
+  Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 161328 kilobytes
+Total memory usage is 165512 kilobytes
 
-Total REAL time to NGDBUILD completion:  19 sec
-Total CPU time to NGDBUILD completion:   17 sec
-
-One or more errors were found during NGDBUILD.  No NGD file will be written.
+Writing NGD file "BPSK_tx.ngd" ...
+Total REAL time to NGDBUILD completion:  20 sec
+Total CPU time to NGDBUILD completion:   19 sec
 
 Writing NGDBUILD log file "BPSK_tx.bld"...

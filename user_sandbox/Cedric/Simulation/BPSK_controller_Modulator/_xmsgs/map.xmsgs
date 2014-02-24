@@ -5,19 +5,22 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="LIT" num="243" delta="new" >Logical network <arg fmt="%s" index="1">u1/u0/u0/m_axis_data_tvalid</arg> has no load.
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">u3/u0/u0/blk00000001/sig00000033</arg> has no load.
 </msg>
 
-<msg type="info" file="LIT" num="395" delta="new" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">13</arg> more times for the following (max. 5 shown):
-<arg fmt="%s" index="3">u1/u0/u0/blk00000001/sig00000039,
-u1/u0/u0/blk00000001/sig000000ea,
-u1/u0/u0/blk00000001/sig000000e9,
-u1/u0/u0/blk00000001/sig000000e8,
-u1/u0/u0/blk00000001/sig000000e7</arg>
+<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">12</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="3">u3/u0/u0/blk00000001/sig000000de,
+u3/u0/u0/blk00000001/sig000000dd,
+u3/u0/u0/blk00000001/sig000000dc,
+u3/u0/u0/blk00000001/sig000000db,
+u3/u0/u0/blk00000001/sig000000da</arg>
 To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
 </msg>
 
-<msg type="info" file="MapLib" num="562" delta="new" >No environment variables are currently set.
+<msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
+</msg>
+
+<msg type="info" file="MapLib" num="159" delta="new" >Net Timing constraints on signal <arg fmt="%s" index="1">mCLK</arg> are pushed forward through input buffer.
 </msg>
 
 <msg type="info" file="LIT" num="244" delta="new" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
@@ -33,6 +36,15 @@ To see the details of these <arg fmt="%s" index="4">info</arg> messages, please 
 </msg>
 
 <msg type="info" file="Pack" num="1650" delta="new" >Map created a placed design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">u2/state</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">u6/n_reset_rand_en_ff[17]_OR_34_o</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">u1/PB_db_G</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
 </messages>

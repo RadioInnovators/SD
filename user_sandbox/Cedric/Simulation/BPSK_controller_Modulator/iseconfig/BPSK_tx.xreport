@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-02-23T18:19:45</DateModified>
+  <DateModified>2014-02-24T16:23:48</DateModified>
   <ModuleName>BPSK_tx</ModuleName>
-  <SummaryTimeStamp>2014-02-22T23:08:00</SummaryTimeStamp>
+  <SummaryTimeStamp>2014-02-24T16:13:07</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/iseconfig/BPSK_tx.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator\</ImplementationReportsDirectory>
   <DateInitialized>2014-02-16T20:05:39</DateInitialized>

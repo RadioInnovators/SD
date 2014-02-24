@@ -27,23 +27,29 @@ module BPSK_tx(
     input DATA,
 
     output [1:0] LED,
-    output signed [15:0] BPSK_out,
-    output signed [15:0] AWGN_out,
+    // output signed [15:0] BPSK_out, 
+    // output signed [15:0] AWGN_out,
 
     output LDAC,
     output CS,
     output SCLK,
-    output DIN,
+    output DIN
 
-   output bpsk_clk
+   //output bpsk_clk
 );
+	// Dummy signals
+
+	wire dummy = 0;
+	wire bpsk_clk;
+	wire signed [15:0] BPSK_out;
+	wire signed [15:0] AWGN_out;
 
 	/* ClockDivider: used to divide th clock inout
 	- mCLK: input clock
 	- clk_scale: clock scale used to dived the clock
 	- clk: clock output divided
 	*/
-	wire dummy = 0;
+
 	wire clk;
 	ClockDivider u0(
 		.Mclk(mCLK),

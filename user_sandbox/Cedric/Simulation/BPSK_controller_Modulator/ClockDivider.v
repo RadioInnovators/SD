@@ -7,11 +7,9 @@ module ClockDivider(
     );
 	
 	//parameter SIZE = clk_scale & 32'b1111_1111_1111_1111_1111_1111_1111_1111;
-	reg COUNT = 0;
 	reg [31:0] count = 0;
 	always@(posedge Mclk)begin
-		COUNT = Dclk_scale;
-		count = count + 1'b1;
+		count = count + 1;
 		if(count == Dclk_scale)begin
 			clk_periph = ~clk_periph;
 			count = 0;
