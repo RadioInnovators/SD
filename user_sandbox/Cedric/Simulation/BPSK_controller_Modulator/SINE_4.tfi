@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+SINE_4 instance_name (
+    .CLK(CLK), 
+    .CE(CE), 
+    .sine_out(sine_out), 
+    .sine_rdy(sine_rdy)
+    );
+
+

@@ -9,10 +9,12 @@ module BPSKcontroller(
     input davdac,
     output reg dacdav = 0,
 
+    output reg en_AWGN = 0,
+    output reg rst_AWGN = 0,
+
     output reg sine_rst = 1'b1,
     output reg sine_clk_en = 0,
     output reg mod_en = 0
-    //output reg LED = 0
 );
 
 parameter WAIT = 0; 
@@ -27,6 +29,8 @@ end
 always@(state, sine_rdy, data_rdy, PB, davdac)begin
 	sine_rst = 1'b1;
 	sine_clk_en = 1'b0;
+	en_AWGN = 0;
+	rst_AWGN = 0;
 	
 	//LED = 0;
 	next_state = state;
@@ -44,11 +48,13 @@ always@(state, sine_rdy, data_rdy, PB, davdac)begin
 			if(data_rdy == 1)begin
 				mod_en = 1;
 				sine_clk_en = 1'b1;
-				//LED = 1'b1;
+				en_AWGN = 1;
+				rst_AWGN = 1;
 			end else begin
 				mod_en = 0;
 				sine_clk_en = 1'b0;
-				//LED = ~LED; // make it blink so you will need a counter
+				en_AWGN = 0;
+				rst_AWGN = 0;
 			end
 			if(PB == 1'b1)begin
 				next_state = WAIT;

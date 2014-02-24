@@ -22,6 +22,8 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="BPSK_controller_Modulator.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="AWGN_Tester_data_rate_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="AWGN_Tester_data_rate_stx_beh.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="BPSK_tx.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="BPSK_tx.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="BPSK_tx.lso"/>
@@ -39,7 +41,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="BPSK_tx.unroutes" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="BPSK_tx.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="BPSK_tx.xst"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="BPSK_txTest_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="BPSK_txTest_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="BPSK_txTest_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="BPSK_txTest_isim_beh.wdb"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="BPSK_txTest_stx_beh.prj"/>
@@ -64,11 +66,18 @@
     <file xil_pn:fileType="FILE_XST" xil_pn:name="BPSKcontroller.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="BPSKcontrollerTest_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="BPSKcontrollerTest_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ClockDividerTest_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ClockDivider_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Debouncer.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Debouncer.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="Debouncer.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Debouncer_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="LFSR_Plus.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="LFSR_Plus.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="LFSR_Plus.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="LFSR_Plus_tf_isim_beh.exe"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="LFSR_Test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="LFSR_Test_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MixerTest_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MixerTest_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Mixer_stx_beh.prj"/>
@@ -80,12 +89,15 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="SINE.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="SINE.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="SINE.xst"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="SINE_4.tfi"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="SINE_envsettings.html"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SINE_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="SINE_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SINE_xst.xrpt"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="SINEtest_isim_beh.exe"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SINEtest_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Sine_4_Test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Sine_4_Test_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
@@ -112,58 +124,91 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1392874369" xil_pn:in_ck="-317701272705021841" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1392874369">
+    <transform xil_pn:end_ts="1393211598" xil_pn:in_ck="4670148843479092760" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1393211598">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="AWGN_Test.v"/>
+      <outfile xil_pn:name="AWGN_Tester_data_rate.v"/>
       <outfile xil_pn:name="BPSK_tx.v"/>
       <outfile xil_pn:name="BPSK_txTest.v"/>
       <outfile xil_pn:name="BPSKcontrollerTest.v"/>
+      <outfile xil_pn:name="Channel.v"/>
       <outfile xil_pn:name="ClockDivider.v"/>
+      <outfile xil_pn:name="ClockDividerTest.v"/>
       <outfile xil_pn:name="Debouncer.v"/>
+      <outfile xil_pn:name="LFSR_Plus.v"/>
+      <outfile xil_pn:name="LFSR_Plus_tf.v"/>
+      <outfile xil_pn:name="LFSR_Test.v"/>
       <outfile xil_pn:name="Mixer.v"/>
       <outfile xil_pn:name="MixerTest.v"/>
       <outfile xil_pn:name="SINE.v"/>
+      <outfile xil_pn:name="SINE_4.v"/>
       <outfile xil_pn:name="SINEtest.v"/>
+      <outfile xil_pn:name="Sine_4_Test.v"/>
       <outfile xil_pn:name="da3dac.v"/>
       <outfile xil_pn:name="sineController.v"/>
       <outfile xil_pn:name="sineDatapath.v"/>
       <outfile xil_pn:name="sineDatapathTest.v"/>
     </transform>
-    <transform xil_pn:end_ts="1392740538" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="3165885086572360882" xil_pn:start_ts="1392740538">
+    <transform xil_pn:end_ts="1393196079" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="3165885086572360882" xil_pn:start_ts="1393196079">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1392740538" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-7839306656919097232" xil_pn:start_ts="1392740538">
+    <transform xil_pn:end_ts="1393196079" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-7839306656919097232" xil_pn:start_ts="1393196079">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1392874369" xil_pn:in_ck="311179594313370045" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="4468995955764118855" xil_pn:start_ts="1392874369">
+    <transform xil_pn:end_ts="1393190195" xil_pn:in_ck="-3941046623357943909" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="4468995955764118855" xil_pn:start_ts="1393190194">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ipcore_dir/DDScompiler.ngc"/>
       <outfile xil_pn:name="ipcore_dir/DDScompiler.v"/>
+      <outfile xil_pn:name="ipcore_dir/DDScore_4.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/DDScore_4.v"/>
     </transform>
-    <transform xil_pn:end_ts="1392874370" xil_pn:in_ck="-2476452399550453704" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1392874369">
+    <transform xil_pn:end_ts="1393211598" xil_pn:in_ck="4670148843479092760" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1393211598">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="AWGN_Test.v"/>
+      <outfile xil_pn:name="AWGN_Tester_data_rate.v"/>
       <outfile xil_pn:name="BPSK_tx.v"/>
       <outfile xil_pn:name="BPSK_txTest.v"/>
       <outfile xil_pn:name="BPSKcontrollerTest.v"/>
+      <outfile xil_pn:name="Channel.v"/>
       <outfile xil_pn:name="ClockDivider.v"/>
+      <outfile xil_pn:name="ClockDividerTest.v"/>
       <outfile xil_pn:name="Debouncer.v"/>
+      <outfile xil_pn:name="LFSR_Plus.v"/>
+      <outfile xil_pn:name="LFSR_Plus_tf.v"/>
+      <outfile xil_pn:name="LFSR_Test.v"/>
       <outfile xil_pn:name="Mixer.v"/>
       <outfile xil_pn:name="MixerTest.v"/>
       <outfile xil_pn:name="SINE.v"/>
+      <outfile xil_pn:name="SINE_4.v"/>
       <outfile xil_pn:name="SINEtest.v"/>
+      <outfile xil_pn:name="Sine_4_Test.v"/>
       <outfile xil_pn:name="da3dac.v"/>
-      <outfile xil_pn:name="ipcore_dir/DDScompiler.v"/>
       <outfile xil_pn:name="sineController.v"/>
       <outfile xil_pn:name="sineDatapath.v"/>
       <outfile xil_pn:name="sineDatapathTest.v"/>
     </transform>
-    <transform xil_pn:end_ts="1392874426" xil_pn:in_ck="-2476452399550453704" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4284955560137660317" xil_pn:start_ts="1392874370">
+    <transform xil_pn:end_ts="1393211643" xil_pn:in_ck="-3531556789909094389" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4284955560137660317" xil_pn:start_ts="1393211598">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="BPSK_txTest_beh.prj"/>
       <outfile xil_pn:name="BPSK_txTest_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -171,9 +216,12 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1392874427" xil_pn:in_ck="6250643731977026550" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6168753081392025370" xil_pn:start_ts="1392874426">
+    <transform xil_pn:end_ts="1393211644" xil_pn:in_ck="-6254872539788980699" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6168753081392025370" xil_pn:start_ts="1393211643">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="BPSK_txTest_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
@@ -186,11 +234,14 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1392874039" xil_pn:in_ck="311179594313370045" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="4468995955764118855" xil_pn:start_ts="1392874038">
+    <transform xil_pn:end_ts="1393126035" xil_pn:in_ck="311179594313370045" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="4468995955764118855" xil_pn:start_ts="1393126034">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="ipcore_dir/DDScompiler.ngc"/>
-      <outfile xil_pn:name="ipcore_dir/DDScompiler.v"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:name="TRAN_SubProjectAbstractToPreProxy">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -203,36 +254,31 @@
     <transform xil_pn:end_ts="1392433243" xil_pn:in_ck="-8177817461368333364" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="8977612015756275229" xil_pn:start_ts="1392433243">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1392486571" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-4974986805993019119" xil_pn:start_ts="1392486571">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1392874090" xil_pn:in_ck="-8910993590679228629" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="2066440932779176246" xil_pn:start_ts="1392874039">
+    <transform xil_pn:end_ts="1393160033" xil_pn:in_ck="3428612571819068374" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="2066440932779176246" xil_pn:start_ts="1393159982">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="BPSK_tx.lso"/>
-      <outfile xil_pn:name="BPSK_tx.ngc"/>
-      <outfile xil_pn:name="BPSK_tx.ngr"/>
-      <outfile xil_pn:name="BPSK_tx.prj"/>
-      <outfile xil_pn:name="BPSK_tx.stx"/>
-      <outfile xil_pn:name="BPSK_tx.syr"/>
-      <outfile xil_pn:name="BPSK_tx.xst"/>
-      <outfile xil_pn:name="BPSK_txTest_beh.prj"/>
-      <outfile xil_pn:name="BPSK_txTest_stx_beh.prj"/>
-      <outfile xil_pn:name="BPSK_tx_xst.xrpt"/>
-      <outfile xil_pn:name="SINE.ngr"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-      <outfile xil_pn:name="xst"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1392490354" xil_pn:in_ck="134090439672503856" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="1262981218414084893" xil_pn:start_ts="1392490353">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1392490379" xil_pn:in_ck="8417989495834043857" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-3511694943577576824" xil_pn:start_ts="1392490354">

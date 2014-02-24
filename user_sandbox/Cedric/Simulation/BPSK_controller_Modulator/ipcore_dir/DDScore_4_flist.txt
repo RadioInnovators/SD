@@ -1,0 +1,15 @@
+# Output products list for <DDScore_4>
+DDScore_4.asy
+DDScore_4.gise
+DDScore_4.ngc
+DDScore_4.sym
+DDScore_4.v
+DDScore_4.veo
+DDScore_4.xco
+DDScore_4.xise
+DDScore_4\doc\dds_compiler_v4_0_vinfo.html
+DDScore_4\doc\dds_ds558.pdf
+DDScore_4_flist.txt
+DDScore_4_readme.txt
+DDScore_4_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

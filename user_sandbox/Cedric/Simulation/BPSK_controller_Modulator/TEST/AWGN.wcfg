@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/LFSR_Test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="LFSR_Test" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="/LFSR_Test/g_noise_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">g_noise_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">g_noise_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LFSR_Test/g_noise_out_scaled_mean" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">g_noise_out_scaled_mean[15:0]</obj_property>
+      <obj_property name="ObjectShortName">g_noise_out_scaled_mean[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LFSR_Test/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LFSR_Test/n_reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_reset</obj_property>
+      <obj_property name="ObjectShortName">n_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LFSR_Test/enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LFSR_Test/FileAWGN" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">FileAWGN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FileAWGN[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LFSR_Test/dummy" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dummy[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dummy[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LFSR_Test/uut/I" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">I[64:0]</obj_property>
+      <obj_property name="ObjectShortName">I[64:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/LFSR_Test/uut/mean" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mean[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mean[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,4 @@
+verilog isim_temp "ipcore_dir/DDScore_4.v"
+verilog isim_temp "SINE_4.v"
+verilog isim_temp "Sine_4_Test.v"
+verilog isim_temp "C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v"

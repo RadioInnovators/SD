@@ -23,7 +23,15 @@ module sineDatapath(
 		.sine_out(sine)
 	);
 
-	Mixer u1 (
+	/*SINE_4 u1 (
+		.CLK(clk),
+		.CE(),
+
+		.sine_out(),
+		.sine_rdy()
+	);*/
+
+	Mixer u2 (
 		.clk(clk),
 		.mod_ena(mod_ena),
 		.data(data),
@@ -32,6 +40,8 @@ module sineDatapath(
 		.ena_mod(ena_mod),
 		.BPSK(BPSK)
 	);
+
+
 
 	assign data_rdy = 1'b1;
 

@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj BPSK_controller_Modulator -o C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/SINE_4.tfi -lib work C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator//SINE_4.v -module SINE_4 -template C:/Xilinx/14.6/ISE_DS/ISE//data/tfi.tft -deleteonerror 

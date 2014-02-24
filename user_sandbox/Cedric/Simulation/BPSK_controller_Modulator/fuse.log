@@ -8,14 +8,17 @@ Analyzing Verilog file "C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedr
 Analyzing Verilog file "C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/Mixer.v" into library work
 Analyzing Verilog file "C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/sineDatapath.v" into library work
 Analyzing Verilog file "C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/sineController.v" into library work
+Analyzing Verilog file "C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/LFSR_Plus.v" into library work
 Analyzing Verilog file "C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/Debouncer.v" into library work
 Analyzing Verilog file "C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/da3dac.v" into library work
 Analyzing Verilog file "C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/ClockDivider.v" into library work
+Analyzing Verilog file "C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/Channel.v" into library work
 Analyzing Verilog file "C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/BPSK_tx.v" into library work
 Analyzing Verilog file "C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/BPSK_txTest.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v" into library work
 WARNING:HDLCompiler:687 - "C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module <glbl>.
 Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/BPSK_txTest.v" Line 29: Port LED is not connected to this instance
 WARNING:HDLCompiler:1007 - "N:/P.68d/rtf/verilog/src/unisims/RAMB16BWER.v" Line 1716: Element index 2 into memp is out of bounds
 WARNING:HDLCompiler:1007 - "N:/P.68d/rtf/verilog/src/unisims/RAMB16BWER.v" Line 1720: Element index 3 into memp is out of bounds
 WARNING:HDLCompiler:1007 - "N:/P.68d/rtf/verilog/src/unisims/RAMB16BWER.v" Line 1803: Element index 2 into memp is out of bounds
@@ -60,12 +63,14 @@ Compiling module SINE
 Compiling module Mixer
 Compiling module sineDatapath
 Compiling module da3dac
+Compiling module LFSR_Plus
+Compiling module Channel
 Compiling module BPSK_tx
 Compiling module BPSK_txTest
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 18 sub-compilation(s) to finish...
-Compiled 29 Verilog Units
+Waiting for 21 sub-compilation(s) to finish...
+Compiled 31 Verilog Units
 Built simulation executable C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/BPSK_txTest_isim_beh.exe
-Fuse Memory Usage: 53944 KB
-Fuse CPU Usage: 3447 ms
+Fuse Memory Usage: 54084 KB
+Fuse CPU Usage: 3354 ms

@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 module Debouncer(
-    input clk,
+    input Myclk,
     input PB,
     output reg PB_db = 0
 );
@@ -9,14 +9,14 @@ module Debouncer(
 	parameter HOLD = 1;
 	parameter MAX_COUNT = 5;	// allow 1us for bounces to settle MAX_COUNT = clk (5Mhz)* delay (1us)
 
-	reg [24:0] count = 0;
-	reg [24:0] next_count = 0;
+	reg [2:0] count = 0;
+	reg [2:0] next_count = 0;
 	reg state = 0;
 	reg next_state = 0;
 	reg holder = 0;
 	reg next_holder = 0;
 
-	always@(posedge clk)begin
+	always@(posedge Myclk)begin
 		state <= next_state;
 		holder <= next_holder;
 		count <= next_count;

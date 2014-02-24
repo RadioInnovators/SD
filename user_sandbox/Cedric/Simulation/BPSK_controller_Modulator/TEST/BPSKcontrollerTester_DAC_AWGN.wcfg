@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/BPSK_txTest_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="BPSK_txTest" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/BPSK_txTest/LDAC" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">LDAC</obj_property>
+      <obj_property name="ObjectShortName">LDAC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BPSK_txTest/CS" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CS</obj_property>
+      <obj_property name="ObjectShortName">CS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BPSK_txTest/SCLK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">SCLK</obj_property>
+      <obj_property name="ObjectShortName">SCLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BPSK_txTest/DIN" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DIN</obj_property>
+      <obj_property name="ObjectShortName">DIN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BPSK_txTest/bpsk_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bpsk_clk</obj_property>
+      <obj_property name="ObjectShortName">bpsk_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BPSK_txTest/BPSK_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">BPSK_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">BPSK_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BPSK_txTest/AWGN_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">AWGN_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">AWGN_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BPSK_txTest/test_vector" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">test_vector[0:8,0:0]</obj_property>
+      <obj_property name="ObjectShortName">test_vector[0:8,0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BPSK_txTest/single_vector" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">single_vector[0:0]</obj_property>
+      <obj_property name="ObjectShortName">single_vector[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BPSK_txTest/mCLK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mCLK</obj_property>
+      <obj_property name="ObjectShortName">mCLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BPSK_txTest/PB" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">PB</obj_property>
+      <obj_property name="ObjectShortName">PB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BPSK_txTest/DATA" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DATA</obj_property>
+      <obj_property name="ObjectShortName">DATA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BPSK_txTest/myFile" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">myFile[31:0]</obj_property>
+      <obj_property name="ObjectShortName">myFile[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BPSK_txTest/i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BPSK_txTest/yourFile" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">yourFile[31:0]</obj_property>
+      <obj_property name="ObjectShortName">yourFile[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BPSK_txTest/COLUMNS" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">COLUMNS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">COLUMNS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BPSK_txTest/ROWS" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ROWS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ROWS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BPSK_txTest/uut/u6/g_noise_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">g_noise_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">g_noise_out[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BPSK_txTest/uut/u6/g_noise_out_scaled_mean" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">g_noise_out_scaled_mean[15:0]</obj_property>
+      <obj_property name="ObjectShortName">g_noise_out_scaled_mean[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BPSK_txTest/uut/u6/g_noise_out_scaled_mean_var" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">g_noise_out_scaled_mean_var[15:0]</obj_property>
+      <obj_property name="ObjectShortName">g_noise_out_scaled_mean_var[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BPSK_txTest/uut/u6/u_noise_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">u_noise_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">u_noise_out[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,5 @@
+verilog isim_temp "LFSR_Plus.v"
+verilog isim_temp "ClockDivider.v"
+verilog isim_temp "AWGN_Test.v"
+verilog isim_temp "AWGN_Tester_data_rate.v"
+verilog isim_temp "C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v"

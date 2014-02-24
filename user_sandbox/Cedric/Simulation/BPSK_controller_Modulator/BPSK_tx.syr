@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.36 secs
+Total CPU time to Xst completion: 0.30 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.36 secs
+Total CPU time to Xst completion: 0.30 secs
  
 --> Reading design: BPSK_tx.prj
 
@@ -118,12 +118,16 @@ Analyzing Verilog file "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedr
 Parsing module <sineDatapath>.
 Analyzing Verilog file "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\sineController.v" into library work
 Parsing module <BPSKcontroller>.
+Analyzing Verilog file "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\LFSR_Plus.v" into library work
+Parsing module <LFSR_Plus>.
 Analyzing Verilog file "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\Debouncer.v" into library work
 Parsing module <Debouncer>.
 Analyzing Verilog file "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\da3dac.v" into library work
 Parsing module <da3dac>.
 Analyzing Verilog file "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\ClockDivider.v" into library work
 Parsing module <ClockDivider>.
+Analyzing Verilog file "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\Channel.v" into library work
+Parsing module <Channel>.
 Analyzing Verilog file "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" into library work
 Parsing module <BPSK_tx>.
 
@@ -134,6 +138,8 @@ Parsing module <BPSK_tx>.
 Elaborating module <BPSK_tx>.
 
 Elaborating module <ClockDivider>.
+WARNING:HDLCompiler:413 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\ClockDivider.v" Line 13: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:1127 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\ClockDivider.v" Line 12: Assignment to COUNT ignored, since the identifier is never used
 
 Elaborating module <Debouncer>.
 
@@ -149,25 +155,37 @@ Elaborating module <Mixer>.
 
 Elaborating module <da3dac>.
 
+Elaborating module <LFSR_Plus>.
+WARNING:HDLCompiler:413 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\LFSR_Plus.v" Line 64: Result of 22-bit expression is truncated to fit in 18-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\LFSR_Plus.v" Line 88: Result of 23-bit expression is truncated to fit in 16-bit target.
+
+Elaborating module <Channel>.
+WARNING:HDLCompiler:1127 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" Line 148: Assignment to dummy ignored, since the identifier is never used
+
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <BPSK_tx>.
     Related source file is "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v".
+INFO:Xst:3210 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 107: Output port <dacld> of the instance <u4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 128: Output port <g_noise_out> of the instance <u6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 128: Output port <g_noise_out_scaled_mean> of the instance <u6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 128: Output port <u_noise_out> of the instance <u6> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <BPSK_tx> synthesized.
 
 Synthesizing Unit <ClockDivider>.
     Related source file is "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\ClockDivider.v".
-        MAX_COUNT = 10
-    Found 1-bit register for signal <clk>.
-    Found 5-bit register for signal <count>.
-    Found 5-bit adder for signal <_n0013> created at line 11.
+    Found 32-bit register for signal <count>.
+    Found 1-bit register for signal <clk_periph>.
+    Found 32-bit adder for signal <count[31]_GND_2_o_add_1_OUT> created at line 14.
+    Found 32-bit comparator equal for signal <count[31]_Dclk_scale[31]_equal_3_o> created at line 15
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred   6 D-type flip-flop(s).
+	inferred  33 D-type flip-flop(s).
+	inferred   1 Comparator(s).
 Unit <ClockDivider> synthesized.
 
 Synthesizing Unit <Debouncer>.
@@ -175,13 +193,13 @@ Synthesizing Unit <Debouncer>.
         WAIT = 0
         HOLD = 1
         MAX_COUNT = 5
-    Found 25-bit register for signal <count>.
+    Found 3-bit register for signal <count>.
     Found 1-bit register for signal <state>.
-    Found 25-bit adder for signal <count[24]_GND_3_o_add_3_OUT> created at line 38.
+    Found 3-bit adder for signal <count[2]_GND_3_o_add_3_OUT> created at line 38.
 WARNING:Xst:737 - Found 1-bit latch for signal <PB_db>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  26 D-type flip-flop(s).
+	inferred   4 D-type flip-flop(s).
 	inferred   1 Latch(s).
 Unit <Debouncer> synthesized.
 
@@ -233,6 +251,132 @@ WARNING:Xst:2935 - Signal 'dacld', unconnected in block 'da3dac', is tied to its
 	inferred  26 Multiplexer(s).
 Unit <da3dac> synthesized.
 
+Synthesizing Unit <LFSR_Plus>.
+    Related source file is "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\LFSR_Plus.v".
+        W = 16
+        V = 18
+        g_type = 0
+        u_type = 1
+    Found 16-bit register for signal <rand_ff>.
+    Found 16-bit register for signal <rand_out>.
+    Found 16-bit register for signal <temp_u_noise3>.
+    Found 16-bit register for signal <temp_u_noise2>.
+    Found 16-bit register for signal <temp_u_noise1>.
+    Found 16-bit register for signal <temp_u_noise0>.
+    Found 16-bit register for signal <temp_g_noise_nxt>.
+    Found 16-bit register for signal <u_noise_out>.
+    Found 18-bit register for signal <rand_en_ff>.
+    Found 16-bit adder for signal <temp_u_noise3[15]_g_noise_out[15]_add_36_OUT> created at line 223.
+    Found 16-bit adder for signal <n0161> created at line 225.
+    Found 16-bit adder for signal <n0164> created at line 225.
+    Found 16-bit adder for signal <n0155> created at line 225.
+    Found 16-bit adder for signal <g_noise_out[15]_GND_12_o_add_55_OUT> created at line 261.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean_var<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean_var<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean_var<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean_var<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean_var<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean_var<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean_var<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean_var<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean_var<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean_var<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean_var<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean_var<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean_var<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean_var<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean_var<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <g_noise_out_scaled_mean_var<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred 146 D-type flip-flop(s).
+	inferred  48 Latch(s).
+	inferred  22 Multiplexer(s).
+Unit <LFSR_Plus> synthesized.
+
+Synthesizing Unit <div_16u_14u>.
+    Related source file is "".
+    Found 30-bit adder for signal <GND_13_o_b[13]_add_1_OUT> created at line 0.
+    Found 29-bit adder for signal <GND_13_o_b[13]_add_3_OUT> created at line 0.
+    Found 28-bit adder for signal <GND_13_o_b[13]_add_5_OUT> created at line 0.
+    Found 27-bit adder for signal <GND_13_o_b[13]_add_7_OUT> created at line 0.
+    Found 26-bit adder for signal <GND_13_o_b[13]_add_9_OUT> created at line 0.
+    Found 25-bit adder for signal <GND_13_o_b[13]_add_11_OUT> created at line 0.
+    Found 24-bit adder for signal <GND_13_o_b[13]_add_13_OUT> created at line 0.
+    Found 23-bit adder for signal <GND_13_o_b[13]_add_15_OUT> created at line 0.
+    Found 22-bit adder for signal <GND_13_o_b[13]_add_17_OUT> created at line 0.
+    Found 21-bit adder for signal <GND_13_o_b[13]_add_19_OUT> created at line 0.
+    Found 20-bit adder for signal <GND_13_o_b[13]_add_21_OUT> created at line 0.
+    Found 19-bit adder for signal <GND_13_o_b[13]_add_23_OUT> created at line 0.
+    Found 18-bit adder for signal <GND_13_o_b[13]_add_25_OUT> created at line 0.
+    Found 17-bit adder for signal <GND_13_o_b[13]_add_27_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_b[13]_add_29_OUT[15:0]> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_13_o_add_31_OUT[15:0]> created at line 0.
+    Found 30-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 29-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 28-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 27-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 26-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 25-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 23-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 22-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 20-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 19-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 18-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 17-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Summary:
+	inferred  16 Adder/Subtractor(s).
+	inferred  17 Comparator(s).
+	inferred 211 Multiplexer(s).
+Unit <div_16u_14u> synthesized.
+
+Synthesizing Unit <Channel>.
+    Related source file is "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\Channel.v".
+    Found 1-bit register for signal <en_status>.
+    Found 17-bit register for signal <BPSK_AWGN>.
+    Found 17-bit adder for signal <n0010> created at line 14.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  18 D-type flip-flop(s).
+Unit <Channel> synthesized.
+
 =========================================================================
 HDL Synthesis Report
 
@@ -241,21 +385,59 @@ Macro Statistics
  64x6-bit single-port Read Only RAM                    : 1
 # Multipliers                                          : 1
  16x16-bit multiplier                                  : 1
-# Adders/Subtractors                                   : 2
+# Adders/Subtractors                                   : 25
+ 16-bit adder                                          : 7
+ 17-bit adder                                          : 2
+ 18-bit adder                                          : 1
+ 19-bit adder                                          : 1
+ 20-bit adder                                          : 1
+ 21-bit adder                                          : 1
+ 22-bit adder                                          : 1
+ 23-bit adder                                          : 1
+ 24-bit adder                                          : 1
  25-bit adder                                          : 1
- 5-bit adder                                           : 1
-# Registers                                            : 12
- 1-bit register                                        : 8
- 16-bit register                                       : 1
- 25-bit register                                       : 1
- 5-bit register                                        : 1
+ 26-bit adder                                          : 1
+ 27-bit adder                                          : 1
+ 28-bit adder                                          : 1
+ 29-bit adder                                          : 1
+ 3-bit adder                                           : 1
+ 30-bit adder                                          : 1
+ 32-bit adder                                          : 2
+# Registers                                            : 25
+ 1-bit register                                        : 10
+ 16-bit register                                       : 9
+ 17-bit register                                       : 1
+ 18-bit register                                       : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 2
  6-bit register                                        : 1
-# Latches                                              : 1
- 1-bit latch                                           : 1
-# Multiplexers                                         : 28
- 1-bit 2-to-1 multiplexer                              : 25
- 16-bit 2-to-1 multiplexer                             : 1
+# Latches                                              : 49
+ 1-bit latch                                           : 49
+# Comparators                                          : 19
+ 16-bit comparator lessequal                           : 3
+ 17-bit comparator lessequal                           : 1
+ 18-bit comparator lessequal                           : 1
+ 19-bit comparator lessequal                           : 1
+ 20-bit comparator lessequal                           : 1
+ 21-bit comparator lessequal                           : 1
+ 22-bit comparator lessequal                           : 1
+ 23-bit comparator lessequal                           : 1
+ 24-bit comparator lessequal                           : 1
+ 25-bit comparator lessequal                           : 1
+ 26-bit comparator lessequal                           : 1
+ 27-bit comparator lessequal                           : 1
+ 28-bit comparator lessequal                           : 1
+ 29-bit comparator lessequal                           : 1
+ 30-bit comparator lessequal                           : 1
+ 32-bit comparator equal                               : 2
+# Multiplexers                                         : 261
+ 1-bit 2-to-1 multiplexer                              : 249
+ 16-bit 2-to-1 multiplexer                             : 9
+ 18-bit 2-to-1 multiplexer                             : 1
  6-bit 2-to-1 multiplexer                              : 2
+# Xors                                                 : 2
+ 1-bit xor2                                            : 1
+ 1-bit xor4                                            : 1
 
 =========================================================================
 
@@ -266,6 +448,9 @@ Macro Statistics
 Reading core <ipcore_dir/DDScompiler.ngc>.
 Reading Secure Unit <blk00000001>.
 Loading core <DDScompiler> for timing and area information for instance <u0>.
+INFO:Xst:2261 - The FF/Latch <temp_u_noise3_13> in Unit <u6> is equivalent to the following 2 FFs/Latches, which will be removed : <temp_u_noise3_14> <temp_u_noise3_15> 
+INFO:Xst:2261 - The FF/Latch <temp_u_noise2_13> in Unit <u6> is equivalent to the following 2 FFs/Latches, which will be removed : <temp_u_noise2_14> <temp_u_noise2_15> 
+WARNING:Xst:2677 - Node <BPSK_AWGN_16> of sequential type is unconnected in block <u7>.
 
 Synthesizing (advanced) Unit <ClockDivider>.
 The following registers are absorbed into counter <count>: 1 register on signal <count>.
@@ -274,6 +459,11 @@ Unit <ClockDivider> synthesized (advanced).
 Synthesizing (advanced) Unit <Debouncer>.
 The following registers are absorbed into counter <count>: 1 register on signal <count>.
 Unit <Debouncer> synthesized (advanced).
+
+Synthesizing (advanced) Unit <LFSR_Plus>.
+	The following adders/subtractors are grouped into adder tree <Madd_n01551> :
+ 	<Madd_n0161> in block <LFSR_Plus>, 	<Madd_n0164> in block <LFSR_Plus>, 	<Madd_n0155> in block <LFSR_Plus>.
+Unit <LFSR_Plus> synthesized (advanced).
 
 Synthesizing (advanced) Unit <da3dac>.
 INFO:Xst:3231 - The small RAM <Mram_dacstate[5]_PWR_9_o_wide_mux_5_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
@@ -297,23 +487,65 @@ Macro Statistics
  64x6-bit single-port distributed Read Only RAM        : 1
 # Multipliers                                          : 1
  16x16-bit multiplier                                  : 1
-# Adders/Subtractors                                   : 1
- 5-bit adder                                           : 1
-# Counters                                             : 2
- 25-bit up counter                                     : 1
- 5-bit up counter                                      : 1
-# Registers                                            : 30
- Flip-Flops                                            : 30
-# Multiplexers                                         : 28
- 1-bit 2-to-1 multiplexer                              : 25
- 16-bit 2-to-1 multiplexer                             : 1
+# Adders/Subtractors                                   : 21
+ 16-bit adder                                          : 18
+ 17-bit adder                                          : 1
+ 32-bit adder                                          : 2
+# Adder Trees                                          : 1
+ 16-bit / 4-inputs adder tree                          : 1
+# Counters                                             : 3
+ 3-bit up counter                                      : 1
+ 32-bit up counter                                     : 2
+# Registers                                            : 195
+ Flip-Flops                                            : 195
+# Comparators                                          : 19
+ 16-bit comparator lessequal                           : 3
+ 17-bit comparator lessequal                           : 1
+ 18-bit comparator lessequal                           : 1
+ 19-bit comparator lessequal                           : 1
+ 20-bit comparator lessequal                           : 1
+ 21-bit comparator lessequal                           : 1
+ 22-bit comparator lessequal                           : 1
+ 23-bit comparator lessequal                           : 1
+ 24-bit comparator lessequal                           : 1
+ 25-bit comparator lessequal                           : 1
+ 26-bit comparator lessequal                           : 1
+ 27-bit comparator lessequal                           : 1
+ 28-bit comparator lessequal                           : 1
+ 29-bit comparator lessequal                           : 1
+ 30-bit comparator lessequal                           : 1
+ 32-bit comparator equal                               : 2
+# Multiplexers                                         : 276
+ 1-bit 2-to-1 multiplexer                              : 265
+ 16-bit 2-to-1 multiplexer                             : 8
+ 18-bit 2-to-1 multiplexer                             : 1
  6-bit 2-to-1 multiplexer                              : 2
+# Xors                                                 : 2
+ 1-bit xor2                                            : 1
+ 1-bit xor4                                            : 1
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+INFO:Xst:2261 - The FF/Latch <temp_u_noise3_13> in Unit <LFSR_Plus> is equivalent to the following 2 FFs/Latches, which will be removed : <temp_u_noise3_14> <temp_u_noise3_15> 
+INFO:Xst:2261 - The FF/Latch <temp_u_noise2_13> in Unit <LFSR_Plus> is equivalent to the following 2 FFs/Latches, which will be removed : <temp_u_noise2_14> <temp_u_noise2_15> 
+INFO:Xst:2261 - The FF/Latch <temp_u_noise1_13> in Unit <LFSR_Plus> is equivalent to the following 2 FFs/Latches, which will be removed : <temp_u_noise1_14> <temp_u_noise1_15> 
+INFO:Xst:2261 - The FF/Latch <temp_u_noise0_13> in Unit <LFSR_Plus> is equivalent to the following 2 FFs/Latches, which will be removed : <temp_u_noise0_14> <temp_u_noise0_15> 
+WARNING:Xst:1293 - FF/Latch <g_noise_out_scaled_mean_var_15> has a constant value of 0 in block <LFSR_Plus>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <g_noise_out_scaled_mean_var_14> has a constant value of 0 in block <LFSR_Plus>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <g_noise_out_scaled_mean_var_13> has a constant value of 0 in block <LFSR_Plus>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <g_noise_out_scaled_mean_var_12> has a constant value of 0 in block <LFSR_Plus>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <g_noise_out_scaled_mean_var_11> has a constant value of 0 in block <LFSR_Plus>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <g_noise_out_scaled_mean_var_10> has a constant value of 0 in block <LFSR_Plus>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <g_noise_out_scaled_mean_var_9> has a constant value of 0 in block <LFSR_Plus>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <g_noise_out_scaled_mean_var_8> has a constant value of 0 in block <LFSR_Plus>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <g_noise_out_scaled_mean_var_7> has a constant value of 0 in block <LFSR_Plus>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <g_noise_out_scaled_mean_var_6> has a constant value of 0 in block <LFSR_Plus>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <g_noise_out_scaled_mean_var_5> has a constant value of 0 in block <LFSR_Plus>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <g_noise_out_scaled_mean_var_4> has a constant value of 0 in block <LFSR_Plus>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <g_noise_out_scaled_mean_var_3> has a constant value of 0 in block <LFSR_Plus>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
    incompatible with the Spartan6 architecture. The two primary causes of this is
    either a register or latch described with both an asynchronous set and
@@ -347,33 +579,66 @@ Optimizing unit <da3dac> ...
 Optimizing unit <Debouncer> ...
 
 Optimizing unit <Mixer> ...
-WARNING:Xst:1293 - FF/Latch <u1/count_3> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <u1/count_4> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <u1/count_5> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <u1/count_6> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <u1/count_7> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <u1/count_8> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <u1/count_9> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <u1/count_10> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <u1/count_11> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <u1/count_12> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <u1/count_13> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <u1/count_14> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <u1/count_15> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <u1/count_16> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <u1/count_17> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <u1/count_18> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <u1/count_19> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <u1/count_20> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <u1/count_21> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <u1/count_22> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <u1/count_23> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <u1/count_24> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_4> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <LFSR_Plus> ...
+
+Optimizing unit <Channel> ...
+WARNING:Xst:2677 - Node <u6/g_noise_out_scaled_mean_0> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/g_noise_out_scaled_mean_1> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/g_noise_out_scaled_mean_3> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/g_noise_out_scaled_mean_4> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/g_noise_out_scaled_mean_2> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/g_noise_out_scaled_mean_5> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/g_noise_out_scaled_mean_6> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/g_noise_out_scaled_mean_8> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/g_noise_out_scaled_mean_9> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/g_noise_out_scaled_mean_7> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/g_noise_out_scaled_mean_10> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/g_noise_out_scaled_mean_11> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/g_noise_out_scaled_mean_13> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/g_noise_out_scaled_mean_14> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/g_noise_out_scaled_mean_12> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/g_noise_out_scaled_mean_15> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/u_noise_out_15> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/u_noise_out_14> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/u_noise_out_13> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/u_noise_out_12> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/u_noise_out_11> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/u_noise_out_10> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/u_noise_out_9> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/u_noise_out_8> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/u_noise_out_7> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/u_noise_out_6> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/u_noise_out_5> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/u_noise_out_4> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/u_noise_out_3> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/u_noise_out_2> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/u_noise_out_1> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u6/u_noise_out_0> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u7/BPSK_AWGN_16> of sequential type is unconnected in block <BPSK_tx>.
+INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise3_10> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/rand_out_11> 
+INFO:Xst:2261 - The FF/Latch <u3/u1/ena_mod> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u7/en_status> 
+INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise0_10> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/temp_u_noise1_9> 
+INFO:Xst:2261 - The FF/Latch <u6/rand_out_12> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/rand_ff_11> 
+INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise2_10> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/temp_u_noise3_9> 
+INFO:Xst:2261 - The FF/Latch <u6/rand_out_2> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/rand_ff_1> 
+INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise0_4> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/temp_u_noise1_3> 
+INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise0_5> in Unit <BPSK_tx> is equivalent to the following 2 FFs/Latches, which will be removed : <u6/temp_u_noise1_4> <u6/temp_u_noise2_3> 
+INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise0_7> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/temp_u_noise1_6> 
+INFO:Xst:2261 - The FF/Latch <u6/rand_out_7> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/rand_ff_6> 
+INFO:Xst:2261 - The FF/Latch <u6/rand_out_9> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/rand_ff_8> 
+INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise1_5> in Unit <BPSK_tx> is equivalent to the following 2 FFs/Latches, which will be removed : <u6/temp_u_noise2_4> <u6/temp_u_noise3_3> 
+INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise1_7> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/temp_u_noise2_6> 
+INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise2_5> in Unit <BPSK_tx> is equivalent to the following 2 FFs/Latches, which will be removed : <u6/temp_u_noise3_4> <u6/rand_out_5> 
+INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise2_7> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/temp_u_noise3_6> 
+INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise1_10> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/temp_u_noise2_9> 
+INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise3_0> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/rand_out_1> 
+INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise3_5> in Unit <BPSK_tx> is equivalent to the following 2 FFs/Latches, which will be removed : <u6/rand_out_6> <u6/rand_ff_5> 
+INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise3_7> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/rand_out_8> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block BPSK_tx, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block BPSK_tx, actual ratio is 1.
 
 Final Macro Processing ...
 
@@ -381,8 +646,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 37
- Flip-Flops                                            : 37
+# Registers                                            : 214
+ Flip-Flops                                            : 214
 
 =========================================================================
 
@@ -405,27 +670,28 @@ Top Level Output File Name         : BPSK_tx.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 230
+# BELS                             : 939
 #      GND                         : 3
-#      INV                         : 5
-#      LUT1                        : 5
-#      LUT2                        : 48
-#      LUT3                        : 42
-#      LUT4                        : 8
-#      LUT5                        : 3
-#      LUT6                        : 12
-#      MUXCY                       : 48
+#      INV                         : 10
+#      LUT1                        : 139
+#      LUT2                        : 110
+#      LUT3                        : 98
+#      LUT4                        : 24
+#      LUT5                        : 5
+#      LUT6                        : 44
+#      MUXCY                       : 252
 #      MUXF7                       : 2
 #      MUXF8                       : 1
 #      VCC                         : 2
-#      XORCY                       : 51
-# FlipFlops/Latches                : 142
-#      FD                          : 13
-#      FDE                         : 76
-#      FDR                         : 20
-#      FDRE                        : 30
+#      XORCY                       : 249
+# FlipFlops/Latches                : 336
+#      FD                          : 14
+#      FDE                         : 121
+#      FDR                         : 96
+#      FDRE                        : 83
 #      FDSE                        : 2
-#      LD                          : 1
+#      LD                          : 4
+#      LDC                         : 16
 # RAMS                             : 1
 #      RAMB16BWER                  : 1
 # Shift Registers                  : 2
@@ -433,9 +699,9 @@ Primitive and Black Box Usage:
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 23
+# IO Buffers                       : 9
 #      IBUF                        : 2
-#      OBUF                        : 21
+#      OBUF                        : 7
 # DSPs                             : 1
 #      DSP48A1                     : 1
 
@@ -446,22 +712,22 @@ Selected Device : 6slx45csg484-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             142  out of  54576     0%  
- Number of Slice LUTs:                  125  out of  27288     0%  
-    Number used as Logic:               123  out of  27288     0%  
+ Number of Slice Registers:             336  out of  54576     0%  
+ Number of Slice LUTs:                  432  out of  27288     1%  
+    Number used as Logic:               430  out of  27288     1%  
     Number used as Memory:                2  out of   6408     0%  
        Number used as SRL:                2
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    230
-   Number with an unused Flip Flop:      88  out of    230    38%  
-   Number with an unused LUT:           105  out of    230    45%  
-   Number of fully used LUT-FF pairs:    37  out of    230    16%  
-   Number of unique control sets:         7
+ Number of LUT Flip Flop pairs used:    607
+   Number with an unused Flip Flop:     271  out of    607    44%  
+   Number with an unused LUT:           175  out of    607    28%  
+   Number of fully used LUT-FF pairs:   161  out of    607    26%  
+   Number of unique control sets:        13
 
 IO Utilization: 
- Number of IOs:                          24
- Number of bonded IOBs:                  24  out of    320     7%  
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    320     3%  
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:                1  out of    116     0%  
@@ -487,14 +753,16 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-CLK                                | BUFGP                  | 15    |
-u0/clk                             | BUFG                   | 129   |
-u1/PB_db_G(u1/PB_db_G:O)           | NONE(*)(u1/PB_db)      | 1     |
------------------------------------+------------------------+-------+
-(*) This 1 clock signal(s) are generated by combinatorial logic,
+-------------------------------------------------------------------------------------+---------------------------------------+-------+
+Clock Signal                                                                         | Clock buffer(FF name)                 | Load  |
+-------------------------------------------------------------------------------------+---------------------------------------+-------+
+mCLK                                                                                 | BUFGP                                 | 76    |
+u0/clk_periph                                                                        | BUFG                                  | 243   |
+u2/state                                                                             | NONE(u6/g_noise_out_scaled_mean_var_0)| 3     |
+u6/rand_en_ff[17]_rand_en_ff[10]_OR_33_o(u6/rand_en_ff[17]_rand_en_ff[10]_OR_33_o1:O)| NONE(*)(u6/g_noise_out_0)             | 16    |
+u1/PB_db_G(u1/PB_db_G:O)                                                             | NONE(*)(u1/PB_db)                     | 1     |
+-------------------------------------------------------------------------------------+---------------------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -507,9 +775,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 5.807ns (Maximum Frequency: 172.206MHz)
+   Minimum period: 7.033ns (Maximum Frequency: 142.197MHz)
    Minimum input arrival time before clock: 3.047ns
-   Maximum output required time after clock: 4.162ns
+   Maximum output required time after clock: 4.645ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -517,64 +785,101 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 4.664ns (frequency: 214.408MHz)
-  Total number of paths / destination ports: 157 / 19
+Timing constraint: Default period analysis for Clock 'mCLK'
+  Clock period: 6.324ns (frequency: 158.134MHz)
+  Total number of paths / destination ports: 36031 / 140
 -------------------------------------------------------------------------
-Delay:               4.664ns (Levels of Logic = 5)
-  Source:            u4/davdac (FF)
-  Destination:       u4/dacout (FF)
-  Source Clock:      CLK rising
-  Destination Clock: CLK rising
+Delay:               6.324ns (Levels of Logic = 29)
+  Source:            u5/count_0 (FF)
+  Destination:       u5/count_0 (FF)
+  Source Clock:      mCLK rising
+  Destination Clock: mCLK rising
 
-  Data Path: u4/davdac to u4/dacout
+  Data Path: u5/count_0 to u5/count_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              16   0.525   1.182  u4/davdac (u4/davdac)
-     LUT3:I2->O           10   0.254   1.116  u4/Mmux_dacstate[5]_GND_11_o_mux_2_OUT21 (u4/dacstate[5]_GND_11_o_mux_2_OUT<1>)
-     LUT6:I4->O            1   0.250   0.000  u4/Mmux__n0084_4 (u4/Mmux__n0084_4)
-     MUXF7:I1->O           1   0.175   0.000  u4/Mmux__n0084_3_f7 (u4/Mmux__n0084_3_f7)
-     MUXF8:I1->O           1   0.152   0.682  u4/Mmux__n0084_2_f8 (u4/_n0084)
-     LUT6:I5->O            1   0.254   0.000  u4/dacout_rstpot (u4/dacout_rstpot)
-     FD:D                      0.074          u4/dacout
+     FDR:C->Q              2   0.525   0.725  u5/count_0 (u5/count_0)
+     INV:I->O              1   0.255   0.000  u5/Madd_count[31]_GND_2_o_add_1_OUT_lut<0>_INV_0 (u5/Madd_count[31]_GND_2_o_add_1_OUT_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<0> (u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<1> (u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<2> (u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<3> (u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<4> (u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<5> (u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<6> (u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<7> (u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<8> (u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<9> (u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<10> (u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<11> (u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<12> (u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<13> (u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<14> (u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<15> (u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<16> (u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<17> (u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<18> (u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<19> (u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<20> (u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<21> (u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<22> (u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<23> (u5/Madd_count[31]_GND_2_o_add_1_OUT_cy<23>)
+     XORCY:CI->O           1   0.206   1.137  u5/Madd_count[31]_GND_2_o_add_1_OUT_xor<24> (u5/count[31]_GND_2_o_add_1_OUT<24>)
+     LUT6:I0->O            1   0.254   0.000  u5/Mcompar_count[31]_Dclk_scale[31]_equal_3_o_lut<4> (u5/Mcompar_count[31]_Dclk_scale[31]_equal_3_o_lut<4>)
+     MUXCY:S->O            1   0.215   0.000  u5/Mcompar_count[31]_Dclk_scale[31]_equal_3_o_cy<4> (u5/Mcompar_count[31]_Dclk_scale[31]_equal_3_o_cy<4>)
+     MUXCY:CI->O          33   0.262   1.536  u5/Mcompar_count[31]_Dclk_scale[31]_equal_3_o_cy<5> (u5/count[31]_Dclk_scale[31]_equal_3_o)
+     FDR:R                     0.459          u5/count_0
     ----------------------------------------
-    Total                      4.664ns (1.684ns logic, 2.980ns route)
-                                       (36.1% logic, 63.9% route)
+    Total                      6.324ns (2.926ns logic, 3.398ns route)
+                                       (46.3% logic, 53.7% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'u0/clk'
-  Clock period: 5.807ns (frequency: 172.206MHz)
-  Total number of paths / destination ports: 1564 / 297
+Timing constraint: Default period analysis for Clock 'u0/clk_periph'
+  Clock period: 7.033ns (frequency: 142.197MHz)
+  Total number of paths / destination ports: 61877 / 549
 -------------------------------------------------------------------------
-Delay:               5.807ns (Levels of Logic = 3)
-  Source:            sec_inst (FF)
-  Destination:       u3/u1/BPSK_15 (FF)
-  Source Clock:      u0/clk rising
-  Destination Clock: u0/clk rising
+Delay:               7.033ns (Levels of Logic = 17)
+  Source:            u6/temp_u_noise0_5 (FF)
+  Destination:       u6/temp_g_noise_nxt_15 (FF)
+  Source Clock:      u0/clk_periph rising
+  Destination Clock: u0/clk_periph rising
 
-  Data Path: sec_inst to u3/u1/BPSK_15
+  Data Path: u6/temp_u_noise0_5 to u6/temp_g_noise_nxt_15
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     SEC:C->out           10   0.525   1.007  sec_inst (sec_net)
-     end scope: 'u3/u0/u0/blk00000001:m_axis_data_tdata<15>'
-     end scope: 'u3/u0/u0:m_axis_data_tdata<15>'
-     DSP48A1:A15->M15      1   3.265   0.682  u3/u1/Mmult_n0008 (u3/u1/n0008<15>)
-     LUT3:I2->O            1   0.254   0.000  u3/u1/Mmux_PWR_8_o_sine[15]_mux_3_OUT71 (u3/u1/PWR_8_o_sine[15]_mux_3_OUT<15>)
-     FDR:D                     0.074          u3/u1/BPSK_15
+     FDRE:C->Q             5   0.525   0.949  u6/temp_u_noise0_5 (u6/temp_u_noise0_5)
+     LUT2:I0->O            1   0.250   0.000  u6/ADDERTREE_INTERNAL_Madd1_lut<5> (u6/ADDERTREE_INTERNAL_Madd1_lut<5>)
+     MUXCY:S->O            1   0.215   0.000  u6/ADDERTREE_INTERNAL_Madd1_cy<5> (u6/ADDERTREE_INTERNAL_Madd1_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  u6/ADDERTREE_INTERNAL_Madd1_cy<6> (u6/ADDERTREE_INTERNAL_Madd1_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  u6/ADDERTREE_INTERNAL_Madd1_cy<7> (u6/ADDERTREE_INTERNAL_Madd1_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  u6/ADDERTREE_INTERNAL_Madd1_cy<8> (u6/ADDERTREE_INTERNAL_Madd1_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  u6/ADDERTREE_INTERNAL_Madd1_cy<9> (u6/ADDERTREE_INTERNAL_Madd1_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  u6/ADDERTREE_INTERNAL_Madd1_cy<10> (u6/ADDERTREE_INTERNAL_Madd1_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  u6/ADDERTREE_INTERNAL_Madd1_cy<11> (u6/ADDERTREE_INTERNAL_Madd1_cy<11>)
+     XORCY:CI->O           2   0.206   0.726  u6/ADDERTREE_INTERNAL_Madd1_xor<12> (u6/ADDERTREE_INTERNAL_Madd_121)
+     LUT3:I2->O            1   0.254   0.682  u6/ADDERTREE_INTERNAL_Madd212 (u6/ADDERTREE_INTERNAL_Madd212)
+     LUT4:I3->O            1   0.254   0.000  u6/ADDERTREE_INTERNAL_Madd2_lut<0>13 (u6/ADDERTREE_INTERNAL_Madd2_lut<0>13)
+     MUXCY:S->O            1   0.215   0.000  u6/ADDERTREE_INTERNAL_Madd2_cy<0>_12 (u6/ADDERTREE_INTERNAL_Madd2_cy<0>13)
+     XORCY:CI->O           2   0.206   0.726  u6/ADDERTREE_INTERNAL_Madd2_xor<0>_13 (u6/ADDERTREE_INTERNAL_Madd_142)
+     LUT2:I1->O            1   0.254   0.000  u6/Madd_temp_u_noise3[15]_g_noise_out[15]_add_36_OUT_lut<14> (u6/Madd_temp_u_noise3[15]_g_noise_out[15]_add_36_OUT_lut<14>)
+     MUXCY:S->O            0   0.215   0.000  u6/Madd_temp_u_noise3[15]_g_noise_out[15]_add_36_OUT_cy<14> (u6/Madd_temp_u_noise3[15]_g_noise_out[15]_add_36_OUT_cy<14>)
+     XORCY:CI->O           1   0.206   0.682  u6/Madd_temp_u_noise3[15]_g_noise_out[15]_add_36_OUT_xor<15> (u6/temp_u_noise3[15]_g_noise_out[15]_add_36_OUT<15>)
+     LUT3:I2->O            1   0.254   0.000  u6/Mmux_temp_u_noise3[15]_temp_u_noise3[15]_mux_40_OUT71 (u6/temp_u_noise3[15]_temp_u_noise3[15]_mux_40_OUT<15>)
+     FDE:D                     0.074          u6/temp_g_noise_nxt_15
     ----------------------------------------
-    Total                      5.807ns (4.118ns logic, 1.689ns route)
-                                       (70.9% logic, 29.1% route)
+    Total                      7.033ns (3.268ns logic, 3.765ns route)
+                                       (46.5% logic, 53.5% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'u0/clk'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u0/clk_periph'
   Total number of paths / destination ports: 17 / 17
 -------------------------------------------------------------------------
 Offset:              3.047ns (Levels of Logic = 2)
   Source:            DATA (PAD)
   Destination:       u3/u1/BPSK_15 (FF)
-  Destination Clock: u0/clk rising
+  Destination Clock: u0/clk_periph rising
 
   Data Path: DATA to u3/u1/BPSK_15
                                 Gate     Net
@@ -588,85 +893,104 @@ Offset:              3.047ns (Levels of Logic = 2)
                                        (53.7% logic, 46.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'u0/clk'
-  Total number of paths / destination ports: 17 / 17
+Timing constraint: Default OFFSET OUT AFTER for Clock 'u0/clk_periph'
+  Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
 Offset:              4.162ns (Levels of Logic = 1)
-  Source:            u3/u1/BPSK_15 (FF)
-  Destination:       BPSK<15> (PAD)
-  Source Clock:      u0/clk rising
+  Source:            u3/u1/ena_mod (FF)
+  Destination:       LED<1> (PAD)
+  Source Clock:      u0/clk_periph rising
 
-  Data Path: u3/u1/BPSK_15 to BPSK<15>
+  Data Path: u3/u1/ena_mod to LED<1>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              2   0.525   0.725  u3/u1/BPSK_15 (u3/u1/BPSK_15)
-     OBUF:I->O                 2.912          BPSK_15_OBUF (BPSK<15>)
+     FD:C->Q               2   0.525   0.725  u3/u1/ena_mod (u3/u1/ena_mod)
+     OBUF:I->O                 2.912          LED_1_OBUF (LED<1>)
     ----------------------------------------
     Total                      4.162ns (3.437ns logic, 0.725ns route)
                                        (82.6% logic, 17.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
-  Total number of paths / destination ports: 3 / 3
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mCLK'
+  Total number of paths / destination ports: 5 / 5
 -------------------------------------------------------------------------
-Offset:              4.162ns (Levels of Logic = 1)
-  Source:            u4/daccs (FF)
-  Destination:       CS (PAD)
-  Source Clock:      CLK rising
+Offset:              4.645ns (Levels of Logic = 1)
+  Source:            u4/davdac (FF)
+  Destination:       LDAC (PAD)
+  Source Clock:      mCLK rising
 
-  Data Path: u4/daccs to CS
+  Data Path: u4/davdac to LDAC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q              2   0.525   0.725  u4/daccs (u4/daccs)
-     OBUF:I->O                 2.912          CS_OBUF (CS)
+     FD:C->Q              17   0.525   1.208  u4/davdac (u4/davdac)
+     OBUF:I->O                 2.912          LDAC_OBUF (LDAC)
     ----------------------------------------
-    Total                      4.162ns (3.437ns logic, 0.725ns route)
-                                       (82.6% logic, 17.4% route)
+    Total                      4.645ns (3.437ns logic, 1.208ns route)
+                                       (74.0% logic, 26.0% route)
 
 =========================================================================
 
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock CLK
+Clock to Setup on destination clock mCLK
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK            |    4.664|         |         |         |
-u0/clk         |    4.873|         |         |         |
+mCLK           |    6.324|         |         |         |
+u0/clk_periph  |    5.119|         |         |         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock u0/clk
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-u0/clk         |    5.807|         |         |         |
-u1/PB_db_G     |         |    1.695|         |         |
----------------+---------+---------+---------+---------+
+Clock to Setup on destination clock u0/clk_periph
+----------------------------------------+---------+---------+---------+---------+
+                                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------+---------+---------+---------+---------+
+u0/clk_periph                           |    7.033|         |         |         |
+u1/PB_db_G                              |         |    1.695|         |         |
+u2/state                                |         |    2.442|         |         |
+u6/rand_en_ff[17]_rand_en_ff[10]_OR_33_o|         |    3.378|         |         |
+----------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock u1/PB_db_G
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-u0/clk         |         |         |    1.967|         |
+u0/clk_periph  |         |         |    1.967|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock u2/state
+----------------------------------------+---------+---------+---------+---------+
+                                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------+---------+---------+---------+---------+
+u0/clk_periph                           |         |         |    9.112|         |
+u6/rand_en_ff[17]_rand_en_ff[10]_OR_33_o|         |         |    7.291|         |
+----------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock u6/rand_en_ff[17]_rand_en_ff[10]_OR_33_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+u0/clk_periph  |         |         |    5.879|         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 44.00 secs
-Total CPU time to Xst completion: 43.56 secs
+Total REAL time to Xst completion: 45.00 secs
+Total CPU time to Xst completion: 44.35 secs
  
 --> 
 
-Total memory usage is 296532 kilobytes
+Total memory usage is 301652 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   26 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of warnings :  103 (   0 filtered)
+Number of infos    :   31 (   0 filtered)
 

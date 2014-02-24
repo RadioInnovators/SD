@@ -165,7 +165,7 @@ begin
     wait for T_HOLD;
 
     -- Run for long enough to produce 5 periods of outputs
-    wait for CLOCK_PERIOD * 5209;
+    wait for CLOCK_PERIOD * 2084;
 
     -- Deassert clock enable for a bit
     aclken <= '0';
@@ -178,7 +178,7 @@ begin
     wait for CLOCK_PERIOD * 2;  -- Hold reset for 2 clock cycles, as specified in the DDS Compiler datasheet
     aresetn <= '1';
     -- Run for long enough to produce 5 periods of outputs
-    wait for CLOCK_PERIOD * 5209;
+    wait for CLOCK_PERIOD * 2084;
 
     -- End of test
     report "Not a real failure. Simulation finished successfully." severity failure;

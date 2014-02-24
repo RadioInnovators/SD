@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="DDScompiler">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2014-2-18T20:0:52</timestamp>
+    <timestamp>2014-2-22T20:56:55</timestamp>
     <pin polarity="Input" x="0" y="432" name="aclk" />
     <pin polarity="Input" x="0" y="464" name="aclken" />
     <pin polarity="Input" x="0" y="496" name="aresetn" />

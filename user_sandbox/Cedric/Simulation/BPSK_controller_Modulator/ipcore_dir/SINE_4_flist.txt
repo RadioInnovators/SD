@@ -1,0 +1,15 @@
+# Output products list for <SINE_4>
+SINE_4.asy
+SINE_4.gise
+SINE_4.ngc
+SINE_4.sym
+SINE_4.v
+SINE_4.veo
+SINE_4.xco
+SINE_4.xise
+SINE_4\doc\dds_compiler_v4_0_vinfo.html
+SINE_4\doc\dds_ds558.pdf
+SINE_4_flist.txt
+SINE_4_readme.txt
+SINE_4_xmdf.tcl
+_xmsgs\pn_parser.xmsgs

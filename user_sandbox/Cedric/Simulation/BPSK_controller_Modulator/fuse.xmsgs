@@ -8,6 +8,9 @@
 <msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"C:/Xilinx/14.6/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
 </msg>
 
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/BPSK_txTest.v" Line 29: Port <arg fmt="%s" index="1">LED</arg> is not connected to this instance
+</msg>
+
 <msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.68d/rtf/verilog/src/unisims/RAMB16BWER.v" Line 1716: Element index <arg fmt="%d" index="1">2</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
 </msg>
 

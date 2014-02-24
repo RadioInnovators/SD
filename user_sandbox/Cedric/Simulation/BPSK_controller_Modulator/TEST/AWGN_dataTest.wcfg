@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/AWGN_Tester_data_rate_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="AWGN_Tester_data_rate" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="9" />
+   <wave_markers>
+      <marker time="295000000" label="" />
+      <marker time="495000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/AWGN_Tester_data_rate/g_noise_out_scaled_mean" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">g_noise_out_scaled_mean[15:0]</obj_property>
+      <obj_property name="ObjectShortName">g_noise_out_scaled_mean[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWGN_Tester_data_rate/mean" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mean[15:0]</obj_property>
+      <obj_property name="ObjectShortName">mean[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWGN_Tester_data_rate/CLK" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWGN_Tester_data_rate/enable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enable</obj_property>
+      <obj_property name="ObjectShortName">enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWGN_Tester_data_rate/n_reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">n_reset</obj_property>
+      <obj_property name="ObjectShortName">n_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWGN_Tester_data_rate/FileAWGN" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">FileAWGN[31:0]</obj_property>
+      <obj_property name="ObjectShortName">FileAWGN[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWGN_Tester_data_rate/dummy" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dummy[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dummy[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWGN_Tester_data_rate/data_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">data_clk</obj_property>
+      <obj_property name="ObjectShortName">data_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/AWGN_Tester_data_rate/uut/u0/count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">count[32:0]</obj_property>
+      <obj_property name="ObjectShortName">count[32:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
