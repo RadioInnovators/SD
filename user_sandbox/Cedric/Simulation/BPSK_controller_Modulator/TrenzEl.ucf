@@ -1,7 +1,7 @@
 # Cedric
 # 2 / 24 / 2014
 # Revision History
-# Number 2: 
+# Number 3: 
 
 NET mCLK LOC=AA12 | IOSTANDARD = LVCMOS33  | PERIOD = 10000 ps;	# 100 MHz
 #NET RST LOC=R7 | IOSTANDARD = LVCMOS33 | PULLDOWN | TIG;
@@ -35,4 +35,4 @@ NET DIN		LOC = C6 | IOSTANDARD = LVCMOS33; # J2 - 11 I want them to be next to e
                                                       # J2 - 25 or LOC = E6
 
 #### Tester
-NET Tester		LOC = C6 | IOSTANDARD = LVCMOS33;
+NET Tester		LOC = E6 | IOSTANDARD = LVCMOS33;
