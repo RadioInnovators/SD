@@ -7,7 +7,7 @@ module Debouncer(
 );
 	parameter WAIT = 0;
 	parameter HOLD = 1;
-	parameter MAX_COUNT = 20000000;	// allow 0.2s for bounces to settle MAX_COUNT = clk (5Mhz)* delay (1us)
+	parameter MAX_COUNT = 500000;	// allow 2kHz for bounces to settle MAX_COUNT = clk (5Mhz)* delay (1us)
 
 	reg [25:0] count = 0;
 	reg [25:0] next_count = 0;

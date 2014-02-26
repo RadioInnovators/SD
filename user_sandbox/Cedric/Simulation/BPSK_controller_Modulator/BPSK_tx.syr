@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.34 secs
+Total CPU time to Xst completion: 0.39 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.34 secs
+Total CPU time to Xst completion: 0.40 secs
  
 --> Reading design: BPSK_tx.prj
 
@@ -139,7 +139,7 @@ Elaborating module <BPSK_tx>.
 
 Elaborating module <ClockDivider>.
 
-Elaborating module <Debouncer>.
+Elaborating module <Debouncer(MAX_COUNT=500000)>.
 
 Elaborating module <BPSKcontroller>.
 
@@ -152,17 +152,17 @@ Elaborating module <DDScompiler>.
 Elaborating module <Mixer>.
 
 Elaborating module <da3dac>.
-WARNING:HDLCompiler:1127 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" Line 133: Assignment to bpsk_clk ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" Line 140: Assignment to bpsk_clk ignored, since the identifier is never used
 
 Elaborating module <LFSR_Plus>.
 WARNING:HDLCompiler:413 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\LFSR_Plus.v" Line 64: Result of 22-bit expression is truncated to fit in 18-bit target.
 WARNING:HDLCompiler:413 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\LFSR_Plus.v" Line 88: Result of 23-bit expression is truncated to fit in 16-bit target.
 
 Elaborating module <Channel>.
-WARNING:HDLCompiler:1127 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" Line 157: Assignment to dummy ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" Line 159: Assignment to BPSK_out ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" Line 161: Assignment to AWGN_out ignored, since the identifier is never used
-WARNING:Xst:2972 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 130. All outputs of instance <u5> of block <ClockDivider> are unconnected in block <BPSK_tx>. Underlying logic will be removed.
+WARNING:HDLCompiler:1127 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" Line 164: Assignment to dummy ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" Line 166: Assignment to BPSK_out ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" Line 168: Assignment to AWGN_out ignored, since the identifier is never used
+WARNING:Xst:2972 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 137. All outputs of instance <u6> of block <ClockDivider> are unconnected in block <BPSK_tx>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -170,11 +170,11 @@ WARNING:Xst:2972 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\S
 
 Synthesizing Unit <BPSK_tx>.
     Related source file is "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v".
-INFO:Xst:3210 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 116: Output port <dacld> of the instance <u4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 130: Output port <clk_periph> of the instance <u5> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 137: Output port <g_noise_out> of the instance <u6> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 137: Output port <g_noise_out_scaled_mean> of the instance <u6> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 137: Output port <u_noise_out> of the instance <u6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 123: Output port <dacld> of the instance <u5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 137: Output port <clk_periph> of the instance <u6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 144: Output port <g_noise_out> of the instance <u7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 144: Output port <g_noise_out_scaled_mean> of the instance <u7> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 144: Output port <u_noise_out> of the instance <u7> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <BPSK_tx> synthesized.
@@ -184,16 +184,18 @@ Synthesizing Unit <ClockDivider>.
     Found 1-bit register for signal <clk_periph>.
     Found 32-bit register for signal <count>.
     Found 32-bit adder for signal <count[31]_GND_2_o_add_1_OUT> created at line 12.
+    Found 32-bit comparator equal for signal <count[31]_Dclk_scale[31]_equal_3_o> created at line 13
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred  33 D-type flip-flop(s).
+	inferred   1 Comparator(s).
 Unit <ClockDivider> synthesized.
 
 Synthesizing Unit <Debouncer>.
     Related source file is "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\Debouncer.v".
         WAIT = 0
         HOLD = 1
-        MAX_COUNT = 20000000
+        MAX_COUNT = 500000
     Found 26-bit register for signal <count>.
     Found 1-bit register for signal <state>.
     Found 26-bit adder for signal <count[25]_GND_3_o_add_3_OUT> created at line 38.
@@ -328,21 +330,23 @@ Macro Statistics
  64x6-bit single-port Read Only RAM                    : 1
 # Multipliers                                          : 1
  16x16-bit multiplier                                  : 1
-# Adders/Subtractors                                   : 7
+# Adders/Subtractors                                   : 8
  16-bit adder                                          : 4
  17-bit adder                                          : 1
  26-bit adder                                          : 1
- 32-bit adder                                          : 1
-# Registers                                            : 23
- 1-bit register                                        : 9
+ 32-bit adder                                          : 2
+# Registers                                            : 25
+ 1-bit register                                        : 10
  16-bit register                                       : 9
  17-bit register                                       : 1
  18-bit register                                       : 1
  26-bit register                                       : 1
- 32-bit register                                       : 1
+ 32-bit register                                       : 2
  6-bit register                                        : 1
 # Latches                                              : 33
  1-bit latch                                           : 33
+# Comparators                                          : 2
+ 32-bit comparator equal                               : 2
 # Multiplexers                                         : 111
  1-bit 2-to-1 multiplexer                              : 105
  16-bit 2-to-1 multiplexer                             : 3
@@ -361,9 +365,9 @@ Macro Statistics
 Reading core <ipcore_dir/DDScompiler.ngc>.
 Reading Secure Unit <blk00000001>.
 Loading core <DDScompiler> for timing and area information for instance <u0>.
-INFO:Xst:2261 - The FF/Latch <temp_u_noise3_13> in Unit <u6> is equivalent to the following 2 FFs/Latches, which will be removed : <temp_u_noise3_14> <temp_u_noise3_15> 
-INFO:Xst:2261 - The FF/Latch <temp_u_noise2_13> in Unit <u6> is equivalent to the following 2 FFs/Latches, which will be removed : <temp_u_noise2_14> <temp_u_noise2_15> 
-WARNING:Xst:2677 - Node <BPSK_AWGN_16> of sequential type is unconnected in block <u7>.
+INFO:Xst:2261 - The FF/Latch <temp_u_noise3_13> in Unit <u7> is equivalent to the following 2 FFs/Latches, which will be removed : <temp_u_noise3_14> <temp_u_noise3_15> 
+INFO:Xst:2261 - The FF/Latch <temp_u_noise2_13> in Unit <u7> is equivalent to the following 2 FFs/Latches, which will be removed : <temp_u_noise2_14> <temp_u_noise2_15> 
+WARNING:Xst:2677 - Node <BPSK_AWGN_16> of sequential type is unconnected in block <u8>.
 
 Synthesizing (advanced) Unit <ClockDivider>.
 The following registers are absorbed into counter <count>: 1 register on signal <count>.
@@ -400,17 +404,19 @@ Macro Statistics
  64x6-bit single-port distributed Read Only RAM        : 1
 # Multipliers                                          : 1
  16x16-bit multiplier                                  : 1
-# Adders/Subtractors                                   : 3
+# Adders/Subtractors                                   : 4
  16-bit adder                                          : 1
  17-bit adder                                          : 1
- 32-bit adder                                          : 1
+ 32-bit adder                                          : 2
 # Adder Trees                                          : 1
  16-bit / 4-inputs adder tree                          : 1
-# Counters                                             : 2
+# Counters                                             : 3
  26-bit up counter                                     : 1
- 32-bit up counter                                     : 1
-# Registers                                            : 194
- Flip-Flops                                            : 194
+ 32-bit up counter                                     : 2
+# Registers                                            : 195
+ Flip-Flops                                            : 195
+# Comparators                                          : 2
+ 32-bit comparator equal                               : 2
 # Multiplexers                                         : 111
  1-bit 2-to-1 multiplexer                              : 105
  16-bit 2-to-1 multiplexer                             : 3
@@ -457,8 +463,6 @@ WARNING:Xst:3002 - This design contains one or more registers/latches that are d
 
 Optimizing unit <BPSK_tx> ...
 
-Optimizing unit <da3dac> ...
-
 Optimizing unit <Debouncer> ...
 
 Optimizing unit <Mixer> ...
@@ -466,70 +470,51 @@ Optimizing unit <Mixer> ...
 Optimizing unit <LFSR_Plus> ...
 
 Optimizing unit <Channel> ...
-WARNING:Xst:2677 - Node <u6/u_noise_out_15> of sequential type is unconnected in block <BPSK_tx>.
-WARNING:Xst:2677 - Node <u6/u_noise_out_14> of sequential type is unconnected in block <BPSK_tx>.
-WARNING:Xst:2677 - Node <u6/u_noise_out_13> of sequential type is unconnected in block <BPSK_tx>.
-WARNING:Xst:2677 - Node <u6/u_noise_out_12> of sequential type is unconnected in block <BPSK_tx>.
-WARNING:Xst:2677 - Node <u6/u_noise_out_11> of sequential type is unconnected in block <BPSK_tx>.
-WARNING:Xst:2677 - Node <u6/u_noise_out_10> of sequential type is unconnected in block <BPSK_tx>.
-WARNING:Xst:2677 - Node <u6/u_noise_out_9> of sequential type is unconnected in block <BPSK_tx>.
-WARNING:Xst:2677 - Node <u6/u_noise_out_8> of sequential type is unconnected in block <BPSK_tx>.
-WARNING:Xst:2677 - Node <u6/u_noise_out_7> of sequential type is unconnected in block <BPSK_tx>.
-WARNING:Xst:2677 - Node <u6/u_noise_out_6> of sequential type is unconnected in block <BPSK_tx>.
-WARNING:Xst:2677 - Node <u6/u_noise_out_5> of sequential type is unconnected in block <BPSK_tx>.
-WARNING:Xst:2677 - Node <u6/u_noise_out_4> of sequential type is unconnected in block <BPSK_tx>.
-WARNING:Xst:2677 - Node <u6/u_noise_out_3> of sequential type is unconnected in block <BPSK_tx>.
-WARNING:Xst:2677 - Node <u6/u_noise_out_2> of sequential type is unconnected in block <BPSK_tx>.
-WARNING:Xst:2677 - Node <u6/u_noise_out_1> of sequential type is unconnected in block <BPSK_tx>.
-WARNING:Xst:2677 - Node <u6/u_noise_out_0> of sequential type is unconnected in block <BPSK_tx>.
-WARNING:Xst:2677 - Node <u7/BPSK_AWGN_16> of sequential type is unconnected in block <BPSK_tx>.
+
+Optimizing unit <da3dac> ...
+WARNING:Xst:2677 - Node <u7/u_noise_out_15> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u7/u_noise_out_14> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u7/u_noise_out_13> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u7/u_noise_out_12> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u7/u_noise_out_11> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u7/u_noise_out_10> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u7/u_noise_out_9> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u7/u_noise_out_8> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u7/u_noise_out_7> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u7/u_noise_out_6> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u7/u_noise_out_5> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u7/u_noise_out_4> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u7/u_noise_out_3> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u7/u_noise_out_2> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u7/u_noise_out_1> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u7/u_noise_out_0> of sequential type is unconnected in block <BPSK_tx>.
+WARNING:Xst:2677 - Node <u8/BPSK_AWGN_16> of sequential type is unconnected in block <BPSK_tx>.
 WARNING:Xst:1293 - FF/Latch <u1/count_25> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_31> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_30> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_29> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_28> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_27> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_26> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_25> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_24> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_23> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_22> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_21> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_20> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_19> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_18> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_17> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_16> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_15> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_14> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_13> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_12> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_11> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_10> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_9> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_8> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_7> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_6> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <u0/count_5> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <u3/u2/ena_mod> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u7/en_status> 
-INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise3_10> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/rand_out_11> 
-INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise0_10> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/temp_u_noise1_9> 
-INFO:Xst:2261 - The FF/Latch <u6/rand_out_12> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/rand_ff_11> 
-INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise2_10> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/temp_u_noise3_9> 
-INFO:Xst:2261 - The FF/Latch <u6/rand_out_2> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/rand_ff_1> 
-INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise0_4> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/temp_u_noise1_3> 
-INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise0_5> in Unit <BPSK_tx> is equivalent to the following 2 FFs/Latches, which will be removed : <u6/temp_u_noise1_4> <u6/temp_u_noise2_3> 
-INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise0_7> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/temp_u_noise1_6> 
-INFO:Xst:2261 - The FF/Latch <u6/rand_out_7> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/rand_ff_6> 
-INFO:Xst:2261 - The FF/Latch <u6/rand_out_9> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/rand_ff_8> 
-INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise1_5> in Unit <BPSK_tx> is equivalent to the following 2 FFs/Latches, which will be removed : <u6/temp_u_noise2_4> <u6/temp_u_noise3_3> 
-INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise1_7> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/temp_u_noise2_6> 
-INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise2_5> in Unit <BPSK_tx> is equivalent to the following 2 FFs/Latches, which will be removed : <u6/temp_u_noise3_4> <u6/rand_out_5> 
-INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise2_7> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/temp_u_noise3_6> 
-INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise1_10> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/temp_u_noise2_9> 
-INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise3_0> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/rand_out_1> 
-INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise3_5> in Unit <BPSK_tx> is equivalent to the following 2 FFs/Latches, which will be removed : <u6/rand_out_6> <u6/rand_ff_5> 
-INFO:Xst:2261 - The FF/Latch <u6/temp_u_noise3_7> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u6/rand_out_8> 
+WARNING:Xst:1293 - FF/Latch <u1/count_24> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_23> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_22> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_21> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_20> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <u1/count_19> has a constant value of 0 in block <BPSK_tx>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <u7/rand_out_12> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u7/rand_ff_11> 
+INFO:Xst:2261 - The FF/Latch <u3/u2/ena_mod> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u8/en_status> 
+INFO:Xst:2261 - The FF/Latch <u7/temp_u_noise2_10> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u7/temp_u_noise3_9> 
+INFO:Xst:2261 - The FF/Latch <u7/temp_u_noise1_10> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u7/temp_u_noise2_9> 
+INFO:Xst:2261 - The FF/Latch <u7/temp_u_noise0_4> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u7/temp_u_noise1_3> 
+INFO:Xst:2261 - The FF/Latch <u7/temp_u_noise0_5> in Unit <BPSK_tx> is equivalent to the following 2 FFs/Latches, which will be removed : <u7/temp_u_noise1_4> <u7/temp_u_noise2_3> 
+INFO:Xst:2261 - The FF/Latch <u7/temp_u_noise0_7> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u7/temp_u_noise1_6> 
+INFO:Xst:2261 - The FF/Latch <u7/temp_u_noise1_5> in Unit <BPSK_tx> is equivalent to the following 2 FFs/Latches, which will be removed : <u7/temp_u_noise2_4> <u7/temp_u_noise3_3> 
+INFO:Xst:2261 - The FF/Latch <u7/temp_u_noise1_7> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u7/temp_u_noise2_6> 
+INFO:Xst:2261 - The FF/Latch <u7/temp_u_noise3_10> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u7/rand_out_11> 
+INFO:Xst:2261 - The FF/Latch <u7/temp_u_noise0_10> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u7/temp_u_noise1_9> 
+INFO:Xst:2261 - The FF/Latch <u7/temp_u_noise2_5> in Unit <BPSK_tx> is equivalent to the following 2 FFs/Latches, which will be removed : <u7/temp_u_noise3_4> <u7/rand_out_5> 
+INFO:Xst:2261 - The FF/Latch <u7/temp_u_noise2_7> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u7/temp_u_noise3_6> 
+INFO:Xst:2261 - The FF/Latch <u7/rand_out_2> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u7/rand_ff_1> 
+INFO:Xst:2261 - The FF/Latch <u7/temp_u_noise3_0> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u7/rand_out_1> 
+INFO:Xst:2261 - The FF/Latch <u7/rand_out_7> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u7/rand_ff_6> 
+INFO:Xst:2261 - The FF/Latch <u7/rand_out_9> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u7/rand_ff_8> 
+INFO:Xst:2261 - The FF/Latch <u7/temp_u_noise3_5> in Unit <BPSK_tx> is equivalent to the following 2 FFs/Latches, which will be removed : <u7/rand_out_6> <u7/rand_ff_5> 
+INFO:Xst:2261 - The FF/Latch <u7/temp_u_noise3_7> in Unit <BPSK_tx> is equivalent to the following FF/Latch, which will be removed : <u7/rand_out_8> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -541,8 +526,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 176
- Flip-Flops                                            : 176
+# Registers                                            : 230
+ Flip-Flops                                            : 230
 
 =========================================================================
 
@@ -565,25 +550,25 @@ Top Level Output File Name         : BPSK_tx.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 600
+# BELS                             : 959
 #      GND                         : 3
-#      INV                         : 6
-#      LUT1                        : 35
+#      INV                         : 10
+#      LUT1                        : 145
 #      LUT2                        : 122
-#      LUT3                        : 76
-#      LUT4                        : 36
-#      LUT5                        : 2
-#      LUT6                        : 34
-#      MUXCY                       : 136
+#      LUT3                        : 77
+#      LUT4                        : 37
+#      LUT5                        : 3
+#      LUT6                        : 44
+#      MUXCY                       : 257
 #      MUXF7                       : 2
 #      MUXF8                       : 1
 #      VCC                         : 2
-#      XORCY                       : 145
-# FlipFlops/Latches                : 311
-#      FD                          : 13
+#      XORCY                       : 256
+# FlipFlops/Latches                : 365
+#      FD                          : 14
 #      FDE                         : 121
-#      FDR                         : 37
-#      FDRE                        : 105
+#      FDR                         : 96
+#      FDRE                        : 99
 #      FDSE                        : 2
 #      LD                          : 33
 # RAMS                             : 1
@@ -606,18 +591,18 @@ Selected Device : 6slx45csg484-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             311  out of  54576     0%  
- Number of Slice LUTs:                  313  out of  27288     1%  
-    Number used as Logic:               311  out of  27288     1%  
+ Number of Slice Registers:             365  out of  54576     0%  
+ Number of Slice LUTs:                  440  out of  27288     1%  
+    Number used as Logic:               438  out of  27288     1%  
     Number used as Memory:                2  out of   6408     0%  
        Number used as SRL:                2
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    462
-   Number with an unused Flip Flop:     151  out of    462    32%  
-   Number with an unused LUT:           149  out of    462    32%  
-   Number of fully used LUT-FF pairs:   162  out of    462    35%  
-   Number of unique control sets:        12
+ Number of LUT Flip Flop pairs used:    621
+   Number with an unused Flip Flop:     256  out of    621    41%  
+   Number with an unused LUT:           181  out of    621    29%  
+   Number of fully used LUT-FF pairs:   184  out of    621    29%  
+   Number of unique control sets:        14
 
 IO Utilization: 
  Number of IOs:                          10
@@ -650,10 +635,11 @@ Clock Information:
 -----------------------------------------------------------------------+---------------------------------------+-------+
 Clock Signal                                                           | Clock buffer(FF name)                 | Load  |
 -----------------------------------------------------------------------+---------------------------------------+-------+
-mCLK                                                                   | BUFGP                                 | 16    |
-u0/clk_periph                                                          | BUFG                                  | 265   |
-u2/state                                                               | NONE(u6/g_noise_out_scaled_mean_var_0)| 16    |
-u6/n_reset_rand_en_ff[17]_OR_34_o(u6/n_reset_rand_en_ff[17]_OR_34_o1:O)| NONE(*)(u6/g_noise_out_0)             | 16    |
+mCLK                                                                   | BUFGP                                 | 66    |
+u0/clk_periph                                                          | BUFG                                  | 259   |
+u2/state                                                               | NONE(u7/g_noise_out_scaled_mean_var_0)| 16    |
+u7/n_reset_rand_en_ff[17]_OR_34_o(u7/n_reset_rand_en_ff[17]_OR_34_o1:O)| NONE(*)(u7/g_noise_out_0)             | 16    |
+u4/clk_periph                                                          | NONE(u5/dacsck)                       | 10    |
 u1/PB_db_G(u1/PB_db_G:O)                                               | NONE(*)(u1/PB_db)                     | 1     |
 -----------------------------------------------------------------------+---------------------------------------+-------+
 (*) These 2 clock signal(s) are generated by combinatorial logic,
@@ -670,7 +656,7 @@ Timing Summary:
 Speed Grade: -2
 
    Minimum period: 7.033ns (Maximum Frequency: 142.197MHz)
-   Minimum input arrival time before clock: 3.047ns
+   Minimum input arrival time before clock: 3.729ns
    Maximum output required time after clock: 4.645ns
    Maximum combinational path delay: No path found
 
@@ -680,87 +666,138 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'mCLK'
-  Clock period: 5.146ns (frequency: 194.326MHz)
-  Total number of paths / destination ports: 262 / 21
+  Clock period: 6.324ns (frequency: 158.134MHz)
+  Total number of paths / destination ports: 35908 / 130
 -------------------------------------------------------------------------
-Delay:               5.146ns (Levels of Logic = 5)
-  Source:            u4/davdac (FF)
-  Destination:       u4/dacout (FF)
+Delay:               6.324ns (Levels of Logic = 29)
+  Source:            u4/count_0 (FF)
+  Destination:       u4/count_0 (FF)
   Source Clock:      mCLK rising
   Destination Clock: mCLK rising
 
-  Data Path: u4/davdac to u4/dacout
+  Data Path: u4/count_0 to u4/count_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              17   0.525   1.317  u4/davdac (u4/davdac)
-     LUT3:I1->O           10   0.250   1.463  u4/Mmux_dacstate[5]_GND_11_o_mux_2_OUT31 (u4/dacstate[5]_GND_11_o_mux_2_OUT<2>)
-     LUT6:I0->O            1   0.254   0.000  u4/Mmux__n0084_4 (u4/Mmux__n0084_4)
-     MUXF7:I1->O           1   0.175   0.000  u4/Mmux__n0084_3_f7 (u4/Mmux__n0084_3_f7)
-     MUXF8:I1->O           1   0.152   0.682  u4/Mmux__n0084_2_f8 (u4/_n0084)
-     LUT6:I5->O            1   0.254   0.000  u4/dacout_rstpot (u4/dacout_rstpot)
-     FD:D                      0.074          u4/dacout
+     FDR:C->Q              2   0.525   0.725  u4/count_0 (u4/count_0)
+     INV:I->O              1   0.255   0.000  u4/Madd_count[31]_GND_2_o_add_1_OUT_lut<0>_INV_0 (u4/Madd_count[31]_GND_2_o_add_1_OUT_lut<0>)
+     MUXCY:S->O            1   0.215   0.000  u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<0> (u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<1> (u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<2> (u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<3> (u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<4> (u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<5> (u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<6> (u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<7> (u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<8> (u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<9> (u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<10> (u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<11> (u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<12> (u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<13> (u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<14> (u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<15> (u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<16> (u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<17> (u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<18> (u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<19> (u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<20> (u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<21> (u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<22> (u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<23> (u4/Madd_count[31]_GND_2_o_add_1_OUT_cy<23>)
+     XORCY:CI->O           1   0.206   1.137  u4/Madd_count[31]_GND_2_o_add_1_OUT_xor<24> (u4/count[31]_GND_2_o_add_1_OUT<24>)
+     LUT6:I0->O            1   0.254   0.000  u4/Mcompar_count[31]_Dclk_scale[31]_equal_3_o_lut<4> (u4/Mcompar_count[31]_Dclk_scale[31]_equal_3_o_lut<4>)
+     MUXCY:S->O            1   0.215   0.000  u4/Mcompar_count[31]_Dclk_scale[31]_equal_3_o_cy<4> (u4/Mcompar_count[31]_Dclk_scale[31]_equal_3_o_cy<4>)
+     MUXCY:CI->O          33   0.262   1.536  u4/Mcompar_count[31]_Dclk_scale[31]_equal_3_o_cy<5> (u4/count[31]_Dclk_scale[31]_equal_3_o)
+     FDR:R                     0.459          u4/count_0
     ----------------------------------------
-    Total                      5.146ns (1.684ns logic, 3.462ns route)
-                                       (32.7% logic, 67.3% route)
+    Total                      6.324ns (2.926ns logic, 3.398ns route)
+                                       (46.3% logic, 53.7% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'u0/clk_periph'
   Clock period: 7.033ns (frequency: 142.197MHz)
-  Total number of paths / destination ports: 62879 / 615
+  Total number of paths / destination ports: 62462 / 597
 -------------------------------------------------------------------------
 Delay:               7.033ns (Levels of Logic = 17)
-  Source:            u6/temp_u_noise0_5 (FF)
-  Destination:       u6/temp_g_noise_nxt_15 (FF)
+  Source:            u7/temp_u_noise0_5 (FF)
+  Destination:       u7/temp_g_noise_nxt_15 (FF)
   Source Clock:      u0/clk_periph rising
   Destination Clock: u0/clk_periph rising
 
-  Data Path: u6/temp_u_noise0_5 to u6/temp_g_noise_nxt_15
+  Data Path: u7/temp_u_noise0_5 to u7/temp_g_noise_nxt_15
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRE:C->Q             5   0.525   0.949  u6/temp_u_noise0_5 (u6/temp_u_noise0_5)
-     LUT2:I0->O            1   0.250   0.000  u6/ADDERTREE_INTERNAL_Madd1_lut<5> (u6/ADDERTREE_INTERNAL_Madd1_lut<5>)
-     MUXCY:S->O            1   0.215   0.000  u6/ADDERTREE_INTERNAL_Madd1_cy<5> (u6/ADDERTREE_INTERNAL_Madd1_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  u6/ADDERTREE_INTERNAL_Madd1_cy<6> (u6/ADDERTREE_INTERNAL_Madd1_cy<6>)
-     MUXCY:CI->O           1   0.023   0.000  u6/ADDERTREE_INTERNAL_Madd1_cy<7> (u6/ADDERTREE_INTERNAL_Madd1_cy<7>)
-     MUXCY:CI->O           1   0.023   0.000  u6/ADDERTREE_INTERNAL_Madd1_cy<8> (u6/ADDERTREE_INTERNAL_Madd1_cy<8>)
-     MUXCY:CI->O           1   0.023   0.000  u6/ADDERTREE_INTERNAL_Madd1_cy<9> (u6/ADDERTREE_INTERNAL_Madd1_cy<9>)
-     MUXCY:CI->O           1   0.023   0.000  u6/ADDERTREE_INTERNAL_Madd1_cy<10> (u6/ADDERTREE_INTERNAL_Madd1_cy<10>)
-     MUXCY:CI->O           1   0.023   0.000  u6/ADDERTREE_INTERNAL_Madd1_cy<11> (u6/ADDERTREE_INTERNAL_Madd1_cy<11>)
-     XORCY:CI->O           2   0.206   0.726  u6/ADDERTREE_INTERNAL_Madd1_xor<12> (u6/ADDERTREE_INTERNAL_Madd_121)
-     LUT3:I2->O            1   0.254   0.682  u6/ADDERTREE_INTERNAL_Madd212 (u6/ADDERTREE_INTERNAL_Madd212)
-     LUT4:I3->O            1   0.254   0.000  u6/ADDERTREE_INTERNAL_Madd2_lut<0>13 (u6/ADDERTREE_INTERNAL_Madd2_lut<0>13)
-     MUXCY:S->O            1   0.215   0.000  u6/ADDERTREE_INTERNAL_Madd2_cy<0>_12 (u6/ADDERTREE_INTERNAL_Madd2_cy<0>13)
-     XORCY:CI->O           2   0.206   0.726  u6/ADDERTREE_INTERNAL_Madd2_xor<0>_13 (u6/ADDERTREE_INTERNAL_Madd_142)
-     LUT2:I1->O            1   0.254   0.000  u6/Madd_temp_u_noise3[15]_g_noise_out[15]_add_36_OUT_lut<14> (u6/Madd_temp_u_noise3[15]_g_noise_out[15]_add_36_OUT_lut<14>)
-     MUXCY:S->O            0   0.215   0.000  u6/Madd_temp_u_noise3[15]_g_noise_out[15]_add_36_OUT_cy<14> (u6/Madd_temp_u_noise3[15]_g_noise_out[15]_add_36_OUT_cy<14>)
-     XORCY:CI->O           1   0.206   0.682  u6/Madd_temp_u_noise3[15]_g_noise_out[15]_add_36_OUT_xor<15> (u6/temp_u_noise3[15]_g_noise_out[15]_add_36_OUT<15>)
-     LUT3:I2->O            1   0.254   0.000  u6/Mmux_temp_u_noise3[15]_temp_u_noise3[15]_mux_40_OUT71 (u6/temp_u_noise3[15]_temp_u_noise3[15]_mux_40_OUT<15>)
-     FDE:D                     0.074          u6/temp_g_noise_nxt_15
+     FDRE:C->Q             5   0.525   0.949  u7/temp_u_noise0_5 (u7/temp_u_noise0_5)
+     LUT2:I0->O            1   0.250   0.000  u7/ADDERTREE_INTERNAL_Madd1_lut<5> (u7/ADDERTREE_INTERNAL_Madd1_lut<5>)
+     MUXCY:S->O            1   0.215   0.000  u7/ADDERTREE_INTERNAL_Madd1_cy<5> (u7/ADDERTREE_INTERNAL_Madd1_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  u7/ADDERTREE_INTERNAL_Madd1_cy<6> (u7/ADDERTREE_INTERNAL_Madd1_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  u7/ADDERTREE_INTERNAL_Madd1_cy<7> (u7/ADDERTREE_INTERNAL_Madd1_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  u7/ADDERTREE_INTERNAL_Madd1_cy<8> (u7/ADDERTREE_INTERNAL_Madd1_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  u7/ADDERTREE_INTERNAL_Madd1_cy<9> (u7/ADDERTREE_INTERNAL_Madd1_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  u7/ADDERTREE_INTERNAL_Madd1_cy<10> (u7/ADDERTREE_INTERNAL_Madd1_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  u7/ADDERTREE_INTERNAL_Madd1_cy<11> (u7/ADDERTREE_INTERNAL_Madd1_cy<11>)
+     XORCY:CI->O           2   0.206   0.726  u7/ADDERTREE_INTERNAL_Madd1_xor<12> (u7/ADDERTREE_INTERNAL_Madd_121)
+     LUT3:I2->O            1   0.254   0.682  u7/ADDERTREE_INTERNAL_Madd212 (u7/ADDERTREE_INTERNAL_Madd212)
+     LUT4:I3->O            1   0.254   0.000  u7/ADDERTREE_INTERNAL_Madd2_lut<0>13 (u7/ADDERTREE_INTERNAL_Madd2_lut<0>13)
+     MUXCY:S->O            1   0.215   0.000  u7/ADDERTREE_INTERNAL_Madd2_cy<0>_12 (u7/ADDERTREE_INTERNAL_Madd2_cy<0>13)
+     XORCY:CI->O           2   0.206   0.726  u7/ADDERTREE_INTERNAL_Madd2_xor<0>_13 (u7/ADDERTREE_INTERNAL_Madd_142)
+     LUT2:I1->O            1   0.254   0.000  u7/Madd_temp_u_noise3[15]_g_noise_out[15]_add_36_OUT_lut<14> (u7/Madd_temp_u_noise3[15]_g_noise_out[15]_add_36_OUT_lut<14>)
+     MUXCY:S->O            0   0.215   0.000  u7/Madd_temp_u_noise3[15]_g_noise_out[15]_add_36_OUT_cy<14> (u7/Madd_temp_u_noise3[15]_g_noise_out[15]_add_36_OUT_cy<14>)
+     XORCY:CI->O           1   0.206   0.682  u7/Madd_temp_u_noise3[15]_g_noise_out[15]_add_36_OUT_xor<15> (u7/temp_u_noise3[15]_g_noise_out[15]_add_36_OUT<15>)
+     LUT3:I2->O            1   0.254   0.000  u7/Mmux_temp_u_noise3[15]_temp_u_noise3[15]_mux_40_OUT71 (u7/temp_u_noise3[15]_temp_u_noise3[15]_mux_40_OUT<15>)
+     FDE:D                     0.074          u7/temp_g_noise_nxt_15
     ----------------------------------------
     Total                      7.033ns (3.268ns logic, 3.765ns route)
                                        (46.5% logic, 53.5% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'u0/clk_periph'
-  Total number of paths / destination ports: 17 / 17
+Timing constraint: Default period analysis for Clock 'u4/clk_periph'
+  Clock period: 5.251ns (frequency: 190.440MHz)
+  Total number of paths / destination ports: 123 / 10
 -------------------------------------------------------------------------
-Offset:              3.047ns (Levels of Logic = 2)
-  Source:            DATA (PAD)
-  Destination:       u3/u2/BPSK_15 (FF)
-  Destination Clock: u0/clk_periph rising
+Delay:               5.251ns (Levels of Logic = 5)
+  Source:            u5/davdac (FF)
+  Destination:       u5/dacout (FF)
+  Source Clock:      u4/clk_periph rising
+  Destination Clock: u4/clk_periph rising
 
-  Data Path: DATA to u3/u2/BPSK_15
+  Data Path: u5/davdac to u5/dacout
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            16   1.328   1.410  DATA_IBUF (DATA_IBUF)
-     LUT3:I0->O            1   0.235   0.000  u3/u2/Mmux_PWR_8_o_sine[15]_mux_3_OUT17 (u3/u2/PWR_8_o_sine[15]_mux_3_OUT<0>)
-     FDR:D                     0.074          u3/u2/BPSK_0
+     FD:C->Q              17   0.525   1.437  u5/davdac (u5/davdac)
+     LUT3:I0->O           10   0.235   1.463  u5/Mmux_dacstate[5]_GND_11_o_mux_2_OUT31 (u5/dacstate[5]_GND_11_o_mux_2_OUT<2>)
+     LUT6:I0->O            1   0.254   0.000  u5/Mmux__n0084_4 (u5/Mmux__n0084_4)
+     MUXF7:I1->O           1   0.175   0.000  u5/Mmux__n0084_3_f7 (u5/Mmux__n0084_3_f7)
+     MUXF8:I1->O           1   0.152   0.682  u5/Mmux__n0084_2_f8 (u5/_n0084)
+     LUT6:I5->O            1   0.254   0.000  u5/dacout_rstpot (u5/dacout_rstpot)
+     FD:D                      0.074          u5/dacout
     ----------------------------------------
-    Total                      3.047ns (1.637ns logic, 1.410ns route)
-                                       (53.7% logic, 46.3% route)
+    Total                      5.251ns (1.669ns logic, 3.582ns route)
+                                       (31.8% logic, 68.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'u0/clk_periph'
+  Total number of paths / destination ports: 17 / 17
+-------------------------------------------------------------------------
+Offset:              3.729ns (Levels of Logic = 3)
+  Source:            PB (PAD)
+  Destination:       u1/state (FF)
+  Destination Clock: u0/clk_periph rising
+
+  Data Path: PB to u1/state
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.328   0.682  PB_IBUF (PB_IBUF)
+     LUT2:I1->O            1   0.254   1.137  u1/state_glue_set (u1/state_glue_set)
+     LUT6:I0->O            1   0.254   0.000  u1/state_rstpot (u1/state_rstpot)
+     FD:D                      0.074          u1/state
+    ----------------------------------------
+    Total                      3.729ns (1.910ns logic, 1.819ns route)
+                                       (51.2% logic, 48.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'u0/clk_periph'
@@ -782,19 +819,19 @@ Offset:              4.162ns (Levels of Logic = 1)
                                        (82.6% logic, 17.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'mCLK'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'u4/clk_periph'
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
 Offset:              4.645ns (Levels of Logic = 1)
-  Source:            u4/davdac (FF)
+  Source:            u5/davdac (FF)
   Destination:       LDAC (PAD)
-  Source Clock:      mCLK rising
+  Source Clock:      u4/clk_periph rising
 
-  Data Path: u4/davdac to LDAC
+  Data Path: u5/davdac to LDAC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              17   0.525   1.208  u4/davdac (u4/davdac)
+     FD:C->Q              17   0.525   1.208  u5/davdac (u5/davdac)
      OBUF:I->O                 2.912          LDAC_OBUF (LDAC)
     ----------------------------------------
     Total                      4.645ns (3.437ns logic, 1.208ns route)
@@ -810,8 +847,7 @@ Clock to Setup on destination clock mCLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-mCLK           |    5.146|         |         |         |
-u0/clk_periph  |    5.224|         |         |         |
+mCLK           |    6.324|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock u0/clk_periph
@@ -822,7 +858,7 @@ Source Clock                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 u0/clk_periph                    |    7.033|         |         |         |
 u1/PB_db_G                       |         |    1.695|         |         |
 u2/state                         |         |    2.442|         |         |
-u6/n_reset_rand_en_ff[17]_OR_34_o|         |    3.422|         |         |
+u7/n_reset_rand_en_ff[17]_OR_34_o|         |    3.422|         |         |
 ---------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock u1/PB_db_G
@@ -830,7 +866,7 @@ Clock to Setup on destination clock u1/PB_db_G
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-u0/clk_periph  |         |         |    5.094|         |
+u0/clk_periph  |         |         |    3.765|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock u2/state
@@ -839,10 +875,19 @@ Clock to Setup on destination clock u2/state
 Source Clock                     |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------------------------+---------+---------+---------+---------+
 u0/clk_periph                    |         |         |    3.702|         |
-u6/n_reset_rand_en_ff[17]_OR_34_o|         |         |    1.873|         |
+u7/n_reset_rand_en_ff[17]_OR_34_o|         |         |    1.873|         |
 ---------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock u6/n_reset_rand_en_ff[17]_OR_34_o
+Clock to Setup on destination clock u4/clk_periph
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+u0/clk_periph  |    5.119|         |         |         |
+u4/clk_periph  |    5.251|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock u7/n_reset_rand_en_ff[17]_OR_34_o
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
@@ -853,14 +898,14 @@ u0/clk_periph  |         |         |    3.523|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 46.00 secs
-Total CPU time to Xst completion: 46.63 secs
+Total REAL time to Xst completion: 48.00 secs
+Total CPU time to Xst completion: 48.54 secs
  
 --> 
 
-Total memory usage is 281556 kilobytes
+Total memory usage is 279252 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   88 (   0 filtered)
+Number of warnings :   67 (   0 filtered)
 Number of infos    :   32 (   0 filtered)
 

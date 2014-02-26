@@ -1,19 +1,16 @@
 Release 14.6 Drc P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Mon Feb 24 19:08:47 2014
+Wed Feb 26 08:38:37 2014
 
 drc -z BPSK_tx.ncd BPSK_tx.pcf
 
-WARNING:PhysDesignRules:372 - Gated clock. Clock net u2/state is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   u6/n_reset_rand_en_ff[17]_OR_34_o is sourced by a combinatorial pin. This is
+   u7/n_reset_rand_en_ff[17]_OR_34_o is sourced by a combinatorial pin. This is
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net u1/PB_db_G is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-DRC detected 0 errors and 3 warnings.  Please see the previously displayed
+DRC detected 0 errors and 2 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

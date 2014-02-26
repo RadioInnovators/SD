@@ -1,7 +1,7 @@
 Release 14.6 par P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-CEDRIC-PC::  Mon Feb 24 19:07:29 2014
+CEDRIC-PC::  Wed Feb 26 08:37:10 2014
 
 par -w -intstyle ise -ol high -mt off BPSK_tx_map.ncd BPSK_tx.ncd BPSK_tx.pcf 
 
@@ -21,16 +21,16 @@ Device speed data version:  "PRODUCTION 1.23 2013-06-08".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                   297 out of  54,576    1%
-    Number used as Flip Flops:                 251
+  Number of Slice Registers:                   351 out of  54,576    1%
+    Number used as Flip Flops:                 305
     Number used as Latches:                     33
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:               13
-  Number of Slice LUTs:                        259 out of  27,288    1%
-    Number used as logic:                      227 out of  27,288    1%
-      Number using O6 output only:             134
-      Number using O5 output only:              30
-      Number using O5 and O6:                   63
+  Number of Slice LUTs:                        383 out of  27,288    1%
+    Number used as logic:                      348 out of  27,288    1%
+      Number using O6 output only:             144
+      Number using O5 output only:             137
+      Number using O5 and O6:                   67
       Number used as ROM:                        0
     Number used as Memory:                       1 out of   6,408    1%
       Number used as Dual Port RAM:              0
@@ -39,18 +39,18 @@ Slice Logic Utilization:
         Number using O6 output only:             1
         Number using O5 output only:             0
         Number using O5 and O6:                  0
-    Number used exclusively as route-thrus:     31
-      Number with same-slice register load:     12
-      Number with same-slice carry load:        19
+    Number used exclusively as route-thrus:     34
+      Number with same-slice register load:     13
+      Number with same-slice carry load:        21
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    93 out of   6,822    1%
-  Number of MUXCYs used:                       144 out of  13,644    1%
-  Number of LUT Flip Flop pairs used:          306
-    Number with an unused Flip Flop:            52 out of     306   16%
-    Number with an unused LUT:                  47 out of     306   15%
-    Number of fully used LUT-FF pairs:         207 out of     306   67%
+  Number of occupied Slices:                   126 out of   6,822    1%
+  Number of MUXCYs used:                       264 out of  13,644    1%
+  Number of LUT Flip Flop pairs used:          424
+    Number with an unused Flip Flop:           117 out of     424   27%
+    Number with an unused LUT:                  41 out of     424    9%
+    Number of fully used LUT-FF pairs:         266 out of     424   62%
     Number of slice register sites lost
       to control set restrictions:               0 out of  54,576    0%
 
@@ -93,35 +93,35 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 17 secs 
-Finished initial Timing Analysis.  REAL time: 17 secs 
+Starting initial Timing Analysis.  REAL time: 21 secs 
+Finished initial Timing Analysis.  REAL time: 21 secs 
 
 Starting Router
 
 
-Phase  1  : 1347 unrouted;      REAL time: 19 secs 
+Phase  1  : 1700 unrouted;      REAL time: 23 secs 
 
-Phase  2  : 1017 unrouted;      REAL time: 22 secs 
+Phase  2  : 1237 unrouted;      REAL time: 27 secs 
 
-Phase  3  : 260 unrouted;      REAL time: 25 secs 
+Phase  3  : 287 unrouted;      REAL time: 30 secs 
 
-Phase  4  : 260 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 30 secs 
+Phase  4  : 287 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 35 secs 
 
 Updating file: BPSK_tx.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 32 secs 
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 37 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 32 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 37 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 32 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 37 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 32 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 37 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 32 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 37 secs 
 
-Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 32 secs 
-Total REAL time to Router completion: 32 secs 
-Total CPU time to Router completion: 30 secs 
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 37 secs 
+Total REAL time to Router completion: 38 secs 
+Total CPU time to Router completion: 32 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -139,16 +139,18 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|          mCLK_BUFGP | BUFGMUX_X2Y11| No   |    8 |  0.010     |  1.748      |
+|  u0/clk_periph_BUFG |  BUFGMUX_X2Y3| No   |   60 |  0.042     |  1.774      |
 +---------------------+--------------+------+------+------------+-------------+
-|  u0/clk_periph_BUFG |  BUFGMUX_X2Y3| No   |   62 |  0.041     |  1.771      |
+|          mCLK_BUFGP | BUFGMUX_X2Y11| No   |   18 |  0.034     |  1.769      |
 +---------------------+--------------+------+------+------------+-------------+
-|            u2/state |         Local|      |   95 |  1.470     |  2.083      |
+|       u4/clk_periph |         Local|      |    7 |  0.551     |  1.398      |
 +---------------------+--------------+------+------+------------+-------------+
-|u6/n_reset_rand_en_f |              |      |      |            |             |
-|       f[17]_OR_34_o |         Local|      |    4 |  1.299     |  1.690      |
+|            u2/state |         Local|      |   95 |  0.610     |  1.264      |
 +---------------------+--------------+------+------+------------+-------------+
-|          u1/PB_db_G |         Local|      |    1 |  0.000     |  0.373      |
+|u7/n_reset_rand_en_f |              |      |      |            |             |
+|       f[17]_OR_34_o |         Local|      |    4 |  0.346     |  0.913      |
++---------------------+--------------+------+------+------------+-------------+
+|          u1/PB_db_G |         Local|      |    1 |  0.000     |  0.576      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -168,8 +170,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  NET "mCLK_BUFGP/IBUFG" PERIOD = 10 ns HIG | SETUP       |     3.843ns|     6.157ns|       0|           0
-  H 50%                                     | HOLD        |     0.416ns|            |       0|           0
+  NET "mCLK_BUFGP/IBUFG" PERIOD = 10 ns HIG | SETUP       |     3.790ns|     6.210ns|       0|           0
+  H 50%                                     | HOLD        |     0.450ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -180,10 +182,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 36 secs 
-Total CPU time to PAR completion: 33 secs 
+Total REAL time to PAR completion: 42 secs 
+Total CPU time to PAR completion: 35 secs 
 
-Peak Memory Usage:  423 MB
+Peak Memory Usage:  435 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

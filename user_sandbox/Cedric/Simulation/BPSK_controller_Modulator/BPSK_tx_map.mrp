@@ -10,23 +10,23 @@ Target Device  : xc6slx45
 Target Package : csg484
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Mon Feb 24 19:06:36 2014
+Mapped Date    : Wed Feb 26 08:36:01 2014
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    3
+Number of warnings:    2
 Slice Logic Utilization:
-  Number of Slice Registers:                   297 out of  54,576    1%
-    Number used as Flip Flops:                 251
+  Number of Slice Registers:                   351 out of  54,576    1%
+    Number used as Flip Flops:                 305
     Number used as Latches:                     33
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:               13
-  Number of Slice LUTs:                        259 out of  27,288    1%
-    Number used as logic:                      227 out of  27,288    1%
-      Number using O6 output only:             134
-      Number using O5 output only:              30
-      Number using O5 and O6:                   63
+  Number of Slice LUTs:                        383 out of  27,288    1%
+    Number used as logic:                      348 out of  27,288    1%
+      Number using O6 output only:             144
+      Number using O5 output only:             137
+      Number using O5 and O6:                   67
       Number used as ROM:                        0
     Number used as Memory:                       1 out of   6,408    1%
       Number used as Dual Port RAM:              0
@@ -35,21 +35,21 @@ Slice Logic Utilization:
         Number using O6 output only:             1
         Number using O5 output only:             0
         Number using O5 and O6:                  0
-    Number used exclusively as route-thrus:     31
-      Number with same-slice register load:     12
-      Number with same-slice carry load:        19
+    Number used exclusively as route-thrus:     34
+      Number with same-slice register load:     13
+      Number with same-slice carry load:        21
       Number with other load:                    0
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    93 out of   6,822    1%
-  Number of MUXCYs used:                       144 out of  13,644    1%
-  Number of LUT Flip Flop pairs used:          306
-    Number with an unused Flip Flop:            52 out of     306   16%
-    Number with an unused LUT:                  47 out of     306   15%
-    Number of fully used LUT-FF pairs:         207 out of     306   67%
-    Number of unique control sets:              11
+  Number of occupied Slices:                   126 out of   6,822    1%
+  Number of MUXCYs used:                       264 out of  13,644    1%
+  Number of LUT Flip Flop pairs used:          424
+    Number with an unused Flip Flop:           117 out of     424   27%
+    Number with an unused LUT:                  41 out of     424    9%
+    Number of fully used LUT-FF pairs:         266 out of     424   62%
+    Number of unique control sets:              13
     Number of slice register sites lost
-      to control set restrictions:              35 out of  54,576    1%
+      to control set restrictions:              37 out of  54,576    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -86,11 +86,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                2.41
+Average Fanout of Non-Clock Nets:                2.26
 
-Peak Memory Usage:  487 MB
-Total REAL time to MAP completion:  45 secs 
-Total CPU time to MAP completion:   38 secs 
+Peak Memory Usage:  480 MB
+Total REAL time to MAP completion:  1 mins 2 secs 
+Total CPU time to MAP completion:   57 secs 
 
 Table of Contents
 -----------------
@@ -113,11 +113,8 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
-WARNING:PhysDesignRules:372 - Gated clock. Clock net u2/state is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   u6/n_reset_rand_en_ff[17]_OR_34_o is sourced by a combinatorial pin. This is
+   u7/n_reset_rand_en_ff[17]_OR_34_o is sourced by a combinatorial pin. This is
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net u1/PB_db_G is sourced by a
@@ -168,7 +165,7 @@ To quickly locate the original cause for the removal of a chain of logic, look
 above the place where that logic is listed in the trimming report, then locate
 the lines that are least indented (begin at the leftmost edge).
 
-Loadless block "u6/ADDERTREE_INTERNAL_Madd215" (ROM) removed.
+Loadless block "u7/ADDERTREE_INTERNAL_Madd215" (ROM) removed.
 The signal "u3/u0/u0/blk00000001/sig00000012" is sourceless and has been
 removed.
 The signal "u3/u0/u0/blk00000001/sig0000004a" is sourceless and has been

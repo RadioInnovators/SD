@@ -60,7 +60,7 @@ module BPSK_tx(
 	);
 
 	wire BTN;
-	Debouncer u1(
+	Debouncer #(.MAX_COUNT(500000) ) u1(
 		.Myclk(periph_clk),
 		.PB(PB),
 		.PB_db(BTN)
@@ -112,9 +112,16 @@ module BPSK_tx(
 		.BPSK(BPSK_w)
 	);
 
+	wire clk_50MHz;
+	ClockDivider u4 (
+		.Mclk(mCLK),
+		.Dclk_scale(1),
+		.clk_periph(clk_50MHz)
+	);
+
 	wire [16:0] BPSK_AWGN_out;
-	da3dac u4 (
-		.dacclk(mCLK),
+	da3dac u5 (
+		.dacclk(clk_50MHz),
 		.dacdav(dacdav_w),
 		.dacdata(BPSK_AWGN_out[15:0]),
 
@@ -127,14 +134,14 @@ module BPSK_tx(
 
 	assign LDAC = davdac_w;
 
-	ClockDivider u5 (
+	ClockDivider u6 (
 		.Mclk(mCLK),
 		.Dclk_scale(20833),
 		.clk_periph(bpsk_clk)
 	);
 
 	wire signed [15:0] g_noise_out_scaled_mean_var_w;
-	LFSR_Plus u6 (
+	LFSR_Plus u7 (
 		.clk(periph_clk),
 		.enable(en_AWGN_w),
 		.n_reset(rst_AWGN_w),
@@ -144,7 +151,7 @@ module BPSK_tx(
 		.g_noise_out_scaled_mean_var(g_noise_out_scaled_mean_var_w)
 	);
 
-	Channel u7 (
+	Channel u8 (
 		.CLK(periph_clk),
 		.en(en_AWGN_w),
 		.BPSK(BPSK_w),
