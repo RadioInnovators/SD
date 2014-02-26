@@ -10,7 +10,7 @@ Target Device  : xc6slx45
 Target Package : csg484
 Target Speed   : -2
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Mon Feb 24 16:33:16 2014
+Mapped Date    : Mon Feb 24 19:06:36 2014
 
 Design Summary
 --------------
@@ -58,8 +58,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                         9 out of     320    2%
-    Number of LOCed IOBs:                        9 out of       9  100%
+  Number of bonded IOBs:                        10 out of     320    3%
+    Number of LOCed IOBs:                       10 out of      10  100%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         1 out of     116    1%
@@ -88,9 +88,9 @@ Specific Feature Utilization:
 
 Average Fanout of Non-Clock Nets:                2.41
 
-Peak Memory Usage:  471 MB
-Total REAL time to MAP completion:  1 mins 11 secs 
-Total CPU time to MAP completion:   57 secs 
+Peak Memory Usage:  487 MB
+Total REAL time to MAP completion:  45 secs 
+Total CPU time to MAP completion:   38 secs 
 
 Table of Contents
 -----------------
@@ -415,6 +415,7 @@ Section 6 - IOB Properties
 | LED<1>                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | PB                                 | IOB              | INPUT     | LVCMOS33             |       |          |      |              | PULLDOWN |          |
 | SCLK                               | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| Tester                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
 | mCLK                               | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 

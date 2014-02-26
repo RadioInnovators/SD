@@ -33,7 +33,9 @@ module BPSK_tx(
     output LDAC,
     output CS,
     output SCLK,
-    output DIN
+    output DIN,
+
+    output Tester
 
    //output bpsk_clk
 );
@@ -157,5 +159,7 @@ module BPSK_tx(
 	assign BPSK_out = BPSK_AWGN_out[15:0];
 
 	assign AWGN_out = g_noise_out_scaled_mean_var_w;
+
+	assign Tester = 1'b1;
 
 endmodule

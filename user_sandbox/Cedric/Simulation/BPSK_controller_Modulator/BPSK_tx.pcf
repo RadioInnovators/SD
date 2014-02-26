@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.68d on Mon Feb 24 16:34:25 2014
+// Written by: Map P.68d on Mon Feb 24 19:07:20 2014
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -12,6 +12,7 @@ COMP "SCLK" LOCATE = SITE "F7" LEVEL 1;
 COMP "mCLK" LOCATE = SITE "AA12" LEVEL 1;
 COMP "LED<0>" LOCATE = SITE "K8" LEVEL 1;
 COMP "LED<1>" LOCATE = SITE "F2" LEVEL 1;
+COMP "Tester" LOCATE = SITE "E6" LEVEL 1;
 NET "mCLK_BUFGP/IBUFG" PERIOD = 10 ns HIGH 50%;
 PIN PB_pins<0> = BEL "PB" PINNAME PAD;
 PIN "PB_pins<0>" TIG;

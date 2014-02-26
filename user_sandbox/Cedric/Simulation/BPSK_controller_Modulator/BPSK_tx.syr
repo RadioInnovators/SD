@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.34 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.35 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.34 secs
  
 --> Reading design: BPSK_tx.prj
 
@@ -152,17 +152,17 @@ Elaborating module <DDScompiler>.
 Elaborating module <Mixer>.
 
 Elaborating module <da3dac>.
-WARNING:HDLCompiler:1127 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" Line 131: Assignment to bpsk_clk ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" Line 133: Assignment to bpsk_clk ignored, since the identifier is never used
 
 Elaborating module <LFSR_Plus>.
 WARNING:HDLCompiler:413 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\LFSR_Plus.v" Line 64: Result of 22-bit expression is truncated to fit in 18-bit target.
 WARNING:HDLCompiler:413 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\LFSR_Plus.v" Line 88: Result of 23-bit expression is truncated to fit in 16-bit target.
 
 Elaborating module <Channel>.
-WARNING:HDLCompiler:1127 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" Line 155: Assignment to dummy ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" Line 157: Assignment to BPSK_out ignored, since the identifier is never used
-WARNING:HDLCompiler:1127 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" Line 159: Assignment to AWGN_out ignored, since the identifier is never used
-WARNING:Xst:2972 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 128. All outputs of instance <u5> of block <ClockDivider> are unconnected in block <BPSK_tx>. Underlying logic will be removed.
+WARNING:HDLCompiler:1127 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" Line 157: Assignment to dummy ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" Line 159: Assignment to BPSK_out ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" Line 161: Assignment to AWGN_out ignored, since the identifier is never used
+WARNING:Xst:2972 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 130. All outputs of instance <u5> of block <ClockDivider> are unconnected in block <BPSK_tx>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -170,11 +170,11 @@ WARNING:Xst:2972 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\S
 
 Synthesizing Unit <BPSK_tx>.
     Related source file is "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v".
-INFO:Xst:3210 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 114: Output port <dacld> of the instance <u4> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 128: Output port <clk_periph> of the instance <u5> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 135: Output port <g_noise_out> of the instance <u6> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 135: Output port <g_noise_out_scaled_mean> of the instance <u6> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 135: Output port <u_noise_out> of the instance <u6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 116: Output port <dacld> of the instance <u4> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 130: Output port <clk_periph> of the instance <u5> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 137: Output port <g_noise_out> of the instance <u6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 137: Output port <g_noise_out_scaled_mean> of the instance <u6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Cedric\Documents\SD.git\trunk\user_sandbox\Cedric\Simulation\BPSK_controller_Modulator\BPSK_tx.v" line 137: Output port <u_noise_out> of the instance <u6> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <BPSK_tx> synthesized.
@@ -593,9 +593,9 @@ Primitive and Black Box Usage:
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 8
+# IO Buffers                       : 9
 #      IBUF                        : 2
-#      OBUF                        : 6
+#      OBUF                        : 7
 # DSPs                             : 1
 #      DSP48A1                     : 1
 
@@ -620,8 +620,8 @@ Slice Logic Distribution:
    Number of unique control sets:        12
 
 IO Utilization: 
- Number of IOs:                           9
- Number of bonded IOBs:                   9  out of    320     2%  
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    320     3%  
 
 Specific Feature Utilization:
  Number of Block RAM/FIFO:                1  out of    116     0%  
@@ -853,12 +853,12 @@ u0/clk_periph  |         |         |    3.523|         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 44.00 secs
-Total CPU time to Xst completion: 43.47 secs
+Total REAL time to Xst completion: 46.00 secs
+Total CPU time to Xst completion: 46.63 secs
  
 --> 
 
-Total memory usage is 298772 kilobytes
+Total memory usage is 281556 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   88 (   0 filtered)

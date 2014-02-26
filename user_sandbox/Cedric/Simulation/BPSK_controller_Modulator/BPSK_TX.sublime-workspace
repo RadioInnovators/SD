@@ -1,0 +1,777 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"g",
+				"g_noise_out_scaled_mean_var"
+			],
+			[
+				"gn",
+				"g_noise_out_scaled_mean_var"
+			],
+			[
+				"g_",
+				"g_noise_out_scaled_mean"
+			],
+			[
+				"sin",
+				"sine_out"
+			],
+			[
+				"sine",
+				"sine_out"
+			],
+			[
+				"clk",
+				"clk_scale"
+			],
+			[
+				"rs",
+				"rst_AWGN"
+			],
+			[
+				"B",
+				"BPSK_AWGN_out"
+			],
+			[
+				"en",
+				"en_AWGN"
+			],
+			[
+				"AW",
+				"AWGN"
+			],
+			[
+				"BPSK",
+				"BPSK_AWGN"
+			],
+			[
+				"davd",
+				"davdac_w"
+			],
+			[
+				"L",
+				"LDAC"
+			],
+			[
+				"File",
+				"FileAWGN"
+			],
+			[
+				"Fil",
+				"FileAWGN"
+			],
+			[
+				"dac",
+				"dacdav"
+			],
+			[
+				"da",
+				"davdac"
+			],
+			[
+				"CS",
+				"CS_w"
+			],
+			[
+				"S",
+				"SCLK_w"
+			],
+			[
+				"m",
+				"mCLK"
+			],
+			[
+				"PB",
+				"PB_db"
+			],
+			[
+				"co",
+				"count"
+			],
+			[
+				"cou",
+				"MAX_COUNT"
+			],
+			[
+				"nex",
+				"next_state"
+			],
+			[
+				"mod",
+				"mod_en"
+			],
+			[
+				"mo",
+				"mod_en"
+			],
+			[
+				"sine_r",
+				"sine_rdy"
+			],
+			[
+				"GRV",
+				"GRV1"
+			],
+			[
+				"mu",
+				"mu1"
+			],
+			[
+				"GRV_",
+				"GRV_exp"
+			],
+			[
+				"GR",
+				"GRV2"
+			],
+			[
+				"Gau",
+				"Gaussian_Distributions_Arbitrary_same_covar_Neg"
+			],
+			[
+				"Ga",
+				"Gaussian_Distributions_Arbitrary_same_covar"
+			],
+			[
+				"GaussianDi",
+				"Gaussian_Distributions_Identity_covar"
+			],
+			[
+				"C",
+				"CLK"
+			],
+			[
+				"add",
+				"addEnabler"
+			],
+			[
+				"dis",
+				"displayCTRL"
+			],
+			[
+				"G",
+				"GET0"
+			],
+			[
+				"top",
+				"top_display"
+			],
+			[
+				"displ",
+				"display_top"
+			],
+			[
+				"GET",
+				"GET2"
+			],
+			[
+				"GE0",
+				"GET0"
+			],
+			[
+				"COnt",
+				"Controls"
+			],
+			[
+				"ne",
+				"next_count"
+			],
+			[
+				"Cont",
+				"Controls"
+			],
+			[
+				"Cloc",
+				"ClockDivider"
+			],
+			[
+				"CLK",
+				"CLK_SCALE"
+			],
+			[
+				"dat",
+				"data_clk"
+			],
+			[
+				"CL",
+				"CLK_Periph"
+			],
+			[
+				"div",
+				"divident"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "LFSR_Plus.v",
+			"settings":
+			{
+				"buffer_size": 11721,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "TrenzEl.ucf",
+			"settings":
+			{
+				"buffer_size": 928,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "TXData.txt",
+			"settings":
+			{
+				"buffer_size": 289173,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "AWGN_Tester_data_rate.v",
+			"settings":
+			{
+				"buffer_size": 1156,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "ClockDivider.v",
+			"settings":
+			{
+				"buffer_size": 372,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Debouncer.v",
+			"settings":
+			{
+				"buffer_size": 899,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "AWGN_Test.v",
+			"settings":
+			{
+				"buffer_size": 726,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Cedric/Documents/SD.git/trunk/mainline/implementation/serial_loopback_1200/te0630.ucf",
+			"settings":
+			{
+				"buffer_size": 1092,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "BPSK_tx.v",
+			"settings":
+			{
+				"buffer_size": 2577,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"",
+				"File: Save All"
+			]
+		],
+		"width": 364.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Cedric/SkyDrive/Documents/School/Spring 2014/Embedded/Lab/Lab3/DividerGenerator/ClockDivider.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/BPSK_txTest.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/templates/dummy.txt",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/TxTester.m",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/AWGN_Tester_data_rate.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/LFSR_Plus_tf.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/LFSR_Plus.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/Sine_4_Test.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/sineDatapath.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/TXData.txt",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/AWGN.txt",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/SINE_4.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/ipcore_dir/DDScore_4.veo",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/SINE_4.tfi",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/Sine_4_Data.txt",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/LFSR_Test.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/da3dac.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/sineController.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/Debouncer.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/ClockDivider.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/Channel.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/AWGN_Test.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/BPSK_tx.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/ClockDividerTest.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/SINE.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/SINEtest.v",
+		"/C/Users/Cedric/SkyDrive/Documents/School/Spring 2014/Embedded/Lab/Lab2/BCDaddder/ClockDivider.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/DAC/DACtest/ClockDivider.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator_DAC/sineController.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator_DAC/sineDatapath.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/DAC/DACtest/TopModuleTest.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/TrenzEl.ucf",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/DAC/DACtest/dacController.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/DAC/DACtest/TopModule.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator_DAC/BPSK_tx.v",
+		"/C/Users/Cedric/SkyDrive/Documents/School/Spring 2014/Embedded/s6TEDPGA/Chapter 3/peripherals/da3dac.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator_DAC/Debouncer.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator_DAC/ClockDivider.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/bkeith/serial_loop/serial_loop/te0630.ucf",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/ns3da3test/xst/projnav.tmp/dummyfile.txt",
+		"/C/Users/Cedric/SkyDrive/Documents/School/Spring 2014/Embedded/s6TEDPGA/Chapter 3/DACtest/ns3da3test/ns3da3test.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/DAC/DACtest/ClockDividerTest.v",
+		"/C/Users/Cedric/Desktop/BPSK_controller_Modulator/BPSK_txTest.v",
+		"/C/Users/Cedric/Desktop/BPSK_controller_Modulator/ClockDivider.v",
+		"/C/Users/Cedric/workspace/Manchester_Encoder/ManEncoder_Tester.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/Documents/Trenz Electronics/TE063X-Reference-Designs/blinkin-TE0630/src/TE0630.ucf",
+		"/C/Users/Cedric/workspace/UPENN/ppr_code/trunk/ecosystem/projects/IR/stm32f37x/src/main.c",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/sineDatapathTest.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/ipcore_dir/DDScompiler.veo",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/MixerTest.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_controller_Modulator/BPSKcontrollerTest.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_Verilog/SineWrapper.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_Verilog/ipcore_dir/wavegen.veo",
+		"/C/Users/Cedric/SkyDrive/Documents/School/Spring 2014/Embedded/Lab/Lab2/BCDaddder/BCDadderTest.v",
+		"/C/Users/Cedric/SkyDrive/Documents/School/Spring 2014/Machine Learning/HW/HW2/HW2.m",
+		"/C/Users/Cedric/Downloads/1 - 5 - Acoustic Resonance- Helmholtz Resonators (16-14).txt",
+		"/C/Users/Cedric/SkyDrive/Documents/School/Spring 2014/Machine Learning/HW/HW2/data.txt",
+		"/C/Users/Cedric/SkyDrive/Documents/School/Spring 2014/Embedded/Lab/Lab2/BCDaddder/BCDadder.v",
+		"/C/Users/Cedric/SkyDrive/Documents/School/Spring 2014/Embedded/Lab/Lab2/BCDaddder/ClockDividerTester.v",
+		"/C/Users/Cedric/SkyDrive/Documents/School/Spring 2014/Embedded/Lab/Lab2/BCDaddder/Controller.v",
+		"/C/Users/Cedric/SkyDrive/Documents/School/Spring 2014/Embedded/Lab/Lab2/BCDaddder/Datapath.v",
+		"/C/Users/Cedric/SkyDrive/Documents/School/Spring 2014/Embedded/Lab/Lab2/BCDaddder/Debouncer.v",
+		"/C/Users/Cedric/SkyDrive/Documents/School/Spring 2014/Embedded/Lab/Lab2/BCDaddder/ControllerTest.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_Verilog/ModulatorTest.v",
+		"/C/Users/Cedric/SkyDrive/Documents/School/Spring 2014/Embedded/Lab/Lab2/BCDaddder/DebouncerTester.v",
+		"/C/Users/Cedric/SkyDrive/Documents/School/Spring 2014/Embedded/Lab/Lab2/BCDaddder/Atlys.ucf",
+		"/C/Users/Cedric/SkyDrive/Documents/School/Spring 2014/Embedded/Lab/Lab2/BCDaddder/dkdf.v",
+		"/C/Users/Cedric/SkyDrive/Documents/School/Spring 2014/Embedded/s6TEDPGA/Chapter 3/clocktest/atlclocktest/remote_sources/_/_/peripherals/clock.v",
+		"/C/Users/Cedric/SkyDrive/Documents/School/Spring 2014/Embedded/s6TEDPGA/Chapter 3/clocktest/atlclocktest/clocktest.v",
+		"/C/Users/Cedric/SkyDrive/Documents/School/Spring 2014/Embedded/Lab/Lab1/Intro2Atlys/Atlys.ucf",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_Verilog/SineMonitor.txt",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/Modulator/New Text Document.txt",
+		"/C/Users/Cedric/SkyDrive/Documents/School/Spring 2014/Embedded/Lab/Lab1/Intro2Atlys/Controller.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_Verilog/SineMonitor",
+		"/C/Users/Cedric/workspace/Manchester_Encoder/data_file.txt",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_Verilog/ClockDividerTest.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_Verilog/ipcore_dir/wavegen.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_Verilog/test.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/BPSK_Verilog/wavegenWrapper.v",
+		"/C/Users/Cedric/SkyDrive/Documents/School/Spring 2014/Embedded/Lab/Lab1/Intro2Atlys/BCDConverter.v",
+		"/C/Users/Cedric/SkyDrive/Documents/School/Spring 2014/Embedded/Lab/Lab1/Intro2Atlys/Counter.v",
+		"/C/Users/Cedric/SkyDrive/Documents/School/Spring 2014/Embedded/Lab/Lab1/Intro2Atlys/Debouncer.v",
+		"/C/Users/Cedric/Documents/SD.git/trunk/user_sandbox/Cedric/Simulation/Modulator/Modulator/SineGen.v",
+		"/C/Users/Cedric/workspace/UPENN/ppr_code/trunk/ecosystem/projects/IR/stm32f37x/py/console.py",
+		"/C/Users/Cedric/SkyDrive/Documents/School/Spring 2014/Embedded/s6TEDPGA/Chapter 2/binBCDdivider/binBCD.v",
+		"/C/Users/Cedric/SkyDrive/Documents/School/Spring 2014/Embedded/s6TEDPGA/Chapter 2/binBCDdivider/gendata.v",
+		"/C/Users/Cedric/Desktop/thing",
+		"/C/Users/Cedric/Documents/Workspace/main.cpp",
+		"/C/Users/Cedric/Downloads/ar33254_dds_compiler_examples_v1_0/AR33254_DDS_Compiler_examples_v1_0/verilog/example1/ddsv_3_0_top.v"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"AWGN_o",
+			"clk",
+			"wire [15:0] B",
+			"BPSK",
+			"wire BPS",
+			"en_AWGN",
+			"en_",
+			"mean",
+			"dac",
+			"bps",
+			"dac",
+			"),\n",
+			"	 SW_Reader u3(\n		.clk(CLK_Periph),\n		.SW(SW),\n		.Number(Number)\n	 );"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "LFSR_Plus.v",
+					"settings":
+					{
+						"buffer_size": 11721,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11554,
+								11554
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/verilog.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3405.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "TrenzEl.ucf",
+					"settings":
+					{
+						"buffer_size": 928,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								893,
+								893
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 331.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "TXData.txt",
+					"settings":
+					{
+						"buffer_size": 289173,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 10942.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "AWGN_Tester_data_rate.v",
+					"settings":
+					{
+						"buffer_size": 1156,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								624,
+								624
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/verilog.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 577.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "ClockDivider.v",
+					"settings":
+					{
+						"buffer_size": 372,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								254,
+								254
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/verilog.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Debouncer.v",
+					"settings":
+					{
+						"buffer_size": 899,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								186,
+								186
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/verilog.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "AWGN_Test.v",
+					"settings":
+					{
+						"buffer_size": 726,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								313,
+								313
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/verilog.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/Users/Cedric/Documents/SD.git/trunk/mainline/implementation/serial_loopback_1200/te0630.ucf",
+					"settings":
+					{
+						"buffer_size": 1092,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								760,
+								760
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 148.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 8,
+					"file": "BPSK_tx.v",
+					"settings":
+					{
+						"buffer_size": 2577,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2557,
+								2557
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/verilog.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2280.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				2,
+				0,
+				3,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.33,
+			0.66,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 81.0,
+	"status_bar_visible": true
+}
