@@ -31,8 +31,8 @@ NET LED<1> LOC=F2  | IOSTANDARD = LVCMOS33;
 NET LDAC	LOC = A4 | IOSTANDARD = LVCMOS33; # J2 - 29
 NET CS		LOC = D7 | IOSTANDARD = LVCMOS33; # J2 - 31
 NET SCLK	LOC = F7 | IOSTANDARD = LVCMOS33; # J2 - 27
-NET DIN		LOC = C6 | IOSTANDARD = LVCMOS33; # J2 - 11 I want them to be next to each other so this should be 
+NET DIN		LOC = E6 | IOSTANDARD = LVCMOS33; # J2 - 11 I want them to be next to each other so this should be 
                                                       # J2 - 25 or LOC = E6
 
 #### Tester
-NET Tester		LOC = E6 | IOSTANDARD = LVCMOS33;
+NET Tester		LOC = C6 | IOSTANDARD = LVCMOS33;

@@ -1,18 +1,18 @@
 //! **************************************************************************
-// Written by: Map P.68d on Wed Feb 26 08:37:01 2014
+// Written by: Map P.68d on Wed Feb 26 08:56:45 2014
 //! **************************************************************************
 
 SCHEMATIC START;
 COMP "CS" LOCATE = SITE "D7" LEVEL 1;
 COMP "PB" LOCATE = SITE "R7" LEVEL 1;
-COMP "DIN" LOCATE = SITE "C6" LEVEL 1;
+COMP "DIN" LOCATE = SITE "E6" LEVEL 1;
 COMP "DATA" LOCATE = SITE "AB21" LEVEL 1;
 COMP "LDAC" LOCATE = SITE "A4" LEVEL 1;
 COMP "SCLK" LOCATE = SITE "F7" LEVEL 1;
 COMP "mCLK" LOCATE = SITE "AA12" LEVEL 1;
 COMP "LED<0>" LOCATE = SITE "K8" LEVEL 1;
 COMP "LED<1>" LOCATE = SITE "F2" LEVEL 1;
-COMP "Tester" LOCATE = SITE "E6" LEVEL 1;
+COMP "Tester" LOCATE = SITE "C6" LEVEL 1;
 NET "mCLK_BUFGP/IBUFG" PERIOD = 10 ns HIGH 50%;
 PIN PB_pins<0> = BEL "PB" PINNAME PAD;
 PIN "PB_pins<0>" TIG;

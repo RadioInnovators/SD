@@ -1,7 +1,7 @@
 Release 14.6 Drc P.68d (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Wed Feb 26 08:38:37 2014
+Wed Feb 26 08:58:40 2014
 
 drc -z BPSK_tx.ncd BPSK_tx.pcf
 

@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"cl",
+				"clk_periph"
+			],
+			[
 				"g",
 				"g_noise_out_scaled_mean_var"
 			],
@@ -219,7 +223,7 @@
 			"file": "TrenzEl.ucf",
 			"settings":
 			{
-				"buffer_size": 928,
+				"buffer_size": 1101,
 				"line_ending": "Windows"
 			}
 		},
@@ -236,22 +240,6 @@
 			"settings":
 			{
 				"buffer_size": 1156,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "ClockDivider.v",
-			"settings":
-			{
-				"buffer_size": 372,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Debouncer.v",
-			"settings":
-			{
-				"buffer_size": 899,
 				"line_ending": "Windows"
 			}
 		},
@@ -275,7 +263,23 @@
 			"file": "BPSK_tx.v",
 			"settings":
 			{
-				"buffer_size": 2577,
+				"buffer_size": 2704,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Debouncer.v",
+			"settings":
+			{
+				"buffer_size": 897,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "ClockDivider.v",
+			"settings":
+			{
+				"buffer_size": 372,
 				"line_ending": "Windows"
 			}
 		}
@@ -479,15 +483,15 @@
 					"file": "TrenzEl.ucf",
 					"settings":
 					{
-						"buffer_size": 928,
+						"buffer_size": 1101,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								893,
-								893
+								873,
+								873
 							]
 						],
 						"settings":
@@ -495,7 +499,7 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 331.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -554,68 +558,9 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 3,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 4,
-					"file": "ClockDivider.v",
-					"settings":
-					{
-						"buffer_size": 372,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								254,
-								254
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Verilog/verilog.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Debouncer.v",
-					"settings":
-					{
-						"buffer_size": 899,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								186,
-								186
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Verilog/verilog.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
 					"file": "AWGN_Test.v",
 					"settings":
 					{
@@ -641,7 +586,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 5,
 					"file": "/C/Users/Cedric/Documents/SD.git/trunk/mainline/implementation/serial_loopback_1200/te0630.ucf",
 					"settings":
 					{
@@ -661,31 +606,25 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 148.0,
+						"translation.y": 103.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 8,
+					"buffer": 6,
 					"file": "BPSK_tx.v",
 					"settings":
 					{
-						"buffer_size": 2577,
+						"buffer_size": 2704,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2557,
-								2557
+								1858,
+								1858
 							]
 						],
 						"settings":
@@ -694,7 +633,66 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2280.0,
+						"translation.y": 1575.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"file": "Debouncer.v",
+					"settings":
+					{
+						"buffer_size": 897,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								170,
+								170
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/verilog.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "ClockDivider.v",
+					"settings":
+					{
+						"buffer_size": 372,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								254,
+								254
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Verilog/verilog.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -725,19 +723,12 @@
 				0,
 				2,
 				1
-			],
-			[
-				2,
-				0,
-				3,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.33,
-			0.66,
+			0.5,
 			1.0
 		],
 		"rows":
