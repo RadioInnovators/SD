@@ -19,7 +19,7 @@ module dflop(
 	output reg out
 	);
 
-	always@(posedge clk) begin
+	always@(negedge clk) begin
 		if(clken)
 			out <= in;
 	end

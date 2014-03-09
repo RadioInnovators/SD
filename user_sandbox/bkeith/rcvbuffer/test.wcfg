@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/lifesatrip/Documents/TortoiseSVN/SD/trunk/user_sandbox/bkeith/rcvbuffer/tb_rcvbuffer_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_rcvbuffer" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="20" />
+   <wvobject fp_name="/tb_rcvbuffer/rcvbuf_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rcvbuf_clk</obj_property>
+      <obj_property name="ObjectShortName">rcvbuf_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rcvbuffer/clk_1200" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_1200</obj_property>
+      <obj_property name="ObjectShortName">clk_1200</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rcvbuffer/M1/databit" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">databit</obj_property>
+      <obj_property name="ObjectShortName">databit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rcvbuffer/newdata" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">newdata</obj_property>
+      <obj_property name="ObjectShortName">newdata</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rcvbuffer/rbr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rbr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rbr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rcvbuffer/M1/path" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">path[0:399,24:0]</obj_property>
+      <obj_property name="ObjectShortName">path[0:399,24:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rcvbuffer/M1/feed" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">feed</obj_property>
+      <obj_property name="ObjectShortName">feed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rcvbuffer/M1/temp01" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">temp01</obj_property>
+      <obj_property name="ObjectShortName">temp01</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rcvbuffer/M1/temp02" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">temp02</obj_property>
+      <obj_property name="ObjectShortName">temp02</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rcvbuffer/M1/control_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">control_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">control_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rcvbuffer/M1/next_control_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">next_control_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">next_control_state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rcvbuffer/M1/datapath_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">datapath_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">datapath_state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rcvbuffer/M1/next_datapath_state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">next_datapath_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">next_datapath_state[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rcvbuffer/M1/clocken" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clocken</obj_property>
+      <obj_property name="ObjectShortName">clocken</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rcvbuffer/M1/chainen" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">chainen</obj_property>
+      <obj_property name="ObjectShortName">chainen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rcvbuffer/M1/out_10K" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">out_10K</obj_property>
+      <obj_property name="ObjectShortName">out_10K</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rcvbuffer/M1/done_10K" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">done_10K</obj_property>
+      <obj_property name="ObjectShortName">done_10K</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rcvbuffer/M1/done_8" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">done_8</obj_property>
+      <obj_property name="ObjectShortName">done_8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rcvbuffer/M1/feedbit" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">feedbit</obj_property>
+      <obj_property name="ObjectShortName">feedbit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rcvbuffer/M1/count10K" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">count10K[13:0]</obj_property>
+      <obj_property name="ObjectShortName">count10K[13:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
