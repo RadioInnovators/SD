@@ -28,7 +28,6 @@ module satcom(
 	input rdrdy,
 	input rst,
 	input tbre,
-	input genclk,
 	input clk_100M,
 	output reg rdrst,
 	output reg tdin,
@@ -38,6 +37,7 @@ module satcom(
 
 	wire rxbufclk;
 	wire rx_1200_clk;
+	wire genclk;
 	wire rx_newdata;
 	wire rcvbuf_dataout;
 	wire [7:0] rbr_data;
@@ -46,7 +46,7 @@ module satcom(
 	wire rx_full;
 	wire rx_empty;
 
-	clocks_top M1 (clk_100M, rxbufclk, rx_1200_clk);
+	clocks_top M1 (clk_100M, rxbufclk, rx_1200_clk, genclk);
 	rcvbuffer M2 (rxbufclk, rx_1200_clk, rx_newdata, rbr_data, rcvbuf_dataout, ack_rx_wire, rfd_rx_wire, rx_full, rx_empty);
 	buffer_control M3 (rbr, rdrdy, rst, rfd_rx_wire, ack_rx_wire, genclk, rx_full, rx_empty, rx_newdata, rbr_data, rdrst);  
 

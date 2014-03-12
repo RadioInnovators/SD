@@ -15,7 +15,6 @@ module tb_satcom();
 	reg rdrdy;
 	reg rst;
 	reg tbre;
-	reg genclk;
 	reg clk_100M;
 
 	// Outputs 
@@ -25,20 +24,17 @@ module tb_satcom();
 	wire [15:0] dac_sample;
 
 	// Instantiate UUT
-	satcom M0 (rbr, rdrdy, rst, tbre, genclk, clk_100M, rdrst, tdin, wrn, dac_sample);
+	satcom M0 (rbr, rdrdy, rst, tbre, clk_100M, rdrst, tdin, wrn, dac_sample);
 
 	initial begin
 		rdrdy=0;
 		rst=0;
 		tbre=0;
-		genclk=0;
 		clk_100M=0;
 		rbr = 8'b00000000;
 	end
 
 	// WATCH OUT FOR CLOCK DRIFT (?)
-	always
-		#250000 genclk = ~genclk;		//  2000 Hz
 
 	always 
 		#5 clk_100M = ~clk_100M;	// 100 MHz
