@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/lifesatrip/Documents/TortoiseSVN/SD/trunk/user_sandbox/bkeith/satcom/tb_satcom_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_satcom" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="group65" type="group">
+      <obj_property name="label">rcv_buffer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_satcom/M0/M2/rcvbuf_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rcvbuf_clk</obj_property>
+         <obj_property name="ObjectShortName">rcvbuf_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M2/clk_1200" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_1200</obj_property>
+         <obj_property name="ObjectShortName">clk_1200</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M2/newdata" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">newdata</obj_property>
+         <obj_property name="ObjectShortName">newdata</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M2/rbr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rbr[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rbr[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M2/databit" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">databit</obj_property>
+         <obj_property name="ObjectShortName">databit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M2/path" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">path[0:399,24:0]</obj_property>
+         <obj_property name="ObjectShortName">path[0:399,24:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M2/feed" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">feed</obj_property>
+         <obj_property name="ObjectShortName">feed</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M2/ack" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ack</obj_property>
+         <obj_property name="ObjectShortName">ack</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M2/rfd" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rfd</obj_property>
+         <obj_property name="ObjectShortName">rfd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M2/rx_full" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rx_full</obj_property>
+         <obj_property name="ObjectShortName">rx_full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M2/rx_empty" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rx_empty</obj_property>
+         <obj_property name="ObjectShortName">rx_empty</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M2/temp01" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">temp01</obj_property>
+         <obj_property name="ObjectShortName">temp01</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M2/temp02" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">temp02</obj_property>
+         <obj_property name="ObjectShortName">temp02</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M2/control_state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">control_state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">control_state[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M2/next_control_state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">next_control_state[1:0]</obj_property>
+         <obj_property name="ObjectShortName">next_control_state[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M2/datapath_state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">datapath_state[3:0]</obj_property>
+         <obj_property name="ObjectShortName">datapath_state[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M2/next_datapath_state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">next_datapath_state[3:0]</obj_property>
+         <obj_property name="ObjectShortName">next_datapath_state[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M2/chainen" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">chainen</obj_property>
+         <obj_property name="ObjectShortName">chainen</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M2/out_10K" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">out_10K</obj_property>
+         <obj_property name="ObjectShortName">out_10K</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M2/done_10K" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">done_10K</obj_property>
+         <obj_property name="ObjectShortName">done_10K</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M2/done_8" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">done_8</obj_property>
+         <obj_property name="ObjectShortName">done_8</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M2/feedbit" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">feedbit</obj_property>
+         <obj_property name="ObjectShortName">feedbit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M2/count10K" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">count10K[13:0]</obj_property>
+         <obj_property name="ObjectShortName">count10K[13:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group70" type="group">
+      <obj_property name="label">clocks_top</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_satcom/M0/M1/master_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">master_clk</obj_property>
+         <obj_property name="ObjectShortName">master_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M1/rcvbuf_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rcvbuf_clk</obj_property>
+         <obj_property name="ObjectShortName">rcvbuf_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M1/clk_1200" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_1200</obj_property>
+         <obj_property name="ObjectShortName">clk_1200</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group53" type="group">
+      <obj_property name="label">buffer_control</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_satcom/M0/M3/rbr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rbr[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rbr[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M3/rdrdy" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rdrdy</obj_property>
+         <obj_property name="ObjectShortName">rdrdy</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M3/rst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M3/rfd_rx" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rfd_rx</obj_property>
+         <obj_property name="ObjectShortName">rfd_rx</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M3/ack_rx" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ack_rx</obj_property>
+         <obj_property name="ObjectShortName">ack_rx</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M3/genclk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">genclk</obj_property>
+         <obj_property name="ObjectShortName">genclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M3/rx_full" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rx_full</obj_property>
+         <obj_property name="ObjectShortName">rx_full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M3/rx_empty" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rx_empty</obj_property>
+         <obj_property name="ObjectShortName">rx_empty</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M3/newdata" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">newdata</obj_property>
+         <obj_property name="ObjectShortName">newdata</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M3/rx_buf" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rx_buf[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_buf[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M3/rdrst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rdrst</obj_property>
+         <obj_property name="ObjectShortName">rdrst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M3/state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/M3/next_state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">next_state[3:0]</obj_property>
+         <obj_property name="ObjectShortName">next_state[3:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group74" type="group">
+      <obj_property name="label">satcom</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_satcom/M0/rbr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rbr[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rbr[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/rdrdy" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rdrdy</obj_property>
+         <obj_property name="ObjectShortName">rdrdy</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/rst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/tbre" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">tbre</obj_property>
+         <obj_property name="ObjectShortName">tbre</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/genclk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">genclk</obj_property>
+         <obj_property name="ObjectShortName">genclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/clk_100M" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_100M</obj_property>
+         <obj_property name="ObjectShortName">clk_100M</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/rxbufclk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rxbufclk</obj_property>
+         <obj_property name="ObjectShortName">rxbufclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/rx_1200_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rx_1200_clk</obj_property>
+         <obj_property name="ObjectShortName">rx_1200_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/rx_newdata" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rx_newdata</obj_property>
+         <obj_property name="ObjectShortName">rx_newdata</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/rcvbuf_dataout" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rcvbuf_dataout</obj_property>
+         <obj_property name="ObjectShortName">rcvbuf_dataout</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/rbr_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rbr_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rbr_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/rfd_rx_wire" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rfd_rx_wire</obj_property>
+         <obj_property name="ObjectShortName">rfd_rx_wire</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/ack_rx_wire" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ack_rx_wire</obj_property>
+         <obj_property name="ObjectShortName">ack_rx_wire</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/rx_full" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rx_full</obj_property>
+         <obj_property name="ObjectShortName">rx_full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/rx_empty" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rx_empty</obj_property>
+         <obj_property name="ObjectShortName">rx_empty</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/rdrst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rdrst</obj_property>
+         <obj_property name="ObjectShortName">rdrst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/tdin" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">tdin</obj_property>
+         <obj_property name="ObjectShortName">tdin</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/wrn" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">wrn</obj_property>
+         <obj_property name="ObjectShortName">wrn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/M0/dac_sample" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dac_sample[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dac_sample[15:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group84" type="group">
+      <obj_property name="label">tb_satcom</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_satcom/rdrst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rdrst</obj_property>
+         <obj_property name="ObjectShortName">rdrst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/tdin" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">tdin</obj_property>
+         <obj_property name="ObjectShortName">tdin</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/wrn" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">wrn</obj_property>
+         <obj_property name="ObjectShortName">wrn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/dac_sample" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dac_sample[15:0]</obj_property>
+         <obj_property name="ObjectShortName">dac_sample[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/rbr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rbr[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rbr[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/rdrdy" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rdrdy</obj_property>
+         <obj_property name="ObjectShortName">rdrdy</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/rst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/tbre" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">tbre</obj_property>
+         <obj_property name="ObjectShortName">tbre</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/genclk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">genclk</obj_property>
+         <obj_property name="ObjectShortName">genclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_satcom/clk_100M" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_100M</obj_property>
+         <obj_property name="ObjectShortName">clk_100M</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
