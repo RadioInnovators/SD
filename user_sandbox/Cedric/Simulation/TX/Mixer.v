@@ -16,7 +16,7 @@ module Mixer(
 			if(data == 1'b1)begin
 				BPSK = sine;
 			end else begin
-				BPSK = -8'b1*sine;
+				BPSK = -sine;
 			end
 		end else begin
 				BPSK = 0;
