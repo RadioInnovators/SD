@@ -18,15 +18,19 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module controller(input clk,
-						input dds_rdy,
-						input davdac,
-						output reg dds_ena = 0,
-						output reg [1:0] daccmd = 0,
-						output reg dacdav = 0
-						);
-
-reg [1:0] gstate = 0;
+module controller(
+	input clk,
+	input dds_rdy,
+	input davdac,
+	input enable,
+	input reset,
+						
+	output reg dds_ena = 0,
+	output reg [1:0] daccmd = 0,
+	output reg dacdav = 0
+);
+												
+reg [2:0] gstate = 4;
 
 always@(posedge clk)
 		begin
@@ -48,7 +52,16 @@ always@(posedge clk)
 										if (davdac == 1)  gstate = 0;		// wait for DAC to sync
 										else gstate = 3;
 								end
+						4:begin
+							if(enable)begin
+								gstate = 0;
+								dds_ena = 0;
+								dacdav = 0;
+							end
+						end
 						default:		gstate = 0;
 				endcase
+				if(reset)
+					gstate = 4;
 		end
 endmodule

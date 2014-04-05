@@ -30,16 +30,24 @@
 //// g_type gausian distribution type, 0 = unimodal, 1 = bimodal, from g_noise_out
 //// u_type uniform distribution type, 0 = uniform, 1 =  ave-uniform, from u_noise_out
 
-module LFSR_Plus #(parameter W = 11, V = 18, g_type = 0, u_type = 1, SCALOR = 1)      
+module LFSR_Plus #(parameter W = 12, V = 18, g_type = 0, u_type = 1, SCALOR = 1)      
 	(
 		output reg signed [W-1 : 0]		g_noise_out,
 		output reg signed [W-1 : 0]		g_noise_out_scaled_mean = 0,
 		output reg signed [W-1 : 0]		g_noise_out_scaled_mean_var = 0,
 		output 	reg	[W-1 : 0]		u_noise_out,
-		input 	clk,
-		input		n_reset,
-		input		enable
+		input 	clk
+		//input		n_reset,
+		//input		enable
 	);
+	
+	reg enable = 0;
+	reg n_reset = 0;
+	
+	initial begin
+		#41667 n_reset = 1;
+		#41667 enable = 1;
+	end
 	
 ////---------------- internal variables ----------------------------------
 	reg	 signed	[W-1 : 0] 	rand_out;
