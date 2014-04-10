@@ -1,0 +1,43 @@
+#	Author: Brandon Keith
+#	Date: 2/15/14
+#	Course: Senior Design II
+#	Organization: Temple University
+#	Description: UCF file for Trenz Electronics TE0304 carrier 
+#			 	board and Trenz Electronics TE0603 FPGA module 
+#			 	(Xilinx Spartan-6 XC62LX45 FPGA).
+#
+#			 	Our project implements 1200 b/sec digital loopback
+#			 	using BPSK modulation with (2, 1, 7) convolutional
+#			 	coding through AWGN. Client and server is a Realterm
+#			 	serial terminal on PC, communicating serially (RS-232)
+#			 	with FPGA board.  
+#
+#	Revision History:
+#
+#	2/15/14: Created. 		
+#
+#********************************************************************************************************
+
+NET CLK LOC=AA12 | IOSTANDARD = LVCMOS33  | PERIOD = 10000 ps;		# 100 MHz
+NET RST LOC=R7 | IOSTANDARD = LVCMOS33 | PULLDOWN | TIG;
+
+# LEDs
+NET LED0 LOC=F1  | IOSTANDARD = LVCMOS33;
+NET LED1 LOC=F2  | IOSTANDARD = LVCMOS33;
+NET LED2 LOC=J4  | IOSTANDARD = LVCMOS33;
+NET LED3 LOC=K8  | IOSTANDARD = LVCMOS33;
+
+# RS-232 DCE 
+NET RXD LOC=Y7	| IOSTANDARD = LVCMOS33;
+NET TXD LOC=AB7	| IOSTANDARD = LVCMOS33;
+
+# Digital Testpoints
+NET TP1 LOC=E5 | IOSTANDARD = LVCMOS33;
+NET TP2 LOC=G6 | IOSTANDARD = LVCMOS33;
+NET TP3 LOC=G4 | IOSTANDARD = LVCMOS33;
+NET TP4 LOC=F5 | IOSTANDARD = LVCMOS33;
+NET TP5 LOC=C4 | IOSTANDARD = LVCMOS33;
+NET TP6 LOC=E6 | IOSTANDARD = LVCMOS33;
+NET TP7 LOC=D5 | IOSTANDARD = LVCMOS33;
+
+

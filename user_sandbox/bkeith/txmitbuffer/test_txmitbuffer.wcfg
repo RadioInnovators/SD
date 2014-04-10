@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/lifesatrip/Documents/TortoiseSVN/SD/trunk/user_sandbox/bkeith/txmitbuffer/tb_txmitbuffer_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_txmitbuffer" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="2" />
+   <wvobject fp_name="group13" type="group">
+      <obj_property name="label">tb_txmitbuffer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_txmitbuffer/tx_full" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">tx_full</obj_property>
+         <obj_property name="ObjectShortName">tx_full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/tx_empty" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">tx_empty</obj_property>
+         <obj_property name="ObjectShortName">tx_empty</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/dataout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dataout[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dataout[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/dav_tx" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dav_tx</obj_property>
+         <obj_property name="ObjectShortName">dav_tx</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/ack" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ack</obj_property>
+         <obj_property name="ObjectShortName">ack</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/digipoints" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">digipoints[2:0]</obj_property>
+         <obj_property name="ObjectShortName">digipoints[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/clk_1200" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_1200</obj_property>
+         <obj_property name="ObjectShortName">clk_1200</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/datain" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">datain</obj_property>
+         <obj_property name="ObjectShortName">datain</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/start" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/rfd_tx" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rfd_tx</obj_property>
+         <obj_property name="ObjectShortName">rfd_tx</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/ack_tx" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ack_tx</obj_property>
+         <obj_property name="ObjectShortName">ack_tx</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/LATENCY" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">LATENCY[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LATENCY[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group41" type="group">
+      <obj_property name="label">txmitbuffer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_txmitbuffer/M0/clk_1200" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_1200</obj_property>
+         <obj_property name="ObjectShortName">clk_1200</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/datain" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">datain</obj_property>
+         <obj_property name="ObjectShortName">datain</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/start" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/ack_tx" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ack_tx</obj_property>
+         <obj_property name="ObjectShortName">ack_tx</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/rfd_tx" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rfd_tx</obj_property>
+         <obj_property name="ObjectShortName">rfd_tx</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/path" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">path[0:399,24:0]</obj_property>
+         <obj_property name="ObjectShortName">path[0:399,24:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/feed" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">feed</obj_property>
+         <obj_property name="ObjectShortName">feed</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/tx_full" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">tx_full</obj_property>
+         <obj_property name="ObjectShortName">tx_full</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/tx_empty" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">tx_empty</obj_property>
+         <obj_property name="ObjectShortName">tx_empty</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/dataout" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dataout[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dataout[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/dav_tx" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dav_tx</obj_property>
+         <obj_property name="ObjectShortName">dav_tx</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/ack" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ack</obj_property>
+         <obj_property name="ObjectShortName">ack</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/digipoints" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">digipoints[2:0]</obj_property>
+         <obj_property name="ObjectShortName">digipoints[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/delay" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">delay[16:0]</obj_property>
+         <obj_property name="ObjectShortName">delay[16:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/datapath_state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">datapath_state[3:0]</obj_property>
+         <obj_property name="ObjectShortName">datapath_state[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/next_datapath_state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">next_datapath_state[3:0]</obj_property>
+         <obj_property name="ObjectShortName">next_datapath_state[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/chainen" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">chainen</obj_property>
+         <obj_property name="ObjectShortName">chainen</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/done_10K" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">done_10K</obj_property>
+         <obj_property name="ObjectShortName">done_10K</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/feedbit" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">feedbit</obj_property>
+         <obj_property name="ObjectShortName">feedbit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/count" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">count[13:0]</obj_property>
+         <obj_property name="ObjectShortName">count[13:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/fill_10K" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">fill_10K</obj_property>
+         <obj_property name="ObjectShortName">fill_10K</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/watch_delay" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">watch_delay</obj_property>
+         <obj_property name="ObjectShortName">watch_delay</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/count_8" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">count_8[3:0]</obj_property>
+         <obj_property name="ObjectShortName">count_8[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/delayin_reg1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">delayin_reg1</obj_property>
+         <obj_property name="ObjectShortName">delayin_reg1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/delayin_reg2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">delayin_reg2</obj_property>
+         <obj_property name="ObjectShortName">delayin_reg2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/delayin_reg3" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">delayin_reg3</obj_property>
+         <obj_property name="ObjectShortName">delayin_reg3</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_txmitbuffer/M0/LATENCY" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">LATENCY[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LATENCY[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

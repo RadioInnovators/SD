@@ -1,9 +1,9 @@
 /*	Author: bkeith
 	
-	File: tb_satcom.v
-	Description: testbench for satcom.v and underlying submodules
+	File: tb_txmitbuffer.v
+	Description: testbench for txmitbuffer.v and associated submodules.
 
-	History: 	3/11/14	- started.
+	History: 	3/15/14	- started.
 */
 
 `timescale 1ns / 1ps
@@ -25,10 +25,11 @@ module tb_txmitbuffer();
 	wire [7:0] dataout;
 	wire dav_tx;
 	wire ack;
+	wire [2:0] digipoints;
 
 	initial begin
 	//	txbuf_clk = 0;
-		clk_1200 = 1;
+		clk_1200 = 0;
 		datain = 1'b0;
 		start = 1;
 	end
@@ -44,6 +45,6 @@ module tb_txmitbuffer();
 		#83333;
 	end
 
-	txmitbuffer #(.LATENCY(LATENCY)) M0 (clk_1200, datain, start, ack_tx, rfd_tx, tx_full, tx_empty, dataout, dav_tx, ack);
+	txmitbuffer #(.LATENCY(LATENCY)) M0 (clk_1200, datain, start, ack_tx, rfd_tx, tx_full, tx_empty, dataout, dav_tx, ack, digipoints);
 
 endmodule  

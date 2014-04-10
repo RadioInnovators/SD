@@ -21,6 +21,8 @@
 				ack 				- acknowledgment
 
 	History:	3/14/14		- started.	
+				4/8/14		- fixed 'count' register size to 4-bit instead of 0-bit
+				4/9/14		- added solution for 1-bit processing delay
 */
 
 module txmitbuffer #(
@@ -36,7 +38,8 @@ module txmitbuffer #(
 	output reg tx_empty=0,
 	output reg [7:0] dataout,
 	output reg dav_tx=0,
-	output reg ack=0
+	output reg ack=0,
+	output reg [2:0] digipoints
 	);
 
 	reg [16:0] delay = 0;
@@ -47,7 +50,8 @@ module txmitbuffer #(
 	reg [13:0] count = 0;
 	reg fill_10K=0;
 	reg watch_delay=0;
-	reg count_8=0;
+	reg [3:0] count_8=0;
+	reg delayin_reg1, delayin_reg2;
 
 	wire [24:0] path [0:399];
 	wire feed;
@@ -67,16 +71,28 @@ module txmitbuffer #(
 			dflop X (.clk(clk_1200), .in(path[399][n]), .clken(chainen), .out(path[399][n+1]));
 		end
 	endgenerate
+	
+	
+	// 1-bit delay line upon data input to txmitbuffer (solution for 1-bit processing delay)
+	always@(posedge clk_1200) begin
+		delayin_reg1 <= datain;
+	end
+	always @(negedge clk_1200) begin
+		delayin_reg2 <= delayin_reg1;
+	end
 
 	always@(negedge clk_1200) begin
 		datapath_state = next_datapath_state;
 		if(start)				
 			watch_delay=1;		// YO, make sure to turn this off at the receiver ...
+		else 
+			watch_delay=0;
 	end
 
 	always@(posedge clk_1200) begin
 		case(datapath_state)
 			0: begin
+				//digipoints = 3'b000;
 				chainen=0;
 				if(watch_delay) begin
 					delay=0;
@@ -85,16 +101,18 @@ module txmitbuffer #(
 				end
 			end
 			1: begin
+				//digipoints = 3'b001;
 				delay=delay+1;
-				if(delay == LATENCY) begin
+				if(delay == LATENCY) begin 	// 1-bit processing delay + transmit delay 
 					count=0;
 					chainen=1;
-					feedbit=datain;
+					feedbit=delayin_reg2;
 					next_datapath_state=2;
 				end
 			end
 			2: begin
-				feedbit=datain;
+				//digipoints = 3'b010;
+				feedbit=delayin_reg2;
 				count=count+1;
 				if(count == 14'd10000) begin
 					next_datapath_state=3;
@@ -104,6 +122,7 @@ module txmitbuffer #(
 				end
 			end
 			3: begin
+				//digipoints = 3'b011;
 				if(rfd_tx) begin 				// "OK, I'm ready for data, txmitbuffer."
 					tx_full=0;
 					dataout[0] = path[399][24];
@@ -118,6 +137,7 @@ module txmitbuffer #(
 				end
 			end
 			4: begin
+				//digipoints = 3'b100;
 				dav_tx=1;				 // "Ok, here you go, buffer_control."
 				if(ack_tx) begin 		 // "Got it, thanks, txmitbuffer."
 					ack=1;				 // "Sure, no problem, buffer_control."
@@ -127,6 +147,7 @@ module txmitbuffer #(
 				end
 			end
 			5: begin
+				//digipoints = 3'b101;
 				dav_tx=0;
 				count_8 = count_8 + 1;
 				if(count_8 == 8) begin
@@ -135,6 +156,7 @@ module txmitbuffer #(
 				end
 			end
 			6: begin
+				//digipoints = 3'b110;
 				count_8=0;
 				count = count - 8;
 				if(count == 14'd0) begin
